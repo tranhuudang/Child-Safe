@@ -29,7 +29,7 @@ namespace ChildSafe
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutSet = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,7 +64,9 @@ namespace ChildSafe
             this.button2 = new System.Windows.Forms.Button();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.flowLayoutSet.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -73,25 +75,27 @@ namespace ChildSafe
             this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // flowLayoutSet
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Controls.Add(this.panel4);
-            this.flowLayoutPanel1.Controls.Add(this.panel5);
-            this.flowLayoutPanel1.Controls.Add(this.panel6);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(516, 454);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutSet.AutoScroll = true;
+            this.flowLayoutSet.Controls.Add(this.panel1);
+            this.flowLayoutSet.Controls.Add(this.panel2);
+            this.flowLayoutSet.Controls.Add(this.panel3);
+            this.flowLayoutSet.Controls.Add(this.panel4);
+            this.flowLayoutSet.Controls.Add(this.panel5);
+            this.flowLayoutSet.Controls.Add(this.panel6);
+            this.flowLayoutSet.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutSet.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutSet.Name = "flowLayoutSet";
+            this.flowLayoutSet.Size = new System.Drawing.Size(516, 454);
+            this.flowLayoutSet.TabIndex = 0;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.checkBox1);
@@ -103,42 +107,40 @@ namespace ChildSafe
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 54);
+            this.label3.Location = new System.Drawing.Point(11, 65);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 1;
-            this.label3.Text = "label1";
+            this.label3.Text = "Update: ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(223, 54);
+            this.label2.Location = new System.Drawing.Point(175, 65);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label1";
+            this.label2.Text = "Licence:";
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(7, 28);
+            this.label1.Location = new System.Drawing.Point(11, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(484, 26);
+            this.label1.Size = new System.Drawing.Size(470, 35);
             this.label1.TabIndex = 1;
-            this.label1.Text = " label1label1label1  label1label1label1  label1label1label1  label1label1label1  " +
-    "label1label1label1  label1label1label1  label1label1label1  label1label1label1  " +
-    "label1label1label1  label1label1label1 ";
+            this.label1.Text = "Additional sketch domains as Steven Black comes across them.";
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(9, 9);
+            this.checkBox1.Location = new System.Drawing.Point(10, 10);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(79, 17);
+            this.checkBox1.Size = new System.Drawing.Size(181, 17);
             this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.Text = "Steven Black\'s ad-hoc list filter";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // panel2
@@ -445,6 +447,26 @@ namespace ChildSafe
     "ct your daily usage. Choose filter base on your specific need is definitely bett" +
     "er in this case.";
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(66, 65);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(43, 13);
+            this.label20.TabIndex = 1;
+            this.label20.Text = "usually";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(226, 65);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(26, 13);
+            this.label21.TabIndex = 1;
+            this.label21.Text = "MIT";
+            // 
             // filterBrowsing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -454,12 +476,12 @@ namespace ChildSafe
             this.Controls.Add(this.checkBox7);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flowLayoutSet);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "filterBrowsing";
             this.Text = "filterBrowsing";
             this.Load += new System.EventHandler(this.filterBrowsing_Load);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutSet.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -479,7 +501,7 @@ namespace ChildSafe
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutSet;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -514,5 +536,7 @@ namespace ChildSafe
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
     }
 }

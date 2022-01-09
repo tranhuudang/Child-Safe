@@ -58,6 +58,7 @@
     <Compile Include="about.Designer.cs">
       <DependentUpon>about.cs</DependentUpon>
     </Compile>
+    <Compile Include="customPanel4FilterBrowsing.cs" />
     <Compile Include="filter.cs" />
     <Compile Include="filterBank.cs" />
     <Compile Include="filterBrowsing.cs">
