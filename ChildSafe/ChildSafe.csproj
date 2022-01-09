@@ -123,5 +123,8 @@
   <ItemGroup>
     <None Include="Resources\check_green_256.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="filterListUpdate.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
