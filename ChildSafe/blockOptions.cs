@@ -82,5 +82,11 @@ namespace ChildSafe
                 btRemove.Enabled = false;
             }
         }
+
+        private void btFilterBrowsing_Click(object sender, EventArgs e)
+        {
+            filterBrowsing filterBrowsingForm = new filterBrowsing();
+            filterBrowsingForm.ShowDialog();
+        }
     }
 }

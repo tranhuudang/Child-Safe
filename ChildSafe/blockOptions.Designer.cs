@@ -44,7 +44,7 @@ namespace ChildSafe
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btFilterBrowsing = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -205,7 +205,7 @@ namespace ChildSafe
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button4);
+            this.groupBox2.Controls.Add(this.btFilterBrowsing);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.comboBox2);
@@ -219,14 +219,15 @@ namespace ChildSafe
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Other options";
             // 
-            // button4
+            // btFilterBrowsing
             // 
-            this.button4.Location = new System.Drawing.Point(651, 22);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(117, 23);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Details";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btFilterBrowsing.Location = new System.Drawing.Point(651, 22);
+            this.btFilterBrowsing.Name = "btFilterBrowsing";
+            this.btFilterBrowsing.Size = new System.Drawing.Size(117, 23);
+            this.btFilterBrowsing.TabIndex = 8;
+            this.btFilterBrowsing.Text = "Browsing..";
+            this.btFilterBrowsing.UseVisualStyleBackColor = true;
+            this.btFilterBrowsing.Click += new System.EventHandler(this.btFilterBrowsing_Click);
             // 
             // button3
             // 
@@ -324,14 +325,14 @@ namespace ChildSafe
             // 
             this.errorReporter.ContainerControl = this;
             // 
-            // BlockOptions
+            // blockOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 564);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "BlockOptions";
+            this.Name = "blockOptions";
             this.Text = "BlockOptions";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -366,7 +367,7 @@ namespace ChildSafe
         private System.Windows.Forms.Button btWhiteList;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btFilterBrowsing;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox2;
