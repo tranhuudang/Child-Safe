@@ -42,7 +42,7 @@ namespace ChildSafe
             this.txUrl2AddBlackList = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btCancel = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btFilterBrowsing = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -176,7 +176,7 @@ namespace ChildSafe
             // 
             this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.btCancel);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -194,14 +194,15 @@ namespace ChildSafe
             this.button7.Text = "Save";
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btCancel
             // 
-            this.button6.Location = new System.Drawing.Point(685, 529);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 12;
-            this.button6.Text = "Cancel";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btCancel.Location = new System.Drawing.Point(685, 529);
+            this.btCancel.Name = "btCancel";
+            this.btCancel.Size = new System.Drawing.Size(75, 23);
+            this.btCancel.TabIndex = 12;
+            this.btCancel.Text = "Cancel";
+            this.btCancel.UseVisualStyleBackColor = true;
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
             // groupBox2
             // 
@@ -334,6 +335,7 @@ namespace ChildSafe
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "blockOptions";
             this.Text = "BlockOptions";
+            this.Load += new System.EventHandler(this.blockOptions_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbBlacklist)).EndInit();
@@ -366,7 +368,7 @@ namespace ChildSafe
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btWhiteList;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btCancel;
         private System.Windows.Forms.Button btFilterBrowsing;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label2;

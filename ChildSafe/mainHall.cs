@@ -45,5 +45,10 @@ namespace ChildSafe
             lbPromote.Text = newQuote.getRandomQuote();
 
         }
+
+        private void mainHall_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

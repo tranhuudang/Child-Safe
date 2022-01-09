@@ -9,13 +9,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Threading;
+using System.Text.RegularExpressions;
 
 namespace ChildSafe
 {
     public partial class filterBrowsing : Form
     {
-        Control newControl(string name, string descriptionText, string updateText, string licenceText)
+        Control newControl(string name, string descriptionText,string linkFile, string updateText, string licenceText)
         {
+            // a custom panel to display filter and its descriptions.
             Panel newPanel = new Panel();
             CheckBox newCheckbox = new CheckBox();
             Label description = new Label();
@@ -34,6 +37,9 @@ namespace ChildSafe
 
             newCheckbox.Location = new Point(10, 8);
             newCheckbox.Text = name;
+            // evenhandler for checking event of each checkbox in each created panel.
+            newCheckbox.CheckedChanged += new EventHandler(checkOnFilter_Changed);
+            newCheckbox.Tag = linkFile;
 
             description.Location = new Point(10, 30);
             description.Size = new Size(470, 35);
@@ -50,6 +56,27 @@ namespace ChildSafe
             licence.Text = licenceText;
             return newPanel;
         }
+        
+        private void checkOnFilter_Changed(object sender, EventArgs e)
+        {
+            btDownloadFilter.Enabled = true;
+            if ((sender as CheckBox).Checked == true)
+            {
+                selectedFilterUrl.Items.Add((sender as CheckBox).Tag);
+                selectedFilterName.Items.Add((sender as CheckBox).Text);
+            }
+            else
+            {
+                // remove filter out of selected list
+                selectedFilterUrl.Items.Remove((sender as CheckBox).Tag);
+                selectedFilterName.Items.Remove((sender as CheckBox).Text);
+            }
+        }
+        private void NewCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         public filterBrowsing()
         {
             InitializeComponent();
@@ -76,14 +103,80 @@ namespace ChildSafe
                         string[] filter = content.Split('>');
                         string name = filter[1];
                         string description = filter[2];
+                        string linkFile = filter[3];
                         string update = filter[4];
-                       // string licence = filter[5];
+                        string licence = filter[5];
                         // add filters and it's description in to flowlayout list
-                        flowLayoutSet.Controls.Add(newControl(name, description, update, ""));
+                        flowLayoutSet.Controls.Add(newControl(name, description,linkFile, update, licence));
                     }
 
                 }
             }
+        }
+        // a really helpful function to get rid of special charactors in a string
+        public static string RemoveSpecialCharacters(string str)
+        {
+            return Regex.Replace(str, "[^a-zA-Z0-9_.]+", "", RegexOptions.Compiled);
+        }
+        private void btDownloadFilter_Click(object sender, EventArgs e)
+        {
+            string path = "FilterBase";
+            if (!Directory.Exists(path))
+            {
+                // Try to create the directory.
+                DirectoryInfo di = Directory.CreateDirectory(path);
+            }
+            
+            if (selectedFilterUrl.Items.Count > 0)
+            {
+                // create a thread to download file, this practice will help program not being freeze while downloading file
+                string url = selectedFilterUrl.Items[0].ToString();
+                string fileName = RemoveSpecialCharacters(selectedFilterName.Items[0].ToString().Replace(' ', '_'));
+                Thread thread = new Thread(() =>
+                {
+                    WebClient client = new WebClient();
+                    client.DownloadProgressChanged += new DownloadProgressChangedEventHandler(client_DownloadProgressChanged);
+                    client.DownloadFileCompleted += new AsyncCompletedEventHandler(client_DownloadFileCompleted);
+                    client.DownloadFileAsync(new Uri(url), path+@"\"+fileName);
+                });
+                thread.Start();
+            }
+            else
+            {
+                btDownloadFilter.Enabled = false;
+            }
+        }
+        void client_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
+        {
+            this.BeginInvoke((MethodInvoker)delegate {
+                double bytesIn = double.Parse(e.BytesReceived.ToString());
+                double totalBytes = double.Parse(e.TotalBytesToReceive.ToString());
+                double percentage = bytesIn / totalBytes * 100;
+                lbDownloadStatus.Text = "Downloaded " + e.BytesReceived + " of " + e.TotalBytesToReceive;
+                progressBar1.Value = int.Parse(Math.Truncate(percentage).ToString());
+            });
+        }
+        void client_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
+        {
+            this.BeginInvoke((MethodInvoker)delegate {
+                lbDownloadStatus.Text = "Completed";
+                selectedFilterUrl.Items.Remove(selectedFilterUrl.Items[0].ToString());
+                selectedFilterName.Items.Remove(selectedFilterName.Items[0].ToString());
+                // continue download other files by go back to the downloadfilter process
+                btDownloadFilter_Click(null,null);
+                if (selectedFilterName.Items.Count <= 0) btOk.Enabled = true;
+                else btOk.Enabled = false;
+            });
+        }
+
+        private void selectedFilterName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

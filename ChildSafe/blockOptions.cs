@@ -88,5 +88,15 @@ namespace ChildSafe
             filterBrowsing filterBrowsingForm = new filterBrowsing();
             filterBrowsingForm.ShowDialog();
         }
+
+        private void btCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void blockOptions_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

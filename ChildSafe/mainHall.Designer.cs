@@ -37,25 +37,10 @@ namespace ChildSafe
             this.btMenu = new System.Windows.Forms.PictureBox();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.getStartedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sendFeedbackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkForUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.technicalSupportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label2 = new System.Windows.Forms.Label();
-            this.saparator = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.options = new System.Windows.Forms.LinkLabel();
-            this.lbLoadingStatus = new System.Windows.Forms.Label();
-            this.timerQuote = new System.Windows.Forms.Timer(this.components);
-            this.whitelistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.filtersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
-            this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.whitelistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vietnamseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,6 +49,21 @@ namespace ChildSafe
             this.systemDefaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darkThemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lightThemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
+            this.sendFeedbackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkForUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.technicalSupportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
+            this.saparator = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.options = new System.Windows.Forms.LinkLabel();
+            this.lbLoadingStatus = new System.Windows.Forms.Label();
+            this.timerQuote = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btMenu)).BeginInit();
             this.contextMenu.SuspendLayout();
@@ -136,6 +136,23 @@ namespace ChildSafe
             this.getStartedToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.getStartedToolStripMenuItem.Text = "Get Started";
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(165, 6);
+            // 
+            // filtersToolStripMenuItem
+            // 
+            this.filtersToolStripMenuItem.Name = "filtersToolStripMenuItem";
+            this.filtersToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.filtersToolStripMenuItem.Text = "Filters";
+            // 
+            // whitelistToolStripMenuItem
+            // 
+            this.whitelistToolStripMenuItem.Name = "whitelistToolStripMenuItem";
+            this.whitelistToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.whitelistToolStripMenuItem.Text = "Whitelist";
+            // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -145,6 +162,68 @@ namespace ChildSafe
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
+            // 
+            // languageToolStripMenuItem
+            // 
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem,
+            this.vietnamseToolStripMenuItem});
+            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.languageToolStripMenuItem.Text = "Language";
+            // 
+            // englishToolStripMenuItem
+            // 
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.englishToolStripMenuItem.Text = "English";
+            // 
+            // vietnamseToolStripMenuItem
+            // 
+            this.vietnamseToolStripMenuItem.Name = "vietnamseToolStripMenuItem";
+            this.vietnamseToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.vietnamseToolStripMenuItem.Text = "Vietnamse";
+            // 
+            // autoupdateFilterToolStripMenuItem
+            // 
+            this.autoupdateFilterToolStripMenuItem.Checked = true;
+            this.autoupdateFilterToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.autoupdateFilterToolStripMenuItem.Name = "autoupdateFilterToolStripMenuItem";
+            this.autoupdateFilterToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.autoupdateFilterToolStripMenuItem.Text = "Auto-update filter";
+            // 
+            // themeToolStripMenuItem
+            // 
+            this.themeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.systemDefaultToolStripMenuItem,
+            this.darkThemeToolStripMenuItem,
+            this.lightThemeToolStripMenuItem});
+            this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
+            this.themeToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.themeToolStripMenuItem.Text = "Theme";
+            // 
+            // systemDefaultToolStripMenuItem
+            // 
+            this.systemDefaultToolStripMenuItem.Name = "systemDefaultToolStripMenuItem";
+            this.systemDefaultToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.systemDefaultToolStripMenuItem.Text = "System (Default)";
+            // 
+            // darkThemeToolStripMenuItem
+            // 
+            this.darkThemeToolStripMenuItem.Name = "darkThemeToolStripMenuItem";
+            this.darkThemeToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.darkThemeToolStripMenuItem.Text = "Dark theme";
+            // 
+            // lightThemeToolStripMenuItem
+            // 
+            this.lightThemeToolStripMenuItem.Name = "lightThemeToolStripMenuItem";
+            this.lightThemeToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.lightThemeToolStripMenuItem.Text = "Light theme";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(165, 6);
             // 
             // sendFeedbackToolStripMenuItem
             // 
@@ -164,14 +243,20 @@ namespace ChildSafe
             // checkForUpdatesToolStripMenuItem
             // 
             this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
-            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.checkForUpdatesToolStripMenuItem.Text = "Check for Updates";
             // 
             // updateHistoryToolStripMenuItem
             // 
             this.updateHistoryToolStripMenuItem.Name = "updateHistoryToolStripMenuItem";
-            this.updateHistoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.updateHistoryToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.updateHistoryToolStripMenuItem.Text = "Update History";
+            // 
+            // githubToolStripMenuItem
+            // 
+            this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
+            this.githubToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.githubToolStripMenuItem.Text = "Github";
             // 
             // technicalSupportToolStripMenuItem
             // 
@@ -179,10 +264,10 @@ namespace ChildSafe
             this.technicalSupportToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.technicalSupportToolStripMenuItem.Text = "Technical Support";
             // 
-            // toolStripMenuItem1
+            // toolStripMenuItem2
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(165, 6);
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(165, 6);
             // 
             // aboutToolStripMenuItem
             // 
@@ -243,91 +328,6 @@ namespace ChildSafe
             this.timerQuote.Interval = 8000;
             this.timerQuote.Tick += new System.EventHandler(this.timerQuote_Tick);
             // 
-            // whitelistToolStripMenuItem
-            // 
-            this.whitelistToolStripMenuItem.Name = "whitelistToolStripMenuItem";
-            this.whitelistToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.whitelistToolStripMenuItem.Text = "Whitelist";
-            // 
-            // filtersToolStripMenuItem
-            // 
-            this.filtersToolStripMenuItem.Name = "filtersToolStripMenuItem";
-            this.filtersToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.filtersToolStripMenuItem.Text = "Filters";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(165, 6);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(165, 6);
-            // 
-            // githubToolStripMenuItem
-            // 
-            this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
-            this.githubToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.githubToolStripMenuItem.Text = "Github";
-            // 
-            // languageToolStripMenuItem
-            // 
-            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.englishToolStripMenuItem,
-            this.vietnamseToolStripMenuItem});
-            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            this.languageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.languageToolStripMenuItem.Text = "Language";
-            // 
-            // englishToolStripMenuItem
-            // 
-            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.englishToolStripMenuItem.Text = "English";
-            // 
-            // vietnamseToolStripMenuItem
-            // 
-            this.vietnamseToolStripMenuItem.Name = "vietnamseToolStripMenuItem";
-            this.vietnamseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.vietnamseToolStripMenuItem.Text = "Vietnamse";
-            // 
-            // autoupdateFilterToolStripMenuItem
-            // 
-            this.autoupdateFilterToolStripMenuItem.Checked = true;
-            this.autoupdateFilterToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.autoupdateFilterToolStripMenuItem.Name = "autoupdateFilterToolStripMenuItem";
-            this.autoupdateFilterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.autoupdateFilterToolStripMenuItem.Text = "Auto-update filter";
-            // 
-            // themeToolStripMenuItem
-            // 
-            this.themeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.systemDefaultToolStripMenuItem,
-            this.darkThemeToolStripMenuItem,
-            this.lightThemeToolStripMenuItem});
-            this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
-            this.themeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.themeToolStripMenuItem.Text = "Theme";
-            // 
-            // systemDefaultToolStripMenuItem
-            // 
-            this.systemDefaultToolStripMenuItem.Name = "systemDefaultToolStripMenuItem";
-            this.systemDefaultToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.systemDefaultToolStripMenuItem.Text = "System (Default)";
-            // 
-            // darkThemeToolStripMenuItem
-            // 
-            this.darkThemeToolStripMenuItem.Name = "darkThemeToolStripMenuItem";
-            this.darkThemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.darkThemeToolStripMenuItem.Text = "Dark theme";
-            // 
-            // lightThemeToolStripMenuItem
-            // 
-            this.lightThemeToolStripMenuItem.Name = "lightThemeToolStripMenuItem";
-            this.lightThemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.lightThemeToolStripMenuItem.Text = "Light theme";
-            // 
             // mainHall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,6 +345,7 @@ namespace ChildSafe
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "mainHall";
             this.Text = "Child Safe";
+            this.Load += new System.EventHandler(this.mainHall_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btMenu)).EndInit();
             this.contextMenu.ResumeLayout(false);
