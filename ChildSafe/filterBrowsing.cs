@@ -74,12 +74,12 @@ namespace ChildSafe
                     if (content != "")
                     {
                         string[] filter = content.Split('>');
-                        string name = filter[1].Replace('\"', ' ');
-                        string description = filter[2].Replace('\"', ' ');
-                        string update = filter[4].Replace('\"', ' ');
-                        string licence = filter[5].Replace('\"',' ');
+                        string name = filter[1];
+                        string description = filter[2];
+                        string update = filter[4];
+                       // string licence = filter[5];
                         // add filters and it's description in to flowlayout list
-                        flowLayoutSet.Controls.Add(newControl(name, description, update, licence));
+                        flowLayoutSet.Controls.Add(newControl(name, description, update, ""));
                     }
 
                 }

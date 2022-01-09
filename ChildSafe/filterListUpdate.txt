@@ -46,7 +46,8 @@
 @>KADhosts filter
 >Fraud/adware/scam websites.
 >https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt
->frequently CC BY-SA 4.0
+>frequently
+>CC BY-SA 4.0
 @>MetaMask eth-phishing-detect filter
 >MetaMask eth-phishing-detect
 >https://raw.githubusercontent.com/MetaMask/eth-phishing-detect/master/src/hosts.txt
@@ -87,8 +88,7 @@
 >https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts
 >occasionally
 >MIT
-@
->URLHaus filter
+@>URLHaus filter
 >A project from abuse.ch with the goal of sharing malicious URLs.
 >https://urlhaus.abuse.ch/downloads/hostfile/
 >occasionally
