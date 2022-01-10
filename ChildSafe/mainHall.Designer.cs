@@ -33,8 +33,6 @@ namespace ChildSafe
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainHall));
             this.lbPromote = new System.Windows.Forms.Label();
             this.btStart = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btMenu = new System.Windows.Forms.PictureBox();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.getStartedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
@@ -64,9 +62,11 @@ namespace ChildSafe
             this.options = new System.Windows.Forms.LinkLabel();
             this.lbLoadingStatus = new System.Windows.Forms.Label();
             this.timerQuote = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btMenu)).BeginInit();
+            this.pictureMainHall = new System.Windows.Forms.PictureBox();
+            this.btMenu = new System.Windows.Forms.PictureBox();
             this.contextMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureMainHall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // lbPromote
@@ -89,28 +89,6 @@ namespace ChildSafe
             this.btStart.Text = "START";
             this.btStart.UseVisualStyleBackColor = true;
             this.btStart.Click += new System.EventHandler(this.btStart_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ChildSafe.Properties.Resources.check_green_256;
-            this.pictureBox3.Location = new System.Drawing.Point(407, 153);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(154, 156);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // btMenu
-            // 
-            this.btMenu.ContextMenuStrip = this.contextMenu;
-            this.btMenu.Image = global::ChildSafe.Properties.Resources.more_24;
-            this.btMenu.Location = new System.Drawing.Point(924, 12);
-            this.btMenu.Name = "btMenu";
-            this.btMenu.Size = new System.Drawing.Size(24, 24);
-            this.btMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.btMenu.TabIndex = 0;
-            this.btMenu.TabStop = false;
-            this.btMenu.Click += new System.EventHandler(this.btMenu_Click);
             // 
             // contextMenu
             // 
@@ -144,8 +122,9 @@ namespace ChildSafe
             // filtersToolStripMenuItem
             // 
             this.filtersToolStripMenuItem.Name = "filtersToolStripMenuItem";
-            this.filtersToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.filtersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.filtersToolStripMenuItem.Text = "Filters";
+            this.filtersToolStripMenuItem.Click += new System.EventHandler(this.filtersToolStripMenuItem_Click);
             // 
             // whitelistToolStripMenuItem
             // 
@@ -328,6 +307,28 @@ namespace ChildSafe
             this.timerQuote.Interval = 8000;
             this.timerQuote.Tick += new System.EventHandler(this.timerQuote_Tick);
             // 
+            // pictureMainHall
+            // 
+            this.pictureMainHall.Image = global::ChildSafe.Properties.Resources.danger_128;
+            this.pictureMainHall.Location = new System.Drawing.Point(407, 153);
+            this.pictureMainHall.Name = "pictureMainHall";
+            this.pictureMainHall.Size = new System.Drawing.Size(154, 156);
+            this.pictureMainHall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureMainHall.TabIndex = 2;
+            this.pictureMainHall.TabStop = false;
+            // 
+            // btMenu
+            // 
+            this.btMenu.ContextMenuStrip = this.contextMenu;
+            this.btMenu.Image = global::ChildSafe.Properties.Resources.more_24;
+            this.btMenu.Location = new System.Drawing.Point(924, 12);
+            this.btMenu.Name = "btMenu";
+            this.btMenu.Size = new System.Drawing.Size(24, 24);
+            this.btMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btMenu.TabIndex = 0;
+            this.btMenu.TabStop = false;
+            this.btMenu.Click += new System.EventHandler(this.btMenu_Click);
+            // 
             // mainHall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,15 +341,16 @@ namespace ChildSafe
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btStart);
             this.Controls.Add(this.lbPromote);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureMainHall);
             this.Controls.Add(this.btMenu);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "mainHall";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Child Safe";
             this.Load += new System.EventHandler(this.mainHall_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btMenu)).EndInit();
             this.contextMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureMainHall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btMenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,7 +359,7 @@ namespace ChildSafe
         #endregion
 
         private System.Windows.Forms.PictureBox btMenu;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureMainHall;
         private System.Windows.Forms.Label lbPromote;
         private System.Windows.Forms.Button btStart;
         private System.Windows.Forms.Label label2;

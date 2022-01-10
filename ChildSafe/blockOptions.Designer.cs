@@ -334,6 +334,7 @@ namespace ChildSafe
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "blockOptions";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BlockOptions";
             this.Load += new System.EventHandler(this.blockOptions_Load);
             this.groupBox1.ResumeLayout(false);

@@ -48,7 +48,23 @@ namespace ChildSafe
 
         private void mainHall_Load(object sender, EventArgs e)
         {
+            if ((Properties.Settings.Default["protectEnable"].ToString()) == "False")
+            {
+                pictureMainHall.Image = Properties.Resources.danger_128;
+                btStart.Text = "START";
 
+            }
+            else
+            {
+                pictureMainHall.Image = Properties.Resources.check_green_256;
+                btStart.Text = "STOP";
+            }
+        }
+
+        private void filtersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            filterBrowsing filterBrowsingForm = new filterBrowsing();
+            filterBrowsingForm.ShowDialog();
         }
     }
 }
