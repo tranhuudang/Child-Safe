@@ -20,18 +20,18 @@ namespace ChildSafe
         {
             InitializeComponent();
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-        string host = Path.GetPathRoot(Environment.SystemDirectory) + @"Windows\System32\drivers\etc\host";
-        string defaultBlockListFile = "FilterSet.default";
+        string host = Path.GetPathRoot(Environment.SystemDirectory) + @"Windows\System32\drivers\etc\hosts";
+        string onDutyFilters = "OnDuty";
+        string defaultChildSafeBaseFilter = "ChildSafeBaseFilter";
+        string defaultChildSafeBaseFilter_Url = "https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/defaultChildSafeFilter.txt";
         private void btStart_Click(object sender, EventArgs e)
         {
-            if (File.Exists(defaultBlockListFile))
+            // in options we have the oppotunity to add more filter to the block list, all fillter with be combined in OnDuty file. 
+            // if user don't use option feature, application will look for ChildSafeBaseFilter which is the default filter of this program.
+            // ChildSafeBaseFilter is downloaded when the app is openning and connecting to internet.
+            if (File.Exists(onDutyFilters))
             {
-                string [] list2Block =File.ReadAllLines(defaultBlockListFile);
+                string [] list2Block =File.ReadAllLines(onDutyFilters);
                 progressBar1.Maximum = list2Block.Length;
                 using (StreamWriter writetext = new StreamWriter(host))
                 {
@@ -43,9 +43,20 @@ namespace ChildSafe
                 }
                 lbLoadingStatus.Text = "Completed";
             }
-            else
+            // we use default filter instead in case no option filter is added
+            else if (File.Exists(defaultChildSafeBaseFilter))
             {
-
+                string[] list2Block = File.ReadAllLines(defaultChildSafeBaseFilter);
+                progressBar1.Maximum = list2Block.Length;
+                using (StreamWriter writetext = new StreamWriter(host))
+                {
+                    foreach (string line in list2Block)
+                    {
+                        writetext.WriteLine("127.0.0.0 "+line);
+                        progressBar1.Value++;
+                    }
+                }
+                lbLoadingStatus.Text = "Completed";
             }
         }
 
@@ -74,9 +85,10 @@ namespace ChildSafe
             Thread downloadDefaultFilter = new Thread(() =>
             {
                 WebClient client = new WebClient();
-                client.DownloadFileAsync(new Uri("google.com"), "ChildSafeBaseFilter");
+                client.DownloadFileAsync(new Uri(defaultChildSafeBaseFilter_Url), defaultChildSafeBaseFilter);
             }
             );
+            downloadDefaultFilter.Start();
             // get the current state of program
             if ((Properties.Settings.Default["protectEnable"].ToString()) == "False")
             {

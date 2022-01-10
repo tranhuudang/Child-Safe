@@ -120,7 +120,7 @@
   <metadata name="contextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="label2.Text" xml:space="preserve">
+  <data name="lbNotice.Text" xml:space="preserve">
     <value>*this process will monitor your internet to fill out all unapproriate contents. It is required to access your local permisstions to write and read file. If you encouter errors during the procedure, it's likely to happen because the permission required to run this program is not met. Please try to run the application again by right click and choose Run as administrator. 
 **we make sure to not collect or use any of your personal data.
 </value>

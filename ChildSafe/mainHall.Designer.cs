@@ -54,7 +54,7 @@ namespace ChildSafe
             this.updateHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.technicalSupportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbNotice = new System.Windows.Forms.Label();
             this.saparator = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.options = new System.Windows.Forms.LinkLabel();
@@ -106,30 +106,30 @@ namespace ChildSafe
             this.toolStripMenuItem2,
             this.aboutToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Size = new System.Drawing.Size(181, 242);
+            this.contextMenu.Size = new System.Drawing.Size(169, 220);
             // 
             // getStartedToolStripMenuItem
             // 
             this.getStartedToolStripMenuItem.Name = "getStartedToolStripMenuItem";
-            this.getStartedToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.getStartedToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.getStartedToolStripMenuItem.Text = "Get Started";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(165, 6);
             // 
             // filtersToolStripMenuItem
             // 
             this.filtersToolStripMenuItem.Name = "filtersToolStripMenuItem";
-            this.filtersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.filtersToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.filtersToolStripMenuItem.Text = "Filters";
             this.filtersToolStripMenuItem.Click += new System.EventHandler(this.filtersToolStripMenuItem_Click);
             // 
             // whitelistToolStripMenuItem
             // 
             this.whitelistToolStripMenuItem.Name = "whitelistToolStripMenuItem";
-            this.whitelistToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.whitelistToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.whitelistToolStripMenuItem.Text = "Whitelist";
             // 
             // settingsToolStripMenuItem
@@ -139,7 +139,7 @@ namespace ChildSafe
             this.autoupdateFilterToolStripMenuItem,
             this.themeToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // languageToolStripMenuItem
@@ -202,12 +202,12 @@ namespace ChildSafe
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(165, 6);
             // 
             // sendFeedbackToolStripMenuItem
             // 
             this.sendFeedbackToolStripMenuItem.Name = "sendFeedbackToolStripMenuItem";
-            this.sendFeedbackToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sendFeedbackToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.sendFeedbackToolStripMenuItem.Text = "Send Feedback";
             this.sendFeedbackToolStripMenuItem.Click += new System.EventHandler(this.sendFeedbackToolStripMenuItem_Click);
             // 
@@ -217,7 +217,7 @@ namespace ChildSafe
             this.checkForUpdatesToolStripMenuItem,
             this.updateHistoryToolStripMenuItem});
             this.checkForUpdateToolStripMenuItem.Name = "checkForUpdateToolStripMenuItem";
-            this.checkForUpdateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkForUpdateToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.checkForUpdateToolStripMenuItem.Text = "Updates";
             // 
             // checkForUpdatesToolStripMenuItem
@@ -235,23 +235,22 @@ namespace ChildSafe
             // technicalSupportToolStripMenuItem
             // 
             this.technicalSupportToolStripMenuItem.Name = "technicalSupportToolStripMenuItem";
-            this.technicalSupportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.technicalSupportToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.technicalSupportToolStripMenuItem.Text = "Technical Support";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(165, 6);
             // 
-            // label2
+            // lbNotice
             // 
-            this.label2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label2.Location = new System.Drawing.Point(12, 477);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(936, 71);
-            this.label2.TabIndex = 5;
-            this.label2.Text = resources.GetString("label2.Text");
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lbNotice.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.lbNotice.Location = new System.Drawing.Point(12, 477);
+            this.lbNotice.Name = "lbNotice";
+            this.lbNotice.Size = new System.Drawing.Size(936, 71);
+            this.lbNotice.TabIndex = 5;
+            this.lbNotice.Text = resources.GetString("lbNotice.Text");
             // 
             // saparator
             // 
@@ -322,7 +321,7 @@ namespace ChildSafe
             // 
             this.githubToolStripMenuItem.Image = global::ChildSafe.Properties.Resources.github_20;
             this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
-            this.githubToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.githubToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.githubToolStripMenuItem.Text = "Github";
             this.githubToolStripMenuItem.Click += new System.EventHandler(this.githubToolStripMenuItem_Click);
             // 
@@ -330,7 +329,7 @@ namespace ChildSafe
             // 
             this.aboutToolStripMenuItem.Image = global::ChildSafe.Properties.Resources.info_20;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -343,7 +342,7 @@ namespace ChildSafe
             this.Controls.Add(this.options);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.saparator);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbNotice);
             this.Controls.Add(this.btStart);
             this.Controls.Add(this.lbPromote);
             this.Controls.Add(this.pictureMainHall);
@@ -367,7 +366,7 @@ namespace ChildSafe
         private System.Windows.Forms.PictureBox pictureMainHall;
         private System.Windows.Forms.Label lbPromote;
         private System.Windows.Forms.Button btStart;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbNotice;
         private System.Windows.Forms.Label saparator;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.LinkLabel options;
