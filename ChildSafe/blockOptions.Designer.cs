@@ -36,7 +36,6 @@ namespace ChildSafe
             this.tbBlacklist = new System.Windows.Forms.DataGridView();
             this.urlAdded2Table = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btRemove = new System.Windows.Forms.Button();
-            this.btReportUrl2Server = new System.Windows.Forms.Button();
             this.btAdd2Table = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txUrl2AddBlackList = new System.Windows.Forms.ComboBox();
@@ -44,24 +43,27 @@ namespace ChildSafe
             this.button7 = new System.Windows.Forms.Button();
             this.btCancel = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.btFilterBrowsing = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btAdd = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.filterDetails = new System.Windows.Forms.RichTextBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.cbDownloadedFiltersList = new System.Windows.Forms.ComboBox();
+            this.flowFilterOnDuty = new System.Windows.Forms.FlowLayoutPanel();
+            this.detailsOfEveryFilters = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.errorReporter = new System.Windows.Forms.ErrorProvider(this.components);
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbBlacklist)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.flowFilterOnDuty.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorReporter)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -70,7 +72,6 @@ namespace ChildSafe
             this.groupBox1.Controls.Add(this.btWhiteList);
             this.groupBox1.Controls.Add(this.tbBlacklist);
             this.groupBox1.Controls.Add(this.btRemove);
-            this.groupBox1.Controls.Add(this.btReportUrl2Server);
             this.groupBox1.Controls.Add(this.btAdd2Table);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txUrl2AddBlackList);
@@ -86,7 +87,7 @@ namespace ChildSafe
             // 
             this.label3.AutoSize = true;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Location = new System.Drawing.Point(597, 24);
+            this.label3.Location = new System.Drawing.Point(677, 24);
             this.label3.MaximumSize = new System.Drawing.Size(2, 100);
             this.label3.MinimumSize = new System.Drawing.Size(2, 10);
             this.label3.Name = "label3";
@@ -99,7 +100,7 @@ namespace ChildSafe
             this.btWhiteList.Name = "btWhiteList";
             this.btWhiteList.Size = new System.Drawing.Size(75, 23);
             this.btWhiteList.TabIndex = 5;
-            this.btWhiteList.Text = "White list";
+            this.btWhiteList.Text = "Disable";
             this.btWhiteList.UseVisualStyleBackColor = true;
             // 
             // tbBlacklist
@@ -124,7 +125,7 @@ namespace ChildSafe
             // btRemove
             // 
             this.btRemove.Enabled = false;
-            this.btRemove.Location = new System.Drawing.Point(519, 19);
+            this.btRemove.Location = new System.Drawing.Point(599, 19);
             this.btRemove.Name = "btRemove";
             this.btRemove.Size = new System.Drawing.Size(72, 23);
             this.btRemove.TabIndex = 3;
@@ -132,20 +133,10 @@ namespace ChildSafe
             this.btRemove.UseVisualStyleBackColor = true;
             this.btRemove.Click += new System.EventHandler(this.btRemove_Click);
             // 
-            // btReportUrl2Server
-            // 
-            this.btReportUrl2Server.Enabled = false;
-            this.btReportUrl2Server.Location = new System.Drawing.Point(605, 19);
-            this.btReportUrl2Server.Name = "btReportUrl2Server";
-            this.btReportUrl2Server.Size = new System.Drawing.Size(74, 23);
-            this.btReportUrl2Server.TabIndex = 3;
-            this.btReportUrl2Server.Text = "Report";
-            this.btReportUrl2Server.UseVisualStyleBackColor = true;
-            // 
             // btAdd2Table
             // 
             this.btAdd2Table.Enabled = false;
-            this.btAdd2Table.Location = new System.Drawing.Point(438, 19);
+            this.btAdd2Table.Location = new System.Drawing.Point(518, 19);
             this.btAdd2Table.Name = "btAdd2Table";
             this.btAdd2Table.Size = new System.Drawing.Size(75, 23);
             this.btAdd2Table.TabIndex = 2;
@@ -156,7 +147,7 @@ namespace ChildSafe
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 24);
+            this.label1.Location = new System.Drawing.Point(22, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 13);
             this.label1.TabIndex = 1;
@@ -165,9 +156,9 @@ namespace ChildSafe
             // txUrl2AddBlackList
             // 
             this.txUrl2AddBlackList.FormattingEnabled = true;
-            this.txUrl2AddBlackList.Location = new System.Drawing.Point(157, 21);
+            this.txUrl2AddBlackList.Location = new System.Drawing.Point(173, 21);
             this.txUrl2AddBlackList.Name = "txUrl2AddBlackList";
-            this.txUrl2AddBlackList.Size = new System.Drawing.Size(275, 21);
+            this.txUrl2AddBlackList.Size = new System.Drawing.Size(339, 21);
             this.txUrl2AddBlackList.TabIndex = 0;
             this.txUrl2AddBlackList.SelectedIndexChanged += new System.EventHandler(this.txUrl2AddBlackList_SelectedIndexChanged);
             this.txUrl2AddBlackList.TextChanged += new System.EventHandler(this.txUrl2AddBlackList_TextChanged);
@@ -175,8 +166,7 @@ namespace ChildSafe
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.btCancel);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -187,7 +177,7 @@ namespace ChildSafe
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(604, 529);
+            this.button7.Location = new System.Drawing.Point(606, 5);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 13;
@@ -196,7 +186,7 @@ namespace ChildSafe
             // 
             // btCancel
             // 
-            this.btCancel.Location = new System.Drawing.Point(685, 529);
+            this.btCancel.Location = new System.Drawing.Point(687, 5);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(75, 23);
             this.btCancel.TabIndex = 12;
@@ -206,12 +196,12 @@ namespace ChildSafe
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.groupBox3);
+            this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.btFilterBrowsing);
-            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.btAdd);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.filterDetails);
-            this.groupBox2.Controls.Add(this.flowLayoutPanel1);
+            this.groupBox2.Controls.Add(this.cbDownloadedFiltersList);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox2.Location = new System.Drawing.Point(0, 257);
             this.groupBox2.Name = "groupBox2";
@@ -220,81 +210,86 @@ namespace ChildSafe
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Other options";
             // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(567, 66);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(193, 188);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "label4";
+            // 
             // btFilterBrowsing
             // 
-            this.btFilterBrowsing.Location = new System.Drawing.Point(651, 22);
+            this.btFilterBrowsing.Location = new System.Drawing.Point(667, 21);
             this.btFilterBrowsing.Name = "btFilterBrowsing";
-            this.btFilterBrowsing.Size = new System.Drawing.Size(117, 23);
+            this.btFilterBrowsing.Size = new System.Drawing.Size(95, 23);
             this.btFilterBrowsing.TabIndex = 8;
-            this.btFilterBrowsing.Text = "Browsing..";
+            this.btFilterBrowsing.Text = "Browse..";
             this.btFilterBrowsing.UseVisualStyleBackColor = true;
             this.btFilterBrowsing.Click += new System.EventHandler(this.btFilterBrowsing_Click);
             // 
-            // button3
+            // btAdd
             // 
-            this.button3.Location = new System.Drawing.Point(570, 22);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Add";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btAdd.Enabled = false;
+            this.btAdd.Location = new System.Drawing.Point(570, 21);
+            this.btAdd.Name = "btAdd";
+            this.btAdd.Size = new System.Drawing.Size(91, 23);
+            this.btAdd.TabIndex = 11;
+            this.btAdd.Text = "Add";
+            this.btAdd.UseVisualStyleBackColor = true;
+            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 27);
+            this.label2.Location = new System.Drawing.Point(22, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 13);
             this.label2.TabIndex = 10;
             this.label2.Text = "Search filter";
             // 
-            // comboBox2
+            // cbDownloadedFiltersList
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Adware & malware filter",
-            "Fakenews filter",
-            "Gambling filter",
-            "Social filter"});
-            this.comboBox2.Location = new System.Drawing.Point(86, 24);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(478, 21);
-            this.comboBox2.TabIndex = 9;
+            this.cbDownloadedFiltersList.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbDownloadedFiltersList.FormattingEnabled = true;
+            this.cbDownloadedFiltersList.Location = new System.Drawing.Point(96, 24);
+            this.cbDownloadedFiltersList.Name = "cbDownloadedFiltersList";
+            this.cbDownloadedFiltersList.Size = new System.Drawing.Size(468, 21);
+            this.cbDownloadedFiltersList.TabIndex = 9;
+            this.cbDownloadedFiltersList.SelectedIndexChanged += new System.EventHandler(this.cbDownloadedFiltersList_SelectedIndexChanged);
             // 
-            // filterDetails
+            // flowFilterOnDuty
             // 
-            this.filterDetails.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.filterDetails.Location = new System.Drawing.Point(564, 54);
-            this.filterDetails.Name = "filterDetails";
-            this.filterDetails.Size = new System.Drawing.Size(196, 198);
-            this.filterDetails.TabIndex = 5;
-            this.filterDetails.Text = "Updated: 22/10/2021";
+            this.flowFilterOnDuty.AutoScroll = true;
+            this.flowFilterOnDuty.Controls.Add(this.detailsOfEveryFilters);
+            this.flowFilterOnDuty.Controls.Add(this.checkBox1);
+            this.flowFilterOnDuty.Controls.Add(this.checkBox3);
+            this.flowFilterOnDuty.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowFilterOnDuty.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowFilterOnDuty.Location = new System.Drawing.Point(3, 18);
+            this.flowFilterOnDuty.Name = "flowFilterOnDuty";
+            this.flowFilterOnDuty.Size = new System.Drawing.Size(540, 167);
+            this.flowFilterOnDuty.TabIndex = 4;
             // 
-            // flowLayoutPanel1
+            // detailsOfEveryFilters
             // 
-            this.flowLayoutPanel1.Controls.Add(this.checkBox4);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox3);
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 54);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(546, 200);
-            this.flowLayoutPanel1.TabIndex = 4;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(3, 3);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(207, 17);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Child Safe Adult Content Base filter";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.detailsOfEveryFilters.AutoSize = true;
+            this.detailsOfEveryFilters.Checked = true;
+            this.detailsOfEveryFilters.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.detailsOfEveryFilters.Enabled = false;
+            this.detailsOfEveryFilters.Location = new System.Drawing.Point(3, 3);
+            this.detailsOfEveryFilters.Name = "detailsOfEveryFilters";
+            this.detailsOfEveryFilters.Size = new System.Drawing.Size(207, 17);
+            this.detailsOfEveryFilters.TabIndex = 3;
+            this.detailsOfEveryFilters.Text = "Child Safe Adult Content Base filter";
+            this.detailsOfEveryFilters.UseVisualStyleBackColor = true;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.Enabled = false;
             this.checkBox1.Location = new System.Drawing.Point(3, 26);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(152, 17);
@@ -302,20 +297,12 @@ namespace ChildSafe
             this.checkBox1.Text = "Tracking Protection filter";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(3, 49);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(118, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Social Media filter";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(3, 72);
+            this.checkBox3.Checked = true;
+            this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox3.Location = new System.Drawing.Point(3, 49);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(110, 17);
             this.checkBox3.TabIndex = 2;
@@ -325,6 +312,26 @@ namespace ChildSafe
             // errorReporter
             // 
             this.errorReporter.ContainerControl = this;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.flowFilterOnDuty);
+            this.groupBox3.Location = new System.Drawing.Point(15, 66);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(546, 188);
+            this.groupBox3.TabIndex = 13;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Active Filters";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.btCancel);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 524);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(772, 40);
+            this.panel2.TabIndex = 14;
             // 
             // blockOptions
             // 
@@ -343,9 +350,11 @@ namespace ChildSafe
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
+            this.flowFilterOnDuty.ResumeLayout(false);
+            this.flowFilterOnDuty.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorReporter)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -354,29 +363,29 @@ namespace ChildSafe
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView tbBlacklist;
-        private System.Windows.Forms.Button btReportUrl2Server;
         private System.Windows.Forms.Button btAdd2Table;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox txUrl2AddBlackList;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RichTextBox filterDetails;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.FlowLayoutPanel flowFilterOnDuty;
+        private System.Windows.Forms.CheckBox detailsOfEveryFilters;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btWhiteList;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button btCancel;
         private System.Windows.Forms.Button btFilterBrowsing;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btAdd;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbDownloadedFiltersList;
         private System.Windows.Forms.DataGridViewTextBoxColumn urlAdded2Table;
         private System.Windows.Forms.Button btRemove;
         private System.Windows.Forms.ErrorProvider errorReporter;
         private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

@@ -37,6 +37,9 @@ namespace ChildSafe
 
             newCheckbox.Location = new Point(10, 8);
             newCheckbox.Text = name;
+            newCheckbox.Width = 300;
+            newCheckbox.ForeColor = Color.RoyalBlue;
+            newCheckbox.Font= new Font("Arial", 10, FontStyle.Regular);
             // evenhandler for checking event of each checkbox in each created panel.
             newCheckbox.CheckedChanged += new EventHandler(checkOnFilter_Changed);
             newCheckbox.Tag = linkFile;
@@ -160,6 +163,12 @@ namespace ChildSafe
         {
             this.BeginInvoke((MethodInvoker)delegate {
                 lbDownloadStatus.Text = "Completed";
+                // write download file name list
+                if (File.Exists("DownloadedFilter"))
+                {
+                    File.AppendAllText("DownloadedFilter", selectedFilterName.Items[0].ToString());
+                }
+                // delete in download list
                 selectedFilterUrl.Items.Remove(selectedFilterUrl.Items[0].ToString());
                 selectedFilterName.Items.Remove(selectedFilterName.Items[0].ToString());
                 // continue download other files by go back to the downloadfilter process

@@ -52,10 +52,8 @@ namespace ChildSafe
             this.checkForUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.technicalSupportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.saparator = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -64,6 +62,8 @@ namespace ChildSafe
             this.timerQuote = new System.Windows.Forms.Timer(this.components);
             this.pictureMainHall = new System.Windows.Forms.PictureBox();
             this.btMenu = new System.Windows.Forms.PictureBox();
+            this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMainHall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btMenu)).BeginInit();
@@ -106,18 +106,18 @@ namespace ChildSafe
             this.toolStripMenuItem2,
             this.aboutToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Size = new System.Drawing.Size(169, 220);
+            this.contextMenu.Size = new System.Drawing.Size(181, 242);
             // 
             // getStartedToolStripMenuItem
             // 
             this.getStartedToolStripMenuItem.Name = "getStartedToolStripMenuItem";
-            this.getStartedToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.getStartedToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.getStartedToolStripMenuItem.Text = "Get Started";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(165, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
             // filtersToolStripMenuItem
             // 
@@ -129,7 +129,7 @@ namespace ChildSafe
             // whitelistToolStripMenuItem
             // 
             this.whitelistToolStripMenuItem.Name = "whitelistToolStripMenuItem";
-            this.whitelistToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.whitelistToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.whitelistToolStripMenuItem.Text = "Whitelist";
             // 
             // settingsToolStripMenuItem
@@ -139,7 +139,7 @@ namespace ChildSafe
             this.autoupdateFilterToolStripMenuItem,
             this.themeToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // languageToolStripMenuItem
@@ -202,13 +202,14 @@ namespace ChildSafe
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(165, 6);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(177, 6);
             // 
             // sendFeedbackToolStripMenuItem
             // 
             this.sendFeedbackToolStripMenuItem.Name = "sendFeedbackToolStripMenuItem";
-            this.sendFeedbackToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.sendFeedbackToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sendFeedbackToolStripMenuItem.Text = "Send Feedback";
+            this.sendFeedbackToolStripMenuItem.Click += new System.EventHandler(this.sendFeedbackToolStripMenuItem_Click);
             // 
             // checkForUpdateToolStripMenuItem
             // 
@@ -216,7 +217,7 @@ namespace ChildSafe
             this.checkForUpdatesToolStripMenuItem,
             this.updateHistoryToolStripMenuItem});
             this.checkForUpdateToolStripMenuItem.Name = "checkForUpdateToolStripMenuItem";
-            this.checkForUpdateToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.checkForUpdateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.checkForUpdateToolStripMenuItem.Text = "Updates";
             // 
             // checkForUpdatesToolStripMenuItem
@@ -231,28 +232,16 @@ namespace ChildSafe
             this.updateHistoryToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.updateHistoryToolStripMenuItem.Text = "Update History";
             // 
-            // githubToolStripMenuItem
-            // 
-            this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
-            this.githubToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.githubToolStripMenuItem.Text = "Github";
-            // 
             // technicalSupportToolStripMenuItem
             // 
             this.technicalSupportToolStripMenuItem.Name = "technicalSupportToolStripMenuItem";
-            this.technicalSupportToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.technicalSupportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.technicalSupportToolStripMenuItem.Text = "Technical Support";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(165, 6);
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.aboutToolStripMenuItem.Text = "About";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
             // 
             // label2
             // 
@@ -328,6 +317,22 @@ namespace ChildSafe
             this.btMenu.TabIndex = 0;
             this.btMenu.TabStop = false;
             this.btMenu.Click += new System.EventHandler(this.btMenu_Click);
+            // 
+            // githubToolStripMenuItem
+            // 
+            this.githubToolStripMenuItem.Image = global::ChildSafe.Properties.Resources.github_20;
+            this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
+            this.githubToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.githubToolStripMenuItem.Text = "Github";
+            this.githubToolStripMenuItem.Click += new System.EventHandler(this.githubToolStripMenuItem_Click);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Image = global::ChildSafe.Properties.Resources.info_20;
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // mainHall
             // 

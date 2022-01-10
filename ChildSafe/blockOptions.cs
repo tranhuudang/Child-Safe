@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,12 +43,10 @@ namespace ChildSafe
             if (txUrl2AddBlackList.Text.Length > 5)
             {
                 btAdd2Table.Enabled = true;
-                btReportUrl2Server.Enabled = true;
             }
             else
             {
                 btAdd2Table.Enabled = false;
-                btReportUrl2Server.Enabled = false;
             }
         }
         int selectedCellIndex = -1;
@@ -64,7 +63,7 @@ namespace ChildSafe
                 btRemove.Enabled = false;
             }
             selectedCellIndex = e.RowIndex;
-            
+
         }
 
 
@@ -86,17 +85,54 @@ namespace ChildSafe
         private void btFilterBrowsing_Click(object sender, EventArgs e)
         {
             filterBrowsing filterBrowsingForm = new filterBrowsing();
-            filterBrowsingForm.ShowDialog();
+            if (filterBrowsingForm.ShowDialog() == DialogResult.OK)
+            {
+                loadDownloadedFilter();
+            };
         }
 
         private void btCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
+        string downloadedFiltersFolder = "FilterBase";
         private void blockOptions_Load(object sender, EventArgs e)
         {
+            loadDownloadedFilter();
 
+        }
+        void loadDownloadedFilter()
+        {
+            cbDownloadedFiltersList.Items.Clear();
+            // get all the file name in BaseFilter folder and put it in combobox list downloaded filters
+            if (Directory.Exists(downloadedFiltersFolder))
+            {
+                string[] downloadedFilters = Directory.GetFiles(downloadedFiltersFolder);
+                foreach (string file in downloadedFilters)
+                    cbDownloadedFiltersList.Items.Add(file.Substring(file.LastIndexOf('\\')+1));
+            }
+        }
+
+        private void cbDownloadedFiltersList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbDownloadedFiltersList.Text != "") btAdd.Enabled = true;
+            else btAdd.Enabled = false;
+        }
+
+        private void btAdd_Click(object sender, EventArgs e)
+        {
+
+            foreach(string filterName in cbDownloadedFiltersList.Items)
+            {
+                if (cbDownloadedFiltersList.Text== filterName)
+                {
+                    CheckBox newFilter = new CheckBox();
+                    newFilter.Text = filterName;
+                    newFilter.Checked = true;
+                    newFilter.Width = 400;
+                    flowFilterOnDuty.Controls.Add(newFilter);
+                }
+            }
         }
     }
 }

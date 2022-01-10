@@ -30,14 +30,14 @@ namespace ChildSafe
         private void InitializeComponent()
         {
             this.flowLayoutSet = new System.Windows.Forms.FlowLayoutPanel();
+            this.selectedFilterUrl = new System.Windows.Forms.ListBox();
+            this.selectedFilterName = new System.Windows.Forms.ListBox();
             this.btCancel = new System.Windows.Forms.Button();
             this.btOk = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
-            this.selectedFilterUrl = new System.Windows.Forms.ListBox();
             this.btDownloadFilter = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.lbDownloadStatus = new System.Windows.Forms.Label();
-            this.selectedFilterName = new System.Windows.Forms.ListBox();
             this.flowLayoutSet.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +52,25 @@ namespace ChildSafe
             this.flowLayoutSet.Size = new System.Drawing.Size(516, 454);
             this.flowLayoutSet.TabIndex = 0;
             // 
+            // selectedFilterUrl
+            // 
+            this.selectedFilterUrl.FormattingEnabled = true;
+            this.selectedFilterUrl.Location = new System.Drawing.Point(3, 3);
+            this.selectedFilterUrl.Name = "selectedFilterUrl";
+            this.selectedFilterUrl.Size = new System.Drawing.Size(159, 69);
+            this.selectedFilterUrl.TabIndex = 4;
+            this.selectedFilterUrl.Visible = false;
+            // 
+            // selectedFilterName
+            // 
+            this.selectedFilterName.FormattingEnabled = true;
+            this.selectedFilterName.Location = new System.Drawing.Point(168, 3);
+            this.selectedFilterName.Name = "selectedFilterName";
+            this.selectedFilterName.Size = new System.Drawing.Size(159, 69);
+            this.selectedFilterName.TabIndex = 5;
+            this.selectedFilterName.Visible = false;
+            this.selectedFilterName.SelectedIndexChanged += new System.EventHandler(this.selectedFilterName_SelectedIndexChanged);
+            // 
             // btCancel
             // 
             this.btCancel.Location = new System.Drawing.Point(429, 578);
@@ -64,6 +83,7 @@ namespace ChildSafe
             // 
             // btOk
             // 
+            this.btOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btOk.Enabled = false;
             this.btOk.Location = new System.Drawing.Point(348, 578);
             this.btOk.Name = "btOk";
@@ -82,15 +102,6 @@ namespace ChildSafe
             this.label19.Text = "*we not recommend you to use all the filter at the same time because it will effe" +
     "ct your daily usage. Choose filter base on your specific need is definitely bett" +
     "er in this case.";
-            // 
-            // selectedFilterUrl
-            // 
-            this.selectedFilterUrl.FormattingEnabled = true;
-            this.selectedFilterUrl.Location = new System.Drawing.Point(3, 3);
-            this.selectedFilterUrl.Name = "selectedFilterUrl";
-            this.selectedFilterUrl.Size = new System.Drawing.Size(159, 69);
-            this.selectedFilterUrl.TabIndex = 4;
-            this.selectedFilterUrl.Visible = false;
             // 
             // btDownloadFilter
             // 
@@ -115,19 +126,9 @@ namespace ChildSafe
             this.lbDownloadStatus.AutoSize = true;
             this.lbDownloadStatus.Location = new System.Drawing.Point(12, 524);
             this.lbDownloadStatus.Name = "lbDownloadStatus";
-            this.lbDownloadStatus.Size = new System.Drawing.Size(87, 13);
+            this.lbDownloadStatus.Size = new System.Drawing.Size(108, 13);
             this.lbDownloadStatus.TabIndex = 5;
-            this.lbDownloadStatus.Text = "Fetching data...";
-            // 
-            // selectedFilterName
-            // 
-            this.selectedFilterName.FormattingEnabled = true;
-            this.selectedFilterName.Location = new System.Drawing.Point(168, 3);
-            this.selectedFilterName.Name = "selectedFilterName";
-            this.selectedFilterName.Size = new System.Drawing.Size(159, 69);
-            this.selectedFilterName.TabIndex = 5;
-            this.selectedFilterName.Visible = false;
-            this.selectedFilterName.SelectedIndexChanged += new System.EventHandler(this.selectedFilterName_SelectedIndexChanged);
+            this.lbDownloadStatus.Text = "Ready to download";
             // 
             // filterBrowsing
             // 
