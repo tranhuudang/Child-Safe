@@ -40,30 +40,29 @@ namespace ChildSafe
             this.label1 = new System.Windows.Forms.Label();
             this.txUrl2AddBlackList = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btSave = new System.Windows.Forms.Button();
             this.btCancel = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbFilterDetails = new System.Windows.Forms.Label();
             this.btFilterBrowsing = new System.Windows.Forms.Button();
             this.btAdd = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cbDownloadedFiltersList = new System.Windows.Forms.ComboBox();
-            this.flowFilterOnDuty = new System.Windows.Forms.FlowLayoutPanel();
-            this.detailsOfEveryFilters = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.errorReporter = new System.Windows.Forms.ErrorProvider(this.components);
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.listOnDutyFilters = new System.Windows.Forms.ListBox();
+            this.removeOnDutyFilters = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbBlacklist)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.flowFilterOnDuty.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorReporter)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.removeOnDutyFilters.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -175,14 +174,15 @@ namespace ChildSafe
             this.panel1.Size = new System.Drawing.Size(772, 564);
             this.panel1.TabIndex = 4;
             // 
-            // button7
+            // btSave
             // 
-            this.button7.Location = new System.Drawing.Point(606, 5);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 13;
-            this.button7.Text = "Save";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btSave.Location = new System.Drawing.Point(606, 5);
+            this.btSave.Name = "btSave";
+            this.btSave.Size = new System.Drawing.Size(75, 23);
+            this.btSave.TabIndex = 13;
+            this.btSave.Text = "Save";
+            this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
             // btCancel
             // 
@@ -197,7 +197,7 @@ namespace ChildSafe
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.groupBox3);
-            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.lbFilterDetails);
             this.groupBox2.Controls.Add(this.btFilterBrowsing);
             this.groupBox2.Controls.Add(this.btAdd);
             this.groupBox2.Controls.Add(this.label2);
@@ -210,13 +210,13 @@ namespace ChildSafe
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Other options";
             // 
-            // label4
+            // lbFilterDetails
             // 
-            this.label4.Location = new System.Drawing.Point(567, 66);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(193, 188);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "label4";
+            this.lbFilterDetails.Location = new System.Drawing.Point(567, 66);
+            this.lbFilterDetails.Name = "lbFilterDetails";
+            this.lbFilterDetails.Size = new System.Drawing.Size(193, 188);
+            this.lbFilterDetails.TabIndex = 12;
+            this.lbFilterDetails.Text = "label4";
             // 
             // btFilterBrowsing
             // 
@@ -258,64 +258,13 @@ namespace ChildSafe
             this.cbDownloadedFiltersList.TabIndex = 9;
             this.cbDownloadedFiltersList.SelectedIndexChanged += new System.EventHandler(this.cbDownloadedFiltersList_SelectedIndexChanged);
             // 
-            // flowFilterOnDuty
-            // 
-            this.flowFilterOnDuty.AutoScroll = true;
-            this.flowFilterOnDuty.Controls.Add(this.detailsOfEveryFilters);
-            this.flowFilterOnDuty.Controls.Add(this.checkBox1);
-            this.flowFilterOnDuty.Controls.Add(this.checkBox3);
-            this.flowFilterOnDuty.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowFilterOnDuty.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowFilterOnDuty.Location = new System.Drawing.Point(3, 18);
-            this.flowFilterOnDuty.Name = "flowFilterOnDuty";
-            this.flowFilterOnDuty.Size = new System.Drawing.Size(540, 167);
-            this.flowFilterOnDuty.TabIndex = 4;
-            // 
-            // detailsOfEveryFilters
-            // 
-            this.detailsOfEveryFilters.AutoSize = true;
-            this.detailsOfEveryFilters.Checked = true;
-            this.detailsOfEveryFilters.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.detailsOfEveryFilters.Enabled = false;
-            this.detailsOfEveryFilters.Location = new System.Drawing.Point(3, 3);
-            this.detailsOfEveryFilters.Name = "detailsOfEveryFilters";
-            this.detailsOfEveryFilters.Size = new System.Drawing.Size(207, 17);
-            this.detailsOfEveryFilters.TabIndex = 3;
-            this.detailsOfEveryFilters.Text = "Child Safe Adult Content Base filter";
-            this.detailsOfEveryFilters.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Enabled = false;
-            this.checkBox1.Location = new System.Drawing.Point(3, 26);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(152, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Tracking Protection filter";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Checked = true;
-            this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox3.Location = new System.Drawing.Point(3, 49);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(110, 17);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Annoyance filter";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
             // errorReporter
             // 
             this.errorReporter.ContainerControl = this;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.flowFilterOnDuty);
+            this.groupBox3.Controls.Add(this.listOnDutyFilters);
             this.groupBox3.Location = new System.Drawing.Point(15, 66);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(546, 188);
@@ -325,13 +274,38 @@ namespace ChildSafe
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.btSave);
             this.panel2.Controls.Add(this.btCancel);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 524);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(772, 40);
             this.panel2.TabIndex = 14;
+            // 
+            // listOnDutyFilters
+            // 
+            this.listOnDutyFilters.ContextMenuStrip = this.removeOnDutyFilters;
+            this.listOnDutyFilters.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listOnDutyFilters.FormattingEnabled = true;
+            this.listOnDutyFilters.Location = new System.Drawing.Point(3, 18);
+            this.listOnDutyFilters.Name = "listOnDutyFilters";
+            this.listOnDutyFilters.Size = new System.Drawing.Size(540, 167);
+            this.listOnDutyFilters.TabIndex = 0;
+            this.listOnDutyFilters.SelectedIndexChanged += new System.EventHandler(this.listOnDutyFilters_SelectedIndexChanged);
+            // 
+            // removeOnDutyFilters
+            // 
+            this.removeOnDutyFilters.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.removeToolStripMenuItem});
+            this.removeOnDutyFilters.Name = "removeOnDutyFilters";
+            this.removeOnDutyFilters.Size = new System.Drawing.Size(118, 26);
+            // 
+            // removeToolStripMenuItem
+            // 
+            this.removeToolStripMenuItem.Name = "removeToolStripMenuItem";
+            this.removeToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.removeToolStripMenuItem.Text = "Remove";
+            this.removeToolStripMenuItem.Click += new System.EventHandler(this.removeToolStripMenuItem_Click);
             // 
             // blockOptions
             // 
@@ -350,11 +324,10 @@ namespace ChildSafe
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.flowFilterOnDuty.ResumeLayout(false);
-            this.flowFilterOnDuty.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorReporter)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.removeOnDutyFilters.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -368,13 +341,9 @@ namespace ChildSafe
         private System.Windows.Forms.ComboBox txUrl2AddBlackList;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.FlowLayoutPanel flowFilterOnDuty;
-        private System.Windows.Forms.CheckBox detailsOfEveryFilters;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btWhiteList;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btSave;
         private System.Windows.Forms.Button btCancel;
         private System.Windows.Forms.Button btFilterBrowsing;
         private System.Windows.Forms.Button btAdd;
@@ -384,8 +353,11 @@ namespace ChildSafe
         private System.Windows.Forms.Button btRemove;
         private System.Windows.Forms.ErrorProvider errorReporter;
         private System.Windows.Forms.ToolTip toolTip;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbFilterDetails;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.ListBox listOnDutyFilters;
+        private System.Windows.Forms.ContextMenuStrip removeOnDutyFilters;
+        private System.Windows.Forms.ToolStripMenuItem removeToolStripMenuItem;
     }
 }

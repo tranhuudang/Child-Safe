@@ -46,7 +46,7 @@ namespace ChildSafe
             // we use default filter instead in case no option filter is added
             else if (File.Exists(defaultChildSafeBaseFilter))
             {
-                string[] list2Block = File.ReadAllLines(defaultChildSafeBaseFilter);
+                string[] list2Block = File.ReadAllText(defaultChildSafeBaseFilter).Split('\n');
                 progressBar1.Maximum = list2Block.Length;
                 using (StreamWriter writetext = new StreamWriter(host))
                 {

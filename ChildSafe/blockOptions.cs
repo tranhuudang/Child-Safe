@@ -109,7 +109,10 @@ namespace ChildSafe
             {
                 string[] downloadedFilters = Directory.GetFiles(downloadedFiltersFolder);
                 foreach (string file in downloadedFilters)
-                    cbDownloadedFiltersList.Items.Add(file.Substring(file.LastIndexOf('\\')+1));
+                {
+                    string filterName = file.Substring(file.LastIndexOf('\\') + 1).Replace('_',' ');
+                    cbDownloadedFiltersList.Items.Add(filterName);
+                }
             }
         }
 
@@ -124,13 +127,47 @@ namespace ChildSafe
 
             foreach(string filterName in cbDownloadedFiltersList.Items)
             {
-                if (cbDownloadedFiltersList.Text== filterName)
+                
+                if ((cbDownloadedFiltersList.Text== filterName)&&(listOnDutyFilters.Items.IndexOf(cbDownloadedFiltersList.Text)==-1))
                 {
-                    CheckBox newFilter = new CheckBox();
-                    newFilter.Text = filterName;
-                    newFilter.Checked = true;
-                    newFilter.Width = 400;
-                    flowFilterOnDuty.Controls.Add(newFilter);
+                    listOnDutyFilters.Items.Add(filterName);
+                }
+            }
+        }
+
+        private void btSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void removeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            listOnDutyFilters.Items.RemoveAt(listOnDutyFilters.SelectedIndex);
+        }
+        string fileFilterUpdate = "FilterBaseUpdate";
+        private void listOnDutyFilters_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // open file
+            if (File.Exists(fileFilterUpdate))
+            {
+                // fomular of a custom panel
+
+                // read from file the collection of all available filter
+                string[] contents = File.ReadAllText(fileFilterUpdate).Split('@');
+                foreach (string content in contents)
+                {
+                    if (content.Contains("@>"+cbDownloadedFiltersList))
+                    {
+                        string[] filter = content.Split('>');
+                        string name = filter[1];
+                        string description = filter[2];
+                        string linkFile = filter[3];
+                        string update = filter[4];
+                        string licence = filter[5];
+                        // add filters and it's description in to flowlayout list
+                        //flowLayoutSet.Controls.Add(newControl(name, description, linkFile, update, licence));
+                    }
+
                 }
             }
         }
