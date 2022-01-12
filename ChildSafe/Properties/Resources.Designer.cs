@@ -63,6 +63,36 @@ namespace ChildSafe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5172958_security_communication_comment_talk_internet_chat_message {
+            get {
+                object obj = ResourceManager.GetObject("5172958_security_communication_comment_talk_internet_chat_message", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5172969_security_success_report_file_check_document_internet {
+            get {
+                object obj = ResourceManager.GetObject("5172969_security_success_report_file_check_document_internet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5172979_web_option_security_gear_engine_internet_setting {
+            get {
+                object obj = ResourceManager.GetObject("5172979_web_option_security_gear_engine_internet_setting", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5173004_mail_warning_internet_email_security_alert_attention1 {
             get {
                 object obj = ResourceManager.GetObject("5173004_mail_warning_internet_email_security_alert_attention1", resourceCulture);

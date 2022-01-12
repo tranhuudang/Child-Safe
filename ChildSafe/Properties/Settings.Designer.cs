@@ -70,5 +70,17 @@ namespace ChildSafe.Properties {
                 this["language"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string listOnDutyFilters {
+            get {
+                return ((string)(this["listOnDutyFilters"]));
+            }
+            set {
+                this["listOnDutyFilters"] = value;
+            }
+        }
     }
 }

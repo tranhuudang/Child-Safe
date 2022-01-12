@@ -118,40 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="5172969_security_success_report_file_check_document_internet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5172969_security_success_report_file_check_document_internet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5172958_security_communication_comment_talk_internet_chat_message" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5172958_security_communication_comment_talk_internet_chat_message.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="danger_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\danger_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="info_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\info_20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="danger_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\danger_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="check_blue_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5172960_security_shield_antivirus_internet_protect_accept_check1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lock_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5172962_padlock_locked_protection_internet_cyber_lock_security1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="more-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\more-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lock_blue_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5173021_protect_lock_locked_security_shield_antivirus_internet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="github_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\github_20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5173004_mail_warning_internet_email_security_alert_attention1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5173004_mail_warning_internet_email_security_alert_attention1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5172979_web_option_security_gear_engine_internet_setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5172979_web_option_security_gear_engine_internet_setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
   </data>
 </root>

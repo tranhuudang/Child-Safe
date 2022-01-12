@@ -121,31 +121,14 @@
     <value>Vô hiệu</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tbWhitelist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 48</value>
+  </data>
   <data name="tbWhitelist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>753, 474</value>
+    <value>754, 474</value>
   </data>
   <data name="btRemove.Text" xml:space="preserve">
     <value>Gỡ bỏ</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btApply.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btApply.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btApply.Text" xml:space="preserve">
-    <value>Áp dụng</value>
-  </data>
-  <data name="btCancel.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btCancel.Text" xml:space="preserve">
-    <value>Hủy</value>
   </data>
   <data name="btAdd2Table.Text" xml:space="preserve">
     <value>Thêm</value>
@@ -156,8 +139,43 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Thêm trang vào whitelist</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>772, 569</value>
+    <value>772, 528</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btApply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btApply.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>604, 534</value>
+  </data>
+  <data name="btApply.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btApply.Text" xml:space="preserve">
+    <value>Áp dụng</value>
+  </data>
+  <data name="btCancel.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>685, 534</value>
+  </data>
+  <data name="btCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btCancel.Text" xml:space="preserve">
+    <value>Hủy</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>772, 569</value>

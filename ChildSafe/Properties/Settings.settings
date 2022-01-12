@@ -14,5 +14,8 @@
     <Setting Name="language" Type="System.String" Scope="User">
       <Value Profile="(Default)">Tiếng Việt</Value>
     </Setting>
+    <Setting Name="listOnDutyFilters" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

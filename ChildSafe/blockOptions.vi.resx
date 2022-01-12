@@ -156,9 +156,6 @@ Thêm bộ lọc để khóa những nội dung tiềm tàng nguy cơ khác trê
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Tùy chọn khác</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Tùy chọn khóa</value>
-  </data>
   <data name="btRemove.Text" xml:space="preserve">
     <value>Gỡ bỏ</value>
   </data>

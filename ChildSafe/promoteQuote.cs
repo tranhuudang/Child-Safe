@@ -32,9 +32,9 @@ namespace ChildSafe
         public String getRandomQuote(string lang)
         {
             Random randomNum = new Random();
-            if (lang == "Vi")
+            if (lang == "vi-VI")
                 return quote_Vi[randomNum.Next(quote_Vi.Length)]; // vietnamese quote
-            else if (lang == "En")
+            else if (lang == "en-US")
                 return quote_En[randomNum.Next(quote_En.Length)]; // english quote
             else
                 return quote_En[randomNum.Next(quote_En.Length)]; // default quote language

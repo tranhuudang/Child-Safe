@@ -1,0 +1,4 @@
+﻿1
+#Warning: This file will increate number everytime new version of this application is released, so please
+# dont mess up with it unless you know what you're doing.
+# Increase number value will trigger program to send a notification to user that a new version is available to download.

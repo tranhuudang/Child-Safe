@@ -79,5 +79,20 @@ namespace ChildSafe
             this.Controls.Clear();
             InitializeComponent();
         }
+
+        private void btSwitcher_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btCancel_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

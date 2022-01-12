@@ -125,7 +125,11 @@ namespace ChildSafe
         {
             // Generate new text quote for every 5 seconds.
             promoteQuote newQuote = new promoteQuote();
-            lbPromote.Text = newQuote.getRandomQuote();
+            if (Properties.Settings.Default["language"].ToString()=="English")
+            lbPromote.Text = newQuote.getRandomQuote("en-US");
+            else
+            lbPromote.Text = newQuote.getRandomQuote("vi-VI");
+
 
         }
 
@@ -146,6 +150,19 @@ namespace ChildSafe
             }
             this.Controls.Clear();
             InitializeComponent();
+            // other custom related to language change
+            switch (Properties.Settings.Default["language"].ToString())
+            {
+                case "English":
+                    englishToolStripMenuItem.Checked = true;
+                    vietnamseToolStripMenuItem.Checked = false;
+                    break;
+                case "Tiếng Việt":
+                    englishToolStripMenuItem.Checked = false;
+                    vietnamseToolStripMenuItem.Checked = true;
+
+                    break;
+            }
             // load protection state
             if (Properties.Settings.Default["protectEnable"].ToString() == "True")
             {
@@ -222,6 +239,11 @@ namespace ChildSafe
             Properties.Settings.Default.Save();
             this.Controls.Clear();
             InitializeComponent();
+        }
+
+        private void btIgnore_Click(object sender, EventArgs e)
+        {
+            gbUpdate.Visible = false;
         }
     }
 }

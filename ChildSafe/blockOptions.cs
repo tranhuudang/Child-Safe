@@ -102,7 +102,9 @@ namespace ChildSafe
         string onDutyFilters = "OnDuty";
         private void blockOptions_Load(object sender, EventArgs e)
         {
-            // load language
+            
+           
+            // load language - this one should always go first because the initialize component will clear and rebuild all control
             switch (Properties.Settings.Default["language"].ToString())
             {
                 case "English":
@@ -116,6 +118,14 @@ namespace ChildSafe
             }
             this.Controls.Clear();
             InitializeComponent();
+            // load up current active filter
+            string[] filters = Properties.Settings.Default["listOnDutyFilters"].ToString().Split('>');
+            if (filters.Length != 0)
+                foreach (string item in filters)
+                {
+                    if (item != "")
+                        listOnDutyFilters.Items.Add(item);
+                }
             // check state of blacklist in setting to whether or not it's enable
             if (Properties.Settings.Default["blackListEnable"].ToString() == "True")
             {
@@ -182,10 +192,17 @@ namespace ChildSafe
 
         private void btSave_Click(object sender, EventArgs e)
         {
+            string stringFilters = "";
+            foreach(string item in listOnDutyFilters.Items)
+            {
+                stringFilters += item + ">";
+            }
+            Properties.Settings.Default["listOnDutyFilters"] = stringFilters;
             // read all text in chose filter and copy its contents to one file name OnDuty
             // when we back to home and hit start, app will looking for OnDuty file to move all web to hosts
             foreach (string filterName in listOnDutyFilters.Items)
             {
+
                 string filterContents = File.ReadAllText(downloadedFiltersFolder + "\\" + filterName.Replace(' ', '_'));
                 File.AppendAllText(onDutyFilters, filterContents);
             }
