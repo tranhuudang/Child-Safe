@@ -83,7 +83,26 @@
     <Compile Include="whiteList.Designer.cs">
       <DependentUpon>whiteList.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="blockOptions.vi.resx">
+      <DependentUpon>blockOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="whiteList.vi.resx">
+      <DependentUpon>whiteList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\danger_256.png" />
+    <None Include="Resources\5173021_protect_lock_locked_security_shield_antivirus_internet.png" />
+    <None Include="Resources\5172960_security_shield_antivirus_internet_protect_accept_check1.png" />
+    <None Include="Resources\5172960_security_shield_antivirus_internet_protect_accept_check.png" />
+    <None Include="Resources\5173004_mail_warning_internet_email_security_alert_attention1.png" />
+    <None Include="Resources\5173004_mail_warning_internet_email_security_alert_attention.png" />
+    <None Include="Resources\5172962_padlock_locked_protection_internet_cyber_lock_security2.png" />
+    <None Include="Resources\5172962_padlock_locked_protection_internet_cyber_lock_security1.png" />
+    <None Include="Resources\5172962_padlock_locked_protection_internet_cyber_lock_security.png" />
+    <None Include="Resources\5172970_locked_security_lock_document_page_internet_file.png" />
     <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="about.vi.resx">
       <DependentUpon>about.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="blockOptions.resx">
@@ -92,7 +111,13 @@
     <EmbeddedResource Include="filterBrowsing.resx">
       <DependentUpon>filterBrowsing.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="filterBrowsing.vi.resx">
+      <DependentUpon>filterBrowsing.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainHall.resx">
+      <DependentUpon>mainHall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainHall.vi.resx">
       <DependentUpon>mainHall.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

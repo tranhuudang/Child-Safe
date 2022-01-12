@@ -63,9 +63,9 @@ namespace ChildSafe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap check_green_128 {
+        internal static System.Drawing.Bitmap _5173004_mail_warning_internet_email_security_alert_attention1 {
             get {
-                object obj = ResourceManager.GetObject("check_green_128", resourceCulture);
+                object obj = ResourceManager.GetObject("5173004_mail_warning_internet_email_security_alert_attention1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace ChildSafe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap check_green_256 {
+        internal static System.Drawing.Bitmap check_blue_256 {
             get {
-                object obj = ResourceManager.GetObject("check_green_256", resourceCulture);
+                object obj = ResourceManager.GetObject("check_blue_256", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,6 +93,16 @@ namespace ChildSafe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap danger_256 {
+            get {
+                object obj = ResourceManager.GetObject("danger_256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap github_20 {
             get {
                 object obj = ResourceManager.GetObject("github_20", resourceCulture);
@@ -103,39 +113,29 @@ namespace ChildSafe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap github_24 {
-            get {
-                object obj = ResourceManager.GetObject("github_24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap github_48 {
-            get {
-                object obj = ResourceManager.GetObject("github_48", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap global_small {
-            get {
-                object obj = ResourceManager.GetObject("global-small", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap info_20 {
             get {
                 object obj = ResourceManager.GetObject("info_20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lock_64 {
+            get {
+                object obj = ResourceManager.GetObject("lock_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lock_blue_128 {
+            get {
+                object obj = ResourceManager.GetObject("lock_blue_128", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

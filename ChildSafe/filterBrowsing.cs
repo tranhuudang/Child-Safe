@@ -87,11 +87,36 @@ namespace ChildSafe
         string fileFilterUpdate = "FilterBaseUpdate";
         private void filterBrowsing_Load(object sender, EventArgs e)
         {
-            //download list filter
-            using (var client = new WebClient())
+            // load language
+            switch (Properties.Settings.Default["language"].ToString())
             {
-                client.DownloadFile("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/filterListUpdate.txt", fileFilterUpdate);
+                case "English":
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
+                    Properties.Settings.Default["Language"] = "English";
+                    break;
+                case "Tiếng Việt":
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi-VN");
+                    Properties.Settings.Default["Language"] = "Tiếng Việt";
+                    break;
             }
+            this.Controls.Clear();
+            InitializeComponent();
+            //download list filter
+            try
+            {
+                using (var client = new WebClient())
+                {
+                    client.DownloadFile("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/filterListUpdate.txt", fileFilterUpdate);
+                    lbUpdateTime.Text = DateTime.Now.ToString();
+
+                }
+            }
+            catch (Exception)
+            {
+                lbUpdateTime.Text = "Can't fetch online data !";
+                throw;
+            }
+            
             // open file
             if (File.Exists(fileFilterUpdate))
             {
@@ -186,6 +211,16 @@ namespace ChildSafe
         private void btCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void selectedFilterUrl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void filterBrowsing_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
         }
     }
 }

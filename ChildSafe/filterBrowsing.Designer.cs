@@ -29,6 +29,7 @@ namespace ChildSafe
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(filterBrowsing));
             this.flowLayoutSet = new System.Windows.Forms.FlowLayoutPanel();
             this.selectedFilterUrl = new System.Windows.Forms.ListBox();
             this.selectedFilterName = new System.Windows.Forms.ListBox();
@@ -38,116 +39,113 @@ namespace ChildSafe
             this.btDownloadFilter = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.lbDownloadStatus = new System.Windows.Forms.Label();
+            this.lbUpdateTime = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutSet.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutSet
             // 
-            this.flowLayoutSet.AutoScroll = true;
+            resources.ApplyResources(this.flowLayoutSet, "flowLayoutSet");
             this.flowLayoutSet.Controls.Add(this.selectedFilterUrl);
             this.flowLayoutSet.Controls.Add(this.selectedFilterName);
-            this.flowLayoutSet.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutSet.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutSet.Name = "flowLayoutSet";
-            this.flowLayoutSet.Size = new System.Drawing.Size(516, 454);
-            this.flowLayoutSet.TabIndex = 0;
             // 
             // selectedFilterUrl
             // 
+            resources.ApplyResources(this.selectedFilterUrl, "selectedFilterUrl");
             this.selectedFilterUrl.FormattingEnabled = true;
-            this.selectedFilterUrl.Location = new System.Drawing.Point(3, 3);
             this.selectedFilterUrl.Name = "selectedFilterUrl";
-            this.selectedFilterUrl.Size = new System.Drawing.Size(159, 69);
-            this.selectedFilterUrl.TabIndex = 4;
-            this.selectedFilterUrl.Visible = false;
+            this.selectedFilterUrl.SelectedIndexChanged += new System.EventHandler(this.selectedFilterUrl_SelectedIndexChanged);
             // 
             // selectedFilterName
             // 
+            resources.ApplyResources(this.selectedFilterName, "selectedFilterName");
             this.selectedFilterName.FormattingEnabled = true;
-            this.selectedFilterName.Location = new System.Drawing.Point(168, 3);
             this.selectedFilterName.Name = "selectedFilterName";
-            this.selectedFilterName.Size = new System.Drawing.Size(159, 69);
-            this.selectedFilterName.TabIndex = 5;
-            this.selectedFilterName.Visible = false;
             this.selectedFilterName.SelectedIndexChanged += new System.EventHandler(this.selectedFilterName_SelectedIndexChanged);
             // 
             // btCancel
             // 
-            this.btCancel.Location = new System.Drawing.Point(429, 578);
+            resources.ApplyResources(this.btCancel, "btCancel");
             this.btCancel.Name = "btCancel";
-            this.btCancel.Size = new System.Drawing.Size(75, 23);
-            this.btCancel.TabIndex = 1;
-            this.btCancel.Text = "Cancel";
             this.btCancel.UseVisualStyleBackColor = true;
             this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
             // btOk
             // 
+            resources.ApplyResources(this.btOk, "btOk");
             this.btOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btOk.Enabled = false;
-            this.btOk.Location = new System.Drawing.Point(348, 578);
             this.btOk.Name = "btOk";
-            this.btOk.Size = new System.Drawing.Size(75, 23);
-            this.btOk.TabIndex = 1;
-            this.btOk.Text = "OK";
             this.btOk.UseVisualStyleBackColor = true;
             // 
             // label19
             // 
+            resources.ApplyResources(this.label19, "label19");
             this.label19.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label19.Location = new System.Drawing.Point(6, 462);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(498, 75);
-            this.label19.TabIndex = 3;
-            this.label19.Text = "*we not recommend you to use all the filter at the same time because it will effe" +
-    "ct your daily usage. Choose filter base on your specific need is definitely bett" +
-    "er in this case.";
             // 
             // btDownloadFilter
             // 
-            this.btDownloadFilter.Enabled = false;
-            this.btDownloadFilter.Location = new System.Drawing.Point(12, 578);
+            resources.ApplyResources(this.btDownloadFilter, "btDownloadFilter");
             this.btDownloadFilter.Name = "btDownloadFilter";
-            this.btDownloadFilter.Size = new System.Drawing.Size(75, 23);
-            this.btDownloadFilter.TabIndex = 1;
-            this.btDownloadFilter.Text = "Download";
             this.btDownloadFilter.UseVisualStyleBackColor = true;
             this.btDownloadFilter.Click += new System.EventHandler(this.btDownloadFilter_Click);
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(12, 540);
+            resources.ApplyResources(this.progressBar1, "progressBar1");
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(492, 23);
-            this.progressBar1.TabIndex = 4;
             // 
             // lbDownloadStatus
             // 
-            this.lbDownloadStatus.AutoSize = true;
-            this.lbDownloadStatus.Location = new System.Drawing.Point(12, 524);
+            resources.ApplyResources(this.lbDownloadStatus, "lbDownloadStatus");
             this.lbDownloadStatus.Name = "lbDownloadStatus";
-            this.lbDownloadStatus.Size = new System.Drawing.Size(108, 13);
-            this.lbDownloadStatus.TabIndex = 5;
-            this.lbDownloadStatus.Text = "Ready to download";
+            // 
+            // lbUpdateTime
+            // 
+            resources.ApplyResources(this.lbUpdateTime, "lbUpdateTime");
+            this.lbUpdateTime.ForeColor = System.Drawing.Color.Orange;
+            this.lbUpdateTime.Name = "lbUpdateTime";
+            // 
+            // panel1
+            // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(this.lbUpdateTime);
+            this.panel1.Controls.Add(this.lbDownloadStatus);
+            this.panel1.Controls.Add(this.progressBar1);
+            this.panel1.Controls.Add(this.btDownloadFilter);
+            this.panel1.Controls.Add(this.btOk);
+            this.panel1.Controls.Add(this.btCancel);
+            this.panel1.Name = "panel1";
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::ChildSafe.Properties.Resources.lock_64;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // filterBrowsing
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 613);
-            this.Controls.Add(this.lbDownloadStatus);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.btDownloadFilter);
-            this.Controls.Add(this.btOk);
-            this.Controls.Add(this.btCancel);
             this.Controls.Add(this.flowLayoutSet);
-            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "filterBrowsing";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "filterBrowsing";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.filterBrowsing_FormClosing);
             this.Load += new System.EventHandler(this.filterBrowsing_Load);
             this.flowLayoutSet.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,5 +162,8 @@ namespace ChildSafe
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label lbDownloadStatus;
         private System.Windows.Forms.ListBox selectedFilterName;
+        private System.Windows.Forms.Label lbUpdateTime;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
