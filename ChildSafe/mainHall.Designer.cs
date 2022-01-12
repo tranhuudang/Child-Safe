@@ -67,6 +67,9 @@ namespace ChildSafe
             this.btMenu = new System.Windows.Forms.PictureBox();
             this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbAppVersion = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.contextMenu.SuspendLayout();
             this.panelLoading.SuspendLayout();
             this.gbUpdate.SuspendLayout();
@@ -74,6 +77,7 @@ namespace ChildSafe
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMainHall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btMenu)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbPromote
@@ -181,6 +185,7 @@ namespace ChildSafe
             // 
             this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
             resources.ApplyResources(this.checkForUpdatesToolStripMenuItem, "checkForUpdatesToolStripMenuItem");
+            this.checkForUpdatesToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdatesToolStripMenuItem_Click);
             // 
             // updateHistoryToolStripMenuItem
             // 
@@ -267,6 +272,7 @@ namespace ChildSafe
             resources.ApplyResources(this.btDownload, "btDownload");
             this.btDownload.Name = "btDownload";
             this.btDownload.UseVisualStyleBackColor = true;
+            this.btDownload.Click += new System.EventHandler(this.btDownload_Click);
             // 
             // btIgnore
             // 
@@ -319,10 +325,30 @@ namespace ChildSafe
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
+            // lbAppVersion
+            // 
+            resources.ApplyResources(this.lbAppVersion, "lbAppVersion");
+            this.lbAppVersion.Name = "lbAppVersion";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.lbAppVersion);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
             // mainHall
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbUpdate);
             this.Controls.Add(this.panelLoading);
             this.Controls.Add(this.pictureBox1);
@@ -344,6 +370,8 @@ namespace ChildSafe
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMainHall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btMenu)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,6 +415,9 @@ namespace ChildSafe
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btIgnore;
         private System.Windows.Forms.Button btDownload;
+        private System.Windows.Forms.Label lbAppVersion;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label4;
     }
 }
 

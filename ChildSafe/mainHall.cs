@@ -245,5 +245,64 @@ namespace ChildSafe
         {
             gbUpdate.Visible = false;
         }
+
+        private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thread update = new Thread(()=>
+            {
+                WebClient client = new WebClient();
+                client.DownloadFileCompleted += new AsyncCompletedEventHandler(client_DownloadFileCompleted);
+                client.DownloadFileAsync(new Uri("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/use4CheckUpdate.txt"), "Update");
+
+            });
+            update.Start();
+        }
+        void client_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e )
+        {
+            this.BeginInvoke((MethodInvoker)delegate {
+               
+                if (File.Exists("Update"))
+                {
+                    string[] allLine= File.ReadAllText("Update").Split('\n');
+                    int newVersionNumber = Int32.Parse(allLine[0]);
+                    int currentVersionNumber = Int32.Parse(lbAppVersion.Text);
+                    if (newVersionNumber> currentVersionNumber)
+                    {
+                        gbUpdate.Visible = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("You're running the lastest version of Child Safe!", "Update",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+               
+            });
+        }
+
+        private void btDownload_Click(object sender, EventArgs e)
+        {
+            Thread setup = new Thread(() =>
+            {
+                WebClient downloadSetup = new WebClient();
+                downloadSetup.DownloadFileCompleted += new AsyncCompletedEventHandler(downloadSetup_DownloadFileCompleted);
+                downloadSetup.DownloadFileAsync(new Uri("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/setup.exe"), "Setup.exe");
+
+            });
+            setup.Start();
+        }
+        void downloadSetup_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
+        {
+            this.BeginInvoke((MethodInvoker)delegate {
+
+                if (File.Exists("Setup.exe"))
+                {
+                    if(MessageBox.Show("Download completed, do you want to process update now?","Update",MessageBoxButtons.YesNo,MessageBoxIcon.Question)== DialogResult.Yes)
+                    {
+                        Process.Start("Setup.exe");
+                    }
+                }
+
+            });
+        }
     }
 }
