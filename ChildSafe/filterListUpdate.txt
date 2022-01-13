@@ -1,4 +1,9 @@
-﻿@>Steven Black filter
+﻿@>Vietnamese Porn Filter (Child Safe)
+>A collection of accessible adult websites in Vietnam. 
+>https://raw.githubusercontent.com/zeroclubvn/Vietnamese-Trash-Website-Filter/main/adult_websites
+>monthly
+>MIT
+@>Steven Black filter
 >Additional sketch domains as Steven Black comes across them.
 >https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts
 >occasionally
