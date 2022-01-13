@@ -45,10 +45,10 @@ namespace ChildSafe
             this.autoupdateFilterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.checkForUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sendFeedbackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lbNotice = new System.Windows.Forms.Label();
             this.saparator = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -57,16 +57,14 @@ namespace ChildSafe
             this.timerQuote = new System.Windows.Forms.Timer(this.components);
             this.panelLoading = new System.Windows.Forms.Panel();
             this.gbUpdate = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btDownload = new System.Windows.Forms.Button();
             this.btIgnore = new System.Windows.Forms.Button();
+            this.btDownload = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureMainHall = new System.Windows.Forms.PictureBox();
             this.btMenu = new System.Windows.Forms.PictureBox();
-            this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lbAppVersion = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -175,22 +173,16 @@ namespace ChildSafe
             // 
             // checkForUpdateToolStripMenuItem
             // 
-            this.checkForUpdateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.checkForUpdatesToolStripMenuItem,
-            this.updateHistoryToolStripMenuItem});
             this.checkForUpdateToolStripMenuItem.Name = "checkForUpdateToolStripMenuItem";
             resources.ApplyResources(this.checkForUpdateToolStripMenuItem, "checkForUpdateToolStripMenuItem");
+            this.checkForUpdateToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdateToolStripMenuItem_Click);
             // 
-            // checkForUpdatesToolStripMenuItem
+            // githubToolStripMenuItem
             // 
-            this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
-            resources.ApplyResources(this.checkForUpdatesToolStripMenuItem, "checkForUpdatesToolStripMenuItem");
-            this.checkForUpdatesToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdatesToolStripMenuItem_Click);
-            // 
-            // updateHistoryToolStripMenuItem
-            // 
-            this.updateHistoryToolStripMenuItem.Name = "updateHistoryToolStripMenuItem";
-            resources.ApplyResources(this.updateHistoryToolStripMenuItem, "updateHistoryToolStripMenuItem");
+            this.githubToolStripMenuItem.Image = global::ChildSafe.Properties.Resources.github_20;
+            this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
+            resources.ApplyResources(this.githubToolStripMenuItem, "githubToolStripMenuItem");
+            this.githubToolStripMenuItem.Click += new System.EventHandler(this.githubToolStripMenuItem_Click);
             // 
             // sendFeedbackToolStripMenuItem
             // 
@@ -202,6 +194,13 @@ namespace ChildSafe
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Image = global::ChildSafe.Properties.Resources.info_20;
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // lbNotice
             // 
@@ -257,15 +256,12 @@ namespace ChildSafe
             this.gbUpdate.Name = "gbUpdate";
             this.gbUpdate.TabStop = false;
             // 
-            // label1
+            // btIgnore
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.btIgnore, "btIgnore");
+            this.btIgnore.Name = "btIgnore";
+            this.btIgnore.UseVisualStyleBackColor = true;
+            this.btIgnore.Click += new System.EventHandler(this.btIgnore_Click);
             // 
             // btDownload
             // 
@@ -274,19 +270,22 @@ namespace ChildSafe
             this.btDownload.UseVisualStyleBackColor = true;
             this.btDownload.Click += new System.EventHandler(this.btDownload_Click);
             // 
-            // btIgnore
-            // 
-            resources.ApplyResources(this.btIgnore, "btIgnore");
-            this.btIgnore.Name = "btIgnore";
-            this.btIgnore.UseVisualStyleBackColor = true;
-            this.btIgnore.Click += new System.EventHandler(this.btIgnore_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ChildSafe.Properties.Resources._5172958_security_communication_comment_talk_internet_chat_message;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
             // 
             // pictureBox1
             // 
@@ -310,20 +309,6 @@ namespace ChildSafe
             this.btMenu.Name = "btMenu";
             this.btMenu.TabStop = false;
             this.btMenu.Click += new System.EventHandler(this.btMenu_Click);
-            // 
-            // githubToolStripMenuItem
-            // 
-            this.githubToolStripMenuItem.Image = global::ChildSafe.Properties.Resources.github_20;
-            this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
-            resources.ApplyResources(this.githubToolStripMenuItem, "githubToolStripMenuItem");
-            this.githubToolStripMenuItem.Click += new System.EventHandler(this.githubToolStripMenuItem_Click);
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Image = global::ChildSafe.Properties.Resources.info_20;
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // lbAppVersion
             // 
@@ -359,6 +344,7 @@ namespace ChildSafe
             this.Controls.Add(this.lbPromote);
             this.Controls.Add(this.pictureMainHall);
             this.Controls.Add(this.btMenu);
+            this.MaximizeBox = false;
             this.Name = "mainHall";
             this.Load += new System.EventHandler(this.mainHall_Load);
             this.contextMenu.ResumeLayout(false);
@@ -392,8 +378,6 @@ namespace ChildSafe
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sendFeedbackToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkForUpdateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem checkForUpdatesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem updateHistoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Label lbLoadingStatus;

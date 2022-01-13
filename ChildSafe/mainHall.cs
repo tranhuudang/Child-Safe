@@ -304,5 +304,17 @@ namespace ChildSafe
 
             });
         }
+
+        private void checkForUpdateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thread update = new Thread(() =>
+            {
+                WebClient client = new WebClient();
+                client.DownloadFileCompleted += new AsyncCompletedEventHandler(client_DownloadFileCompleted);
+                client.DownloadFileAsync(new Uri("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/use4CheckUpdate.txt"), "Update");
+
+            });
+            update.Start();
+        }
     }
 }

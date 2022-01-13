@@ -117,14 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="selectedFilterName.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbDownloadStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 13</value>
   </data>
   <data name="&gt;&gt;lbDownloadStatus.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>516, 662</value>
+  </data>
+  <data name="lbUpdateTime.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
   <data name="btCancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
@@ -143,6 +148,10 @@
   <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
     <value>492, 10</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="selectedFilterName.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;panel1.Name" xml:space="preserve">
     <value>panel1</value>
   </data>
@@ -155,8 +164,8 @@
   <data name="btDownloadFilter.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;lbUpdateTime.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 581</value>
   </data>
   <data name="&gt;&gt;btOk.Name" xml:space="preserve">
     <value>btOk</value>
@@ -170,9 +179,6 @@
   <data name="label19.Text" xml:space="preserve">
     <value>*we not recommend you to use all the filter at the same time because it will effect your daily usage. Choose filter base on your specific need is definitely better in this case.</value>
   </data>
-  <data name="lbDownloadStatus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
   <data name="&gt;&gt;selectedFilterName.Parent" xml:space="preserve">
     <value>flowLayoutSet</value>
   </data>
@@ -181,9 +187,6 @@
   </data>
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="flowLayoutSet.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;selectedFilterUrl.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -209,14 +212,17 @@
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
+  <data name="&gt;&gt;selectedFilterUrl.Name" xml:space="preserve">
+    <value>selectedFilterUrl</value>
+  </data>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="flowLayoutSet.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;progressBar1.Parent" xml:space="preserve">
     <value>panel1</value>
-  </data>
-  <data name="lbDownloadStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 13</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -224,11 +230,11 @@
   <data name="&gt;&gt;selectedFilterUrl.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="selectedFilterUrl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
   <data name="selectedFilterName.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 69</value>
+  </data>
+  <data name="btDownloadFilter.Text" xml:space="preserve">
+    <value>Download</value>
   </data>
   <data name="selectedFilterName.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -236,27 +242,21 @@
   <data name="flowLayoutSet.Size" type="System.Drawing.Size, System.Drawing">
     <value>516, 505</value>
   </data>
-  <data name="&gt;&gt;flowLayoutSet.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
   </data>
-  <data name="flowLayoutSet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
   <data name="selectedFilterUrl.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 69</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="btCancel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btOk.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -266,6 +266,9 @@
   </data>
   <data name="btDownloadFilter.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt</value>
@@ -279,8 +282,8 @@
   <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="selectedFilterName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 3</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbUpdateTime.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -303,9 +306,6 @@
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
   </data>
-  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 28</value>
-  </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -321,14 +321,14 @@
   <data name="lbUpdateTime.Location" type="System.Drawing.Point, System.Drawing">
     <value>308, 12</value>
   </data>
+  <data name="&gt;&gt;selectedFilterName.Name" xml:space="preserve">
+    <value>selectedFilterName</value>
+  </data>
   <data name="lbUpdateTime.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;btDownloadFilter.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;selectedFilterName.Name" xml:space="preserve">
-    <value>selectedFilterName</value>
+  <data name="&gt;&gt;btOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -354,17 +354,14 @@
   <data name="&gt;&gt;lbUpdateTime.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btDownloadFilter.Text" xml:space="preserve">
-    <value>Download</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>filterBrowsing</value>
+  <data name="&gt;&gt;btDownloadFilter.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Download Filter</value>
   </data>
-  <data name="&gt;&gt;lbDownloadStatus.Name" xml:space="preserve">
-    <value>lbDownloadStatus</value>
+  <data name="flowLayoutSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="btOk.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -375,11 +372,11 @@
   <data name="&gt;&gt;selectedFilterName.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;flowLayoutSet.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 28</value>
   </data>
   <data name="&gt;&gt;selectedFilterName.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -387,11 +384,11 @@
   <data name="&gt;&gt;lbDownloadStatus.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lbUpdateTime.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="lbDownloadStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 581</value>
+  <data name="&gt;&gt;lbUpdateTime.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btCancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>429, 44</value>
@@ -399,8 +396,8 @@
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 511</value>
   </data>
-  <data name="&gt;&gt;selectedFilterUrl.Name" xml:space="preserve">
-    <value>selectedFilterUrl</value>
+  <data name="selectedFilterUrl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
   <data name="&gt;&gt;flowLayoutSet.Name" xml:space="preserve">
     <value>flowLayoutSet</value>
@@ -411,14 +408,17 @@
   <data name="&gt;&gt;label19.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;lbDownloadStatus.Name" xml:space="preserve">
+    <value>lbDownloadStatus</value>
+  </data>
   <data name="lbDownloadStatus.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>516, 662</value>
+  <data name="selectedFilterName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 3</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>filterBrowsing</value>
   </data>
   <data name="lbUpdateTime.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 13</value>

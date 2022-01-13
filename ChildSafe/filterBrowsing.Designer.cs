@@ -140,6 +140,8 @@ namespace ChildSafe
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "filterBrowsing";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.filterBrowsing_FormClosing);
             this.Load += new System.EventHandler(this.filterBrowsing_Load);
             this.flowLayoutSet.ResumeLayout(false);
