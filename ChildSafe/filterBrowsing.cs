@@ -106,7 +106,7 @@ namespace ChildSafe
             {
                 using (var client = new WebClient())
                 {
-                    client.DownloadFile("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/filterListUpdate.txt", fileFilterUpdate);
+                    client.DownloadFile("https://raw.githubusercontent.com/zeroclubvn/Host-Filters-Collection/main/host-filters-collection", fileFilterUpdate);
                     lbUpdateTime.Text = DateTime.Now.ToString();
 
                 }

@@ -169,7 +169,6 @@
     <None Include="Resources\check_green_256.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="filterListUpdate.txt" />
     <None Include="Resources\info_20.png" />
     <None Include="Resources\github_20.png" />
     <None Include="Resources\github_24.png" />
