@@ -321,7 +321,19 @@ namespace ChildSafe
             //});
             //update.Start();
             XmlDocument updateFile = new XmlDocument();
-            updateFile.Load()
+            updateFile.Load("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/updateInfo.xml");
+            int version= Int32.Parse(updateFile.SelectSingleNode("//currentVersion/version").InnerText);
+            string describe = updateFile.SelectSingleNode("//currentVersion/describe").InnerText;
+            string linkSetup= updateFile.SelectSingleNode("//path").InnerText;
+            int currentVersion = Int32.Parse(lbAppVersion.Text;
+            if (version>currentVersion)
+            {
+                gbUpdate.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("You're running the lastest version of Child Safe!", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
