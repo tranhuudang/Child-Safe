@@ -7,11 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChildSafe", "ChildSafe\Chil
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ChildSafe_Setup", "ChildSafe_Setup\ChildSafe_Setup.vdproj", "{8BA2B494-DA68-4D3D-ADFE-A93606A8086B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{1E4E9CDD-F829-4986-8217-45EBCE719FCA}"
-	ProjectSection(SolutionItems) = preProject
-		ChildSafe_Setup\Debug\ChildSafe_Setup.msi = ChildSafe_Setup\Debug\ChildSafe_Setup.msi
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
