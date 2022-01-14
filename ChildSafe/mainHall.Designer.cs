@@ -93,7 +93,6 @@ namespace ChildSafe
             // 
             // contextMenu
             // 
-            resources.ApplyResources(this.contextMenu, "contextMenu");
             this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.getStartedToolStripMenuItem,
             this.toolStripMenuItem1,
@@ -107,111 +106,112 @@ namespace ChildSafe
             this.toolStripMenuItem2,
             this.aboutToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
+            resources.ApplyResources(this.contextMenu, "contextMenu");
             // 
             // getStartedToolStripMenuItem
             // 
-            resources.ApplyResources(this.getStartedToolStripMenuItem, "getStartedToolStripMenuItem");
             this.getStartedToolStripMenuItem.Name = "getStartedToolStripMenuItem";
+            resources.ApplyResources(this.getStartedToolStripMenuItem, "getStartedToolStripMenuItem");
             // 
             // toolStripMenuItem1
             // 
-            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
             // 
             // filtersToolStripMenuItem
             // 
-            resources.ApplyResources(this.filtersToolStripMenuItem, "filtersToolStripMenuItem");
             this.filtersToolStripMenuItem.Name = "filtersToolStripMenuItem";
+            resources.ApplyResources(this.filtersToolStripMenuItem, "filtersToolStripMenuItem");
             this.filtersToolStripMenuItem.Click += new System.EventHandler(this.filtersToolStripMenuItem_Click);
             // 
             // whitelistToolStripMenuItem
             // 
-            resources.ApplyResources(this.whitelistToolStripMenuItem, "whitelistToolStripMenuItem");
             this.whitelistToolStripMenuItem.Name = "whitelistToolStripMenuItem";
+            resources.ApplyResources(this.whitelistToolStripMenuItem, "whitelistToolStripMenuItem");
             this.whitelistToolStripMenuItem.Click += new System.EventHandler(this.whitelistToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
-            resources.ApplyResources(this.settingsToolStripMenuItem, "settingsToolStripMenuItem");
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.languageToolStripMenuItem,
             this.autoupdateFilterToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            resources.ApplyResources(this.settingsToolStripMenuItem, "settingsToolStripMenuItem");
             // 
             // languageToolStripMenuItem
             // 
-            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem,
             this.vietnamseToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             // 
             // englishToolStripMenuItem
             // 
-            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // vietnamseToolStripMenuItem
             // 
-            resources.ApplyResources(this.vietnamseToolStripMenuItem, "vietnamseToolStripMenuItem");
             this.vietnamseToolStripMenuItem.Name = "vietnamseToolStripMenuItem";
+            resources.ApplyResources(this.vietnamseToolStripMenuItem, "vietnamseToolStripMenuItem");
             this.vietnamseToolStripMenuItem.Click += new System.EventHandler(this.vietnamseToolStripMenuItem_Click);
             // 
             // autoupdateFilterToolStripMenuItem
             // 
-            resources.ApplyResources(this.autoupdateFilterToolStripMenuItem, "autoupdateFilterToolStripMenuItem");
             this.autoupdateFilterToolStripMenuItem.Checked = true;
             this.autoupdateFilterToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.autoupdateFilterToolStripMenuItem.Name = "autoupdateFilterToolStripMenuItem";
+            resources.ApplyResources(this.autoupdateFilterToolStripMenuItem, "autoupdateFilterToolStripMenuItem");
             this.autoupdateFilterToolStripMenuItem.Click += new System.EventHandler(this.autoupdateFilterToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
             // 
-            resources.ApplyResources(this.toolStripMenuItem3, "toolStripMenuItem3");
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            resources.ApplyResources(this.toolStripMenuItem3, "toolStripMenuItem3");
             // 
             // checkForUpdateToolStripMenuItem
             // 
-            resources.ApplyResources(this.checkForUpdateToolStripMenuItem, "checkForUpdateToolStripMenuItem");
             this.checkForUpdateToolStripMenuItem.Name = "checkForUpdateToolStripMenuItem";
+            resources.ApplyResources(this.checkForUpdateToolStripMenuItem, "checkForUpdateToolStripMenuItem");
             this.checkForUpdateToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdateToolStripMenuItem_Click);
             // 
             // githubToolStripMenuItem
             // 
-            resources.ApplyResources(this.githubToolStripMenuItem, "githubToolStripMenuItem");
             this.githubToolStripMenuItem.Image = global::ChildSafe.Properties.Resources.github_20;
             this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
+            resources.ApplyResources(this.githubToolStripMenuItem, "githubToolStripMenuItem");
             this.githubToolStripMenuItem.Click += new System.EventHandler(this.githubToolStripMenuItem_Click);
             // 
             // sendFeedbackToolStripMenuItem
             // 
-            resources.ApplyResources(this.sendFeedbackToolStripMenuItem, "sendFeedbackToolStripMenuItem");
             this.sendFeedbackToolStripMenuItem.Name = "sendFeedbackToolStripMenuItem";
+            resources.ApplyResources(this.sendFeedbackToolStripMenuItem, "sendFeedbackToolStripMenuItem");
             this.sendFeedbackToolStripMenuItem.Click += new System.EventHandler(this.sendFeedbackToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
-            resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
             // 
             // aboutToolStripMenuItem
             // 
-            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Image = global::ChildSafe.Properties.Resources.info_20;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // lbNotice
             // 
-            resources.ApplyResources(this.lbNotice, "lbNotice");
             this.lbNotice.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            resources.ApplyResources(this.lbNotice, "lbNotice");
             this.lbNotice.Name = "lbNotice";
             // 
             // saparator
             // 
-            resources.ApplyResources(this.saparator, "saparator");
             this.saparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.saparator, "saparator");
             this.saparator.Name = "saparator";
             // 
             // progressBar1
@@ -240,19 +240,19 @@ namespace ChildSafe
             // 
             // panelLoading
             // 
-            resources.ApplyResources(this.panelLoading, "panelLoading");
             this.panelLoading.Controls.Add(this.lbLoadingStatus);
             this.panelLoading.Controls.Add(this.progressBar1);
+            resources.ApplyResources(this.panelLoading, "panelLoading");
             this.panelLoading.Name = "panelLoading";
             // 
             // gbUpdate
             // 
-            resources.ApplyResources(this.gbUpdate, "gbUpdate");
             this.gbUpdate.Controls.Add(this.btIgnore);
             this.gbUpdate.Controls.Add(this.btDownload);
             this.gbUpdate.Controls.Add(this.pictureBox2);
             this.gbUpdate.Controls.Add(this.lbUpdateDetail);
             this.gbUpdate.Controls.Add(this.label1);
+            resources.ApplyResources(this.gbUpdate, "gbUpdate");
             this.gbUpdate.Name = "gbUpdate";
             this.gbUpdate.TabStop = false;
             // 
@@ -272,8 +272,8 @@ namespace ChildSafe
             // 
             // pictureBox2
             // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Image = global::ChildSafe.Properties.Resources._5172958_security_communication_comment_talk_internet_chat_message;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
@@ -289,23 +289,23 @@ namespace ChildSafe
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Image = global::ChildSafe.Properties.Resources._5173004_mail_warning_internet_email_security_alert_attention1;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
             // pictureMainHall
             // 
-            resources.ApplyResources(this.pictureMainHall, "pictureMainHall");
             this.pictureMainHall.Image = global::ChildSafe.Properties.Resources.danger_256;
+            resources.ApplyResources(this.pictureMainHall, "pictureMainHall");
             this.pictureMainHall.Name = "pictureMainHall";
             this.pictureMainHall.TabStop = false;
             // 
             // btMenu
             // 
-            resources.ApplyResources(this.btMenu, "btMenu");
             this.btMenu.ContextMenuStrip = this.contextMenu;
             this.btMenu.Image = global::ChildSafe.Properties.Resources.more_24;
+            resources.ApplyResources(this.btMenu, "btMenu");
             this.btMenu.Name = "btMenu";
             this.btMenu.TabStop = false;
             this.btMenu.Click += new System.EventHandler(this.btMenu_Click);
@@ -317,16 +317,16 @@ namespace ChildSafe
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.lbAppVersion);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
             // label4
             // 
-            resources.ApplyResources(this.label4, "label4");
             this.label4.ForeColor = System.Drawing.Color.Red;
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
             // mainHall
@@ -357,7 +357,6 @@ namespace ChildSafe
             ((System.ComponentModel.ISupportInitialize)(this.pictureMainHall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btMenu)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
