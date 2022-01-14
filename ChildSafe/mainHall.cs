@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace ChildSafe
 {
@@ -263,6 +264,10 @@ namespace ChildSafe
                
                 if (File.Exists("Update"))
                 {
+                   
+
+
+
                     string[] allLine= File.ReadAllText("Update").Split('\n');
                     int newVersionNumber = Int32.Parse(allLine[0]);
                     int currentVersionNumber = Int32.Parse(lbAppVersion.Text);
@@ -307,14 +312,16 @@ namespace ChildSafe
 
         private void checkForUpdateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Thread update = new Thread(() =>
-            {
-                WebClient client = new WebClient();
-                client.DownloadFileCompleted += new AsyncCompletedEventHandler(client_DownloadFileCompleted);
-                client.DownloadFileAsync(new Uri("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/use4CheckUpdate.txt"), "Update");
+            //Thread update = new Thread(() =>
+            //{
+            //    WebClient client = new WebClient();
+            //    client.DownloadFileCompleted += new AsyncCompletedEventHandler(client_DownloadFileCompleted);
+            //    client.DownloadFileAsync(new Uri("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/use4CheckUpdate.txt"), "Update");
 
-            });
-            update.Start();
+            //});
+            //update.Start();
+            XmlDocument updateFile = new XmlDocument();
+            updateFile.Load()
         }
     }
 }
