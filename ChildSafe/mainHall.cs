@@ -247,43 +247,6 @@ namespace ChildSafe
             gbUpdate.Visible = false;
         }
 
-        private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Thread update = new Thread(()=>
-            {
-                WebClient client = new WebClient();
-                client.DownloadFileCompleted += new AsyncCompletedEventHandler(client_DownloadFileCompleted);
-                client.DownloadFileAsync(new Uri("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/use4CheckUpdate.txt"), "Update");
-
-            });
-            update.Start();
-        }
-        void client_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e )
-        {
-            this.BeginInvoke((MethodInvoker)delegate {
-               
-                if (File.Exists("Update"))
-                {
-                   
-
-
-
-                    string[] allLine= File.ReadAllText("Update").Split('\n');
-                    int newVersionNumber = Int32.Parse(allLine[0]);
-                    int currentVersionNumber = Int32.Parse(lbAppVersion.Text);
-                    if (newVersionNumber> currentVersionNumber)
-                    {
-                        gbUpdate.Visible = true;
-                    }
-                    else
-                    {
-                        MessageBox.Show("You're running the lastest version of Child Safe!", "Update",MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                }
-               
-            });
-        }
-
         private void btDownload_Click(object sender, EventArgs e)
         {
             Thread setup = new Thread(() =>
@@ -312,32 +275,21 @@ namespace ChildSafe
 
         private void checkForUpdateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Thread update = new Thread(() =>
-            //{
-            //    WebClient client = new WebClient();
-            //    client.DownloadFileCompleted += new AsyncCompletedEventHandler(client_DownloadFileCompleted);
-            //    client.DownloadFileAsync(new Uri("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/use4CheckUpdate.txt"), "Update");
-
-            //});
-            //update.Start();
             XmlDocument updateFile = new XmlDocument();
-            updateFile.Load("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/updateInfo.xml");
+            updateFile.Load("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/updateInfo.xml"+"?"+DateTime.Now.Ticks.ToString());
             int version= Int32.Parse(updateFile.SelectSingleNode("//currentVersion/version").InnerText);
             string describe = updateFile.SelectSingleNode("//currentVersion/describe").InnerText;
             string linkSetup= updateFile.SelectSingleNode("//path").InnerText;
             int currentVersion = Int32.Parse(lbAppVersion.Text);
-            MessageBox.Show(describe);
-            MessageBox.Show(linkSetup);
-            MessageBox.Show(version.ToString());
             if (version>currentVersion)
             {
                 gbUpdate.Visible = true;
+                lbUpdateDetail.Text = describe;
             }
             else
             {
                 MessageBox.Show("You're running the lastest version of Child Safe!", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            updaet
         }
     }
 }

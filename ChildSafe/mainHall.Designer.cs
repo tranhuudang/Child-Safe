@@ -60,7 +60,7 @@ namespace ChildSafe
             this.btIgnore = new System.Windows.Forms.Button();
             this.btDownload = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbUpdateDetail = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureMainHall = new System.Windows.Forms.PictureBox();
@@ -250,7 +250,7 @@ namespace ChildSafe
             this.gbUpdate.Controls.Add(this.btIgnore);
             this.gbUpdate.Controls.Add(this.btDownload);
             this.gbUpdate.Controls.Add(this.pictureBox2);
-            this.gbUpdate.Controls.Add(this.label2);
+            this.gbUpdate.Controls.Add(this.lbUpdateDetail);
             this.gbUpdate.Controls.Add(this.label1);
             resources.ApplyResources(this.gbUpdate, "gbUpdate");
             this.gbUpdate.Name = "gbUpdate";
@@ -277,10 +277,10 @@ namespace ChildSafe
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
-            // label2
+            // lbUpdateDetail
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.lbUpdateDetail, "lbUpdateDetail");
+            this.lbUpdateDetail.Name = "lbUpdateDetail";
             // 
             // label1
             // 
@@ -394,7 +394,7 @@ namespace ChildSafe
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelLoading;
         private System.Windows.Forms.GroupBox gbUpdate;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbUpdateDetail;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btIgnore;
