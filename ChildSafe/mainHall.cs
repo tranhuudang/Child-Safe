@@ -337,6 +337,7 @@ namespace ChildSafe
             {
                 MessageBox.Show("You're running the lastest version of Child Safe!", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            updaet
         }
     }
 }
