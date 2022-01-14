@@ -275,21 +275,30 @@ namespace ChildSafe
 
         private void checkForUpdateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            XmlDocument updateFile = new XmlDocument();
-            updateFile.Load("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/updateInfo.xml"+"?"+DateTime.Now.Ticks.ToString());
-            int version= Int32.Parse(updateFile.SelectSingleNode("//currentVersion/version").InnerText);
-            string describe = updateFile.SelectSingleNode("//currentVersion/describe").InnerText;
-            string linkSetup= updateFile.SelectSingleNode("//path").InnerText;
-            int currentVersion = Int32.Parse(lbAppVersion.Text);
-            if (version>currentVersion)
+            try
             {
-                gbUpdate.Visible = true;
-                lbUpdateDetail.Text = describe;
+                XmlDocument updateFile = new XmlDocument();
+                updateFile.Load("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/updateInfo.xml" + "?" + DateTime.Now.Ticks.ToString());
+                int version = Int32.Parse(updateFile.SelectSingleNode("//currentVersion/version").InnerText);
+                string describe = updateFile.SelectSingleNode("//currentVersion/describe").InnerText;
+                string linkSetup = updateFile.SelectSingleNode("//path").InnerText;
+                int currentVersion = Int32.Parse(lbAppVersion.Text);
+                if (version > currentVersion)
+                {
+                    gbUpdate.Visible = true;
+                    lbUpdateDetail.Text = describe;
+                }
+                else
+                {
+                    MessageBox.Show("You're running the lastest version of Child Safe!", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("You're running the lastest version of Child Safe!", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Can't connect to the internet!");
+                throw;
             }
+            
         }
     }
 }
