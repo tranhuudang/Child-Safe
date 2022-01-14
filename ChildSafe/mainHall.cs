@@ -279,6 +279,7 @@ namespace ChildSafe
                     if(MessageBox.Show("Download completed, do you want to process update now?","Update",MessageBoxButtons.YesNo,MessageBoxIcon.Question)== DialogResult.Yes)
                     {
                         Process.Start("ChildSafe_Setup.msi");
+                        this.Close();
                     }
                 }
 
