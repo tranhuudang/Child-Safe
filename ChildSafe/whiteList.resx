@@ -196,10 +196,10 @@
     <value>Bottom</value>
   </data>
   <data name="tbWhitelist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
+    <value>3, 48</value>
   </data>
   <data name="tbWhitelist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>766, 436</value>
+    <value>766, 472</value>
   </data>
   <data name="tbWhitelist.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -331,7 +331,7 @@
     <value>0, 0</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>772, 491</value>
+    <value>772, 523</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -412,7 +412,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 494</value>
+    <value>12, 534</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>256, 13</value>
@@ -446,9 +446,6 @@
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

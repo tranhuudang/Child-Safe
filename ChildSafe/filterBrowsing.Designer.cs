@@ -71,6 +71,7 @@ namespace ChildSafe
             // btCancel
             // 
             resources.ApplyResources(this.btCancel, "btCancel");
+            this.btCancel.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btCancel.Name = "btCancel";
             this.btCancel.UseVisualStyleBackColor = true;
             this.btCancel.Click += new System.EventHandler(this.btCancel_Click);

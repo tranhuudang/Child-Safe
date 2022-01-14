@@ -168,6 +168,7 @@ namespace ChildSafe
             this.options.LinkColor = System.Drawing.Color.MediumBlue;
             this.options.Name = "options";
             this.options.TabStop = true;
+            this.options.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.options_LinkClicked);
             // 
             // btSave
             // 

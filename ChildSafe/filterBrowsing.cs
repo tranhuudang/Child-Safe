@@ -11,12 +11,13 @@ using System.Windows.Forms;
 using System.IO;
 using System.Threading;
 using System.Text.RegularExpressions;
+using System.Xml;
 
 namespace ChildSafe
 {
     public partial class filterBrowsing : Form
     {
-        Control newControl(string name, string descriptionText,string linkFile, string updateText, string licenceText)
+        Control newControl(string name, string descriptionText, string linkFile, string updateText, string licenceText)
         {
             // a custom panel to display filter and its descriptions.
             Panel newPanel = new Panel();
@@ -39,7 +40,7 @@ namespace ChildSafe
             newCheckbox.Text = name;
             newCheckbox.Width = 300;
             newCheckbox.ForeColor = Color.RoyalBlue;
-            newCheckbox.Font= new Font("Arial", 10, FontStyle.Regular);
+            newCheckbox.Font = new Font("Arial", 10, FontStyle.Regular);
             // evenhandler for checking event of each checkbox in each created panel.
             newCheckbox.CheckedChanged += new EventHandler(checkOnFilter_Changed);
             newCheckbox.Tag = linkFile;
@@ -59,7 +60,7 @@ namespace ChildSafe
             licence.Text = licenceText;
             return newPanel;
         }
-        
+
         private void checkOnFilter_Changed(object sender, EventArgs e)
         {
             btDownloadFilter.Enabled = true;
@@ -84,7 +85,6 @@ namespace ChildSafe
         {
             InitializeComponent();
         }
-        string fileFilterUpdate = "FilterBaseUpdate";
         private void filterBrowsing_Load(object sender, EventArgs e)
         {
             // load language
@@ -104,41 +104,26 @@ namespace ChildSafe
             //download list filter
             try
             {
-                using (var client = new WebClient())
+                // read from file the collection of all available filter in a xml file then fetch it in flowlist
+                XmlDocument filters = new XmlDocument();
+                filters.Load("https://raw.githubusercontent.com/zeroclubvn/Host-Filters-Collection/main/Host-Filters-Collection.xml");
+                XmlNodeList nodes = filters.GetElementsByTagName("filter");
+                foreach (XmlNode note in nodes)
                 {
-                    client.DownloadFile("https://raw.githubusercontent.com/zeroclubvn/Host-Filters-Collection/main/host-filters-collection", fileFilterUpdate);
-                    lbUpdateTime.Text = DateTime.Now.ToString();
-
+                    string name = note["name"].InnerText;
+                    string description = note["description"].InnerText;
+                    string linkFile = note["path"].InnerText;
+                    string update = note["update"].InnerText;
+                    string licence = note["licence"].InnerText;
+                    // add filters and it's description in to flowlayout list
+                    flowLayoutSet.Controls.Add(newControl(name, description, linkFile, update, licence));
                 }
+                lbUpdateTime.Text = DateTime.Now.ToString();
             }
             catch (Exception)
             {
                 lbUpdateTime.Text = "Can't fetch online data !";
                 throw;
-            }
-            
-            // open file
-            if (File.Exists(fileFilterUpdate))
-            {
-                // fomular of a custom panel
-
-                // read from file the collection of all available filter
-                string[] contents = File.ReadAllText(fileFilterUpdate).Split('@');
-                foreach (string content in contents)
-                {
-                    if (content != "")
-                    {
-                        string[] filter = content.Split('>');
-                        string name = filter[1];
-                        string description = filter[2];
-                        string linkFile = filter[3];
-                        string update = filter[4];
-                        string licence = filter[5];
-                        // add filters and it's description in to flowlayout list
-                        flowLayoutSet.Controls.Add(newControl(name, description,linkFile, update, licence));
-                    }
-
-                }
             }
         }
         // a really helpful function to get rid of special charactors in a string
@@ -154,7 +139,7 @@ namespace ChildSafe
                 // Try to create the directory.
                 DirectoryInfo di = Directory.CreateDirectory(path);
             }
-            
+
             if (selectedFilterUrl.Items.Count > 0)
             {
                 // create a thread to download file, this practice will help program not being freeze while downloading file
@@ -165,7 +150,7 @@ namespace ChildSafe
                     WebClient client = new WebClient();
                     client.DownloadProgressChanged += new DownloadProgressChangedEventHandler(client_DownloadProgressChanged);
                     client.DownloadFileCompleted += new AsyncCompletedEventHandler(client_DownloadFileCompleted);
-                    client.DownloadFileAsync(new Uri(url), path+@"\"+fileName);
+                    client.DownloadFileAsync(new Uri(url), path + @"\" + fileName);
                 });
                 thread.Start();
             }
@@ -176,7 +161,8 @@ namespace ChildSafe
         }
         void client_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
         {
-            this.BeginInvoke((MethodInvoker)delegate {
+            this.BeginInvoke((MethodInvoker)delegate
+            {
                 double bytesIn = double.Parse(e.BytesReceived.ToString());
                 double totalBytes = double.Parse(e.TotalBytesToReceive.ToString());
                 double percentage = bytesIn / totalBytes * 100;
@@ -186,7 +172,8 @@ namespace ChildSafe
         }
         void client_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
         {
-            this.BeginInvoke((MethodInvoker)delegate {
+            this.BeginInvoke((MethodInvoker)delegate
+            {
                 lbDownloadStatus.Text = "Completed";
                 // write download file name list
                 if (File.Exists("DownloadedFilter"))
@@ -197,7 +184,7 @@ namespace ChildSafe
                 selectedFilterUrl.Items.Remove(selectedFilterUrl.Items[0].ToString());
                 selectedFilterName.Items.Remove(selectedFilterName.Items[0].ToString());
                 // continue download other files by go back to the downloadfilter process
-                btDownloadFilter_Click(null,null);
+                btDownloadFilter_Click(null, null);
                 if (selectedFilterName.Items.Count <= 0) btOk.Enabled = true;
                 else btOk.Enabled = false;
             });

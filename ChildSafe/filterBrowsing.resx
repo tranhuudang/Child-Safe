@@ -182,9 +182,6 @@
   <data name="&gt;&gt;selectedFilterName.Parent" xml:space="preserve">
     <value>flowLayoutSet</value>
   </data>
-  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 511</value>
-  </data>
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -211,9 +208,6 @@
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
-  </data>
-  <data name="&gt;&gt;selectedFilterUrl.Name" xml:space="preserve">
-    <value>selectedFilterUrl</value>
   </data>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -246,6 +240,9 @@
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
   </data>
+  <data name="flowLayoutSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
   <data name="selectedFilterUrl.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 69</value>
   </data>
@@ -257,6 +254,9 @@
   </data>
   <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -279,14 +279,14 @@
   <data name="&gt;&gt;lbUpdateTime.Name" xml:space="preserve">
     <value>lbUpdateTime</value>
   </data>
-  <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 511</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lbUpdateTime.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="&gt;&gt;selectedFilterUrl.Name" xml:space="preserve">
+    <value>selectedFilterUrl</value>
   </data>
   <data name="&gt;&gt;btCancel.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -303,11 +303,11 @@
   <data name="lbUpdateTime.Text" xml:space="preserve">
     <value>update time</value>
   </data>
+  <data name="&gt;&gt;lbUpdateTime.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="&gt;&gt;btDownloadFilter.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -339,6 +339,9 @@
   <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
+  <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;btCancel.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
@@ -360,8 +363,8 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Download Filter</value>
   </data>
-  <data name="flowLayoutSet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;lbDownloadStatus.Name" xml:space="preserve">
+    <value>lbDownloadStatus</value>
   </data>
   <data name="btOk.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -408,9 +411,6 @@
   <data name="&gt;&gt;label19.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lbDownloadStatus.Name" xml:space="preserve">
-    <value>lbDownloadStatus</value>
-  </data>
   <data name="lbDownloadStatus.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -440,8 +440,5 @@
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>vi</value>
   </metadata>
 </root>

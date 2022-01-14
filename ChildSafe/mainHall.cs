@@ -27,7 +27,7 @@ namespace ChildSafe
         string host = Path.GetPathRoot(Environment.SystemDirectory) + @"Windows\System32\drivers\etc\hosts";
         string onDutyFilters = "OnDuty";
         string defaultChildSafeBaseFilter = "ChildSafeBaseFilter";
-        string defaultChildSafeBaseFilter_Url = "https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/defaultChildSafeFilter.txt";
+        string defaultChildSafeBaseFilter_Url = "https://raw.githubusercontent.com/zeroclubvn/Vietnamese-Trash-Websites-Filter/main/adult_websites";
         private void btStart_Click(object sender, EventArgs e)
         {
             btStart.Enabled = false;
@@ -148,6 +148,10 @@ namespace ChildSafe
                     Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi-VN");
                     Properties.Settings.Default["Language"] = "Tiếng Việt";
                     break;
+                default:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
+                    Properties.Settings.Default["Language"] = "English";
+                    break;
             }
             this.Controls.Clear();
             InitializeComponent();
@@ -161,8 +165,12 @@ namespace ChildSafe
                 case "Tiếng Việt":
                     englishToolStripMenuItem.Checked = false;
                     vietnamseToolStripMenuItem.Checked = true;
-
                     break;
+                default:
+                    englishToolStripMenuItem.Checked = true;
+                    vietnamseToolStripMenuItem.Checked = false;
+                    break;
+
             }
             // load protection state
             if (Properties.Settings.Default["protectEnable"].ToString() == "True")
@@ -235,11 +243,15 @@ namespace ChildSafe
 
         private void vietnamseToolStripMenuItem_Click(object sender, EventArgs e)
         {
+           
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi-VI");
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("vi-VI");
+
             Properties.Settings.Default["Language"] = "Tiếng Việt";
             Properties.Settings.Default.Save();
             this.Controls.Clear();
             InitializeComponent();
+
         }
 
         private void btIgnore_Click(object sender, EventArgs e)
@@ -253,7 +265,7 @@ namespace ChildSafe
             {
                 WebClient downloadSetup = new WebClient();
                 downloadSetup.DownloadFileCompleted += new AsyncCompletedEventHandler(downloadSetup_DownloadFileCompleted);
-                downloadSetup.DownloadFileAsync(new Uri("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/setup.exe"), "Setup.exe");
+                downloadSetup.DownloadFileAsync(new Uri("https://github.com/zeroclubvn/ChildSafe_Project_X15/raw/master/ChildSafe/Setup/ChildSafe_Setup.msi"), "ChildSafe_Setup.msi");
 
             });
             setup.Start();
@@ -262,11 +274,11 @@ namespace ChildSafe
         {
             this.BeginInvoke((MethodInvoker)delegate {
 
-                if (File.Exists("Setup.exe"))
+                if (File.Exists("ChildSafe_Setup.msi"))
                 {
                     if(MessageBox.Show("Download completed, do you want to process update now?","Update",MessageBoxButtons.YesNo,MessageBoxIcon.Question)== DialogResult.Yes)
                     {
-                        Process.Start("Setup.exe");
+                        Process.Start("ChildSafe_Setup.msi");
                     }
                 }
 

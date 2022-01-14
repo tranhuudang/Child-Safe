@@ -274,5 +274,13 @@ namespace ChildSafe
             }
 
         }
+
+        private void options_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
+            whiteList whiteListForm = new whiteList();
+            whiteListForm.Show();
+            
+        }
     }
 }

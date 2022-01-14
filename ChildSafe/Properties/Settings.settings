@@ -12,7 +12,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="language" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Tiếng Việt</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="listOnDutyFilters" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

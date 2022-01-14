@@ -61,7 +61,7 @@ namespace ChildSafe.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Tiếng Việt")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string language {
             get {
                 return ((string)(this["language"]));

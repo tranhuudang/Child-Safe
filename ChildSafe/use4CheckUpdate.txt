@@ -1,6 +1,0 @@
-﻿1
-#Warning: This file will increate number everytime new version of this application is released, so please
-# dont mess up with it unless you know what you're doing.
-# Increase number value will trigger program to send a notification to user that a new version is available to download.
-# Link to new update will be set in: https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/setup.exe
-# Please remember to not remove setup.exe out of project unless it will lose the url
