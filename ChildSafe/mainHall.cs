@@ -325,7 +325,10 @@ namespace ChildSafe
             int version= Int32.Parse(updateFile.SelectSingleNode("//currentVersion/version").InnerText);
             string describe = updateFile.SelectSingleNode("//currentVersion/describe").InnerText;
             string linkSetup= updateFile.SelectSingleNode("//path").InnerText;
-            int currentVersion = Int32.Parse(lbAppVersion.Text;
+            int currentVersion = Int32.Parse(lbAppVersion.Text);
+            MessageBox.Show(describe);
+            MessageBox.Show(linkSetup);
+            MessageBox.Show(version.ToString());
             if (version>currentVersion)
             {
                 gbUpdate.Visible = true;
