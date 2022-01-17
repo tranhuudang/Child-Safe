@@ -8,6 +8,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -191,7 +192,9 @@ namespace ChildSafe
             }
             );
             downloadDefaultFilter.Start();
-            this.Text += " - "+ lbAppVersion.Text;
+            Version version = Assembly.GetExecutingAssembly().GetName().Version;
+            this.Text += " v" + version.Major;
+            lbAppVersion.Text = version.ToString();
         }
 
 
@@ -277,10 +280,13 @@ namespace ChildSafe
 
                 if (File.Exists("ChildSafe_Setup.msi"))
                 {
-                    if(MessageBox.Show("Download completed, do you want to process update now?","Update",MessageBoxButtons.YesNo,MessageBoxIcon.Question)== DialogResult.Yes)
+                    if (File.Exists("ChildSafeUpdater.exe"))
                     {
-                        Process.Start("ChildSafeUpdater.exe");
-                        this.Close();
+                        if (MessageBox.Show("Download completed, do you want to process update now?", "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                        {
+                            Process.Start("ChildSafeUpdater.exe");
+                            this.Close();
+                        }
                     }
                 }
 
@@ -293,11 +299,11 @@ namespace ChildSafe
             {
                 XmlDocument updateFile = new XmlDocument();
                 updateFile.Load("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/updateInfo.xml" + "?" + DateTime.Now.Ticks.ToString());
-                int version = Int32.Parse(updateFile.SelectSingleNode("//currentVersion/version").InnerText);
+                Version netVersion = new Version(updateFile.SelectSingleNode("//currentVersion/version").InnerText);
                 string describe = updateFile.SelectSingleNode("//currentVersion/describe").InnerText;
                 string linkSetup = updateFile.SelectSingleNode("//path").InnerText;
-                int currentVersion = Int32.Parse(lbAppVersion.Text);
-                if (version > currentVersion)
+                Version currentVersion = new Version(lbAppVersion.Text);
+                if (netVersion > currentVersion)
                 {
                     gbUpdate.Visible = true;
                     lbUpdateDetail.Text = describe;

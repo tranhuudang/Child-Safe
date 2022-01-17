@@ -746,6 +746,9 @@
   <data name="&gt;&gt;btMenu.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <metadata name="lbAppVersion.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="lbAppVersion.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 18</value>
   </data>
@@ -756,7 +759,7 @@
     <value>15</value>
   </data>
   <data name="lbAppVersion.Text" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;lbAppVersion.Name" xml:space="preserve">
     <value>lbAppVersion</value>
@@ -811,9 +814,6 @@
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Current app version</value>
-  </data>
-  <data name="groupBox1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
