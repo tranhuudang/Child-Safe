@@ -41,6 +41,7 @@ namespace ChildSafe
             }
             this.Controls.Clear();
             InitializeComponent();
+            lbVersion.Text = Application.ProductVersion.ToString();
         }
     }
 }

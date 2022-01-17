@@ -29,93 +29,109 @@ namespace ChildSafe
         string onDutyFilters = "OnDuty";
         string defaultChildSafeBaseFilter = "ChildSafeBaseFilter";
         string defaultChildSafeBaseFilter_Url = "https://raw.githubusercontent.com/zeroclubvn/Vietnamese-Trash-Websites-Filter/main/adult_websites";
+        private void disableProtect()
+        {
+            // safely clear the block list without delete the file
+            FileStream fileStream = File.Open(host, FileMode.Open); fileStream.SetLength(0);
+            fileStream.Close();
+            // change visual
+            btStart.Text = "START";
+            pictureMainHall.Image = Properties.Resources.danger_256;
+            // change protected state
+            Properties.Settings.Default["protectEnable"] = false;
+            btStart.Enabled = true;
+        }
+        private void enableProtect()
+        {
+            panelLoading.Visible = true;
+            // in options we have the oppotunity to add more filter to the block list, all fillter with be combined in OnDuty file. 
+            // if user don't use option feature, application will look for ChildSafeBaseFilter which is the default filter of this program.
+            // ChildSafeBaseFilter is downloaded when the app is openning and connecting to internet.
+            if (File.Exists(onDutyFilters))
+            {
+                string[] list2Block = File.ReadAllText(onDutyFilters).Split('\n');
+                progressBar1.Maximum = list2Block.Length;
+                progressBar1.Value = 0;
+                using (StreamWriter writetext = new StreamWriter(host))
+                {
+                    foreach (string line in list2Block)
+                    {
+                        if (line.StartsWith("#") || line.StartsWith("::") || line.StartsWith("fe80") || line == "")
+                        {
+
+                        }
+                        else if (line.StartsWith("0.0.0.0") || line.StartsWith("127.0.0.1"))
+                        {
+                            writetext.WriteLine(line);
+                        }
+                        else
+                        {
+                            writetext.WriteLine("127.0.0.1 " + line);
+
+                        }
+                        progressBar1.Value++;
+                    }
+                    writetext.Close();
+                }
+
+                lbLoadingStatus.Text = "Completed";
+                panelLoading.Visible = false;
+                btStart.Enabled = true;
+            }
+            // we use default filter instead in case no option filter is added
+            else if (File.Exists(defaultChildSafeBaseFilter))
+            {
+                string[] list2Block = File.ReadAllText(defaultChildSafeBaseFilter).Split('\n');
+                progressBar1.Maximum = list2Block.Length;
+                progressBar1.Value = 0;
+
+                using (StreamWriter writetext = new StreamWriter(host))
+                {
+                    foreach (string line in list2Block)
+                    {
+                        writetext.WriteLine("127.0.0.0 " + line);
+                        progressBar1.Value++;
+                    }
+                    writetext.Close();
+
+                }
+                lbLoadingStatus.Text = "Completed";
+                panelLoading.Visible = false;
+                btStart.Enabled = true;
+            }
+            // change the visual
+            btStart.Text = "STOP";
+            pictureMainHall.Image = Properties.Resources.check_blue_256;
+            // change protected state
+            Properties.Settings.Default["protectEnable"] = true;
+        }
         private void btStart_Click(object sender, EventArgs e)
         {
             btStart.Enabled = false;
             if (Properties.Settings.Default["protectEnable"].ToString() == "True")
             {
-
-                // safely clear the block list without delete the file
-                FileStream fileStream = File.Open(host, FileMode.Open); fileStream.SetLength(0);
-                fileStream.Close();
-                // change visual
-                btStart.Text = "START";
-                pictureMainHall.Image = Properties.Resources.danger_256;
-                // change protected state
-                Properties.Settings.Default["protectEnable"] = false;
-                btStart.Enabled = true;
+                disableProtect();
             }
             else
             {
-                panelLoading.Visible = true;
-                // in options we have the oppotunity to add more filter to the block list, all fillter with be combined in OnDuty file. 
-                // if user don't use option feature, application will look for ChildSafeBaseFilter which is the default filter of this program.
-                // ChildSafeBaseFilter is downloaded when the app is openning and connecting to internet.
-                if (File.Exists(onDutyFilters))
-                {
-                    string[] list2Block = File.ReadAllText(onDutyFilters).Split('\n');
-                    progressBar1.Maximum = list2Block.Length;
-                    progressBar1.Value = 0;
-                    using (StreamWriter writetext = new StreamWriter(host))
-                    {
-                        foreach (string line in list2Block)
-                        {
-                            if (line.StartsWith("#") || line.StartsWith("::") || line.StartsWith("fe80") || line == "")
-                            {
-
-                            }
-                            else if (line.StartsWith("0.0.0.0") || line.StartsWith("127.0.0.1"))
-                            {
-                                writetext.WriteLine(line);
-                            }
-                            else
-                            {
-                                writetext.WriteLine("127.0.0.1 " + line);
-
-                            }
-                            progressBar1.Value++;
-                        }
-                        writetext.Close();
-                    }
-
-                    lbLoadingStatus.Text = "Completed";
-                    panelLoading.Visible = false;
-                    btStart.Enabled = true;
-                }
-                // we use default filter instead in case no option filter is added
-                else if (File.Exists(defaultChildSafeBaseFilter))
-                {
-                    string[] list2Block = File.ReadAllText(defaultChildSafeBaseFilter).Split('\n');
-                    progressBar1.Maximum = list2Block.Length;
-                    progressBar1.Value = 0;
-
-                    using (StreamWriter writetext = new StreamWriter(host))
-                    {
-                        foreach (string line in list2Block)
-                        {
-                            writetext.WriteLine("127.0.0.0 " + line);
-                            progressBar1.Value++;
-                        }
-                        writetext.Close();
-
-                    }
-                    lbLoadingStatus.Text = "Completed";
-                    panelLoading.Visible = false;
-                    btStart.Enabled = true;
-                }
-                // change the visual
-                btStart.Text = "STOP";
-                pictureMainHall.Image = Properties.Resources.check_blue_256;
-                // change protected state
-                Properties.Settings.Default["protectEnable"] = true;
+                enableProtect();
             }
             Properties.Settings.Default.Save();
         }
 
         private void options_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            // auto refresh filter data after save modifications in filter options
             blockOptions optionsForm = new blockOptions();
-            optionsForm.ShowDialog();
+            if (optionsForm.ShowDialog() == DialogResult.OK)
+            {
+                if (Properties.Settings.Default["protectEnable"].ToString() == "True")
+                {
+                    btStart.Enabled = false;
+                    refresh.Enabled = true;
+                }
+            }
+
         }
 
         private void btMenu_Click(object sender, EventArgs e)
@@ -127,10 +143,10 @@ namespace ChildSafe
         {
             // Generate new text quote for every 5 seconds.
             promoteQuote newQuote = new promoteQuote();
-            if (Properties.Settings.Default["language"].ToString()=="English")
-            lbPromote.Text = newQuote.getRandomQuote("en-US");
+            if (Properties.Settings.Default["language"].ToString() == "English")
+                lbPromote.Text = newQuote.getRandomQuote("en-US");
             else
-            lbPromote.Text = newQuote.getRandomQuote("vi-VI");
+                lbPromote.Text = newQuote.getRandomQuote("vi-VI");
 
 
         }
@@ -247,7 +263,7 @@ namespace ChildSafe
 
         private void vietnamseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi-VI");
             Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("vi-VI");
 
@@ -276,7 +292,8 @@ namespace ChildSafe
         }
         void downloadSetup_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
         {
-            this.BeginInvoke((MethodInvoker)delegate {
+            this.BeginInvoke((MethodInvoker)delegate
+            {
 
                 if (File.Exists("ChildSafe_Setup.msi"))
                 {
@@ -318,7 +335,19 @@ namespace ChildSafe
                 MessageBox.Show("Can't connect to the internet!");
                 throw;
             }
-            
+
+        }
+
+        private void refresh_Tick(object sender, EventArgs e)
+        {
+            if(refresh.Tag.ToString()== "DisableProtect_OK")
+            {
+                refresh.Enabled = false;
+                // now enable protect again after 2 second
+                enableProtect();
+            }
+            disableProtect();
+            refresh.Tag = "DisableProtect_OK";
         }
     }
 }

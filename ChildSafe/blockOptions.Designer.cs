@@ -172,6 +172,7 @@ namespace ChildSafe
             // 
             // btSave
             // 
+            this.btSave.DialogResult = System.Windows.Forms.DialogResult.OK;
             resources.ApplyResources(this.btSave, "btSave");
             this.btSave.Name = "btSave";
             this.btSave.UseVisualStyleBackColor = true;
