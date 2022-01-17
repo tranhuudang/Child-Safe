@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChildSafe", "ChildSafe\Chil
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ChildSafe_Setup", "ChildSafe_Setup\ChildSafe_Setup.vdproj", "{8BA2B494-DA68-4D3D-ADFE-A93606A8086B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChildSafeUpdater", "ChildSafeUpdater\ChildSafeUpdater.csproj", "{A0686A46-AC94-409D-9B20-E12BD1BDFF0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{59FD0073-88F8-43EC-9CC6-F07E6F647C89}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8BA2B494-DA68-4D3D-ADFE-A93606A8086B}.Debug|Any CPU.ActiveCfg = Debug
 		{8BA2B494-DA68-4D3D-ADFE-A93606A8086B}.Release|Any CPU.ActiveCfg = Release
+		{A0686A46-AC94-409D-9B20-E12BD1BDFF0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0686A46-AC94-409D-9B20-E12BD1BDFF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0686A46-AC94-409D-9B20-E12BD1BDFF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0686A46-AC94-409D-9B20-E12BD1BDFF0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

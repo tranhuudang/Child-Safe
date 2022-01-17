@@ -191,6 +191,7 @@ namespace ChildSafe
             }
             );
             downloadDefaultFilter.Start();
+            this.Text += " - "+ lbAppVersion.Text;
         }
 
 
@@ -278,7 +279,7 @@ namespace ChildSafe
                 {
                     if(MessageBox.Show("Download completed, do you want to process update now?","Update",MessageBoxButtons.YesNo,MessageBoxIcon.Question)== DialogResult.Yes)
                     {
-                        Process.Start("ChildSafe_Setup.msi");
+                        Process.Start("ChildSafeUpdater.exe");
                         this.Close();
                     }
                 }
