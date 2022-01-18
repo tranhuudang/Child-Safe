@@ -34,13 +34,13 @@
         "Entry"
         {
         "MsmKey" = "8:_6F6AC5AA0E6C9CD1225B34E4DD9CD1F7"
-        "OwnerKey" = "8:_677217069C0A42A684D5902FADC59CDE"
+        "OwnerKey" = "8:_010DA4405C2E44B0BD4D1CA450AAF976"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_6F6AC5AA0E6C9CD1225B34E4DD9CD1F7"
-        "OwnerKey" = "8:_010DA4405C2E44B0BD4D1CA450AAF976"
+        "OwnerKey" = "8:_677217069C0A42A684D5902FADC59CDE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -86,6 +86,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -110,6 +118,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -247,15 +263,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Child Safe"
-        "ProductCode" = "8:{83FAA5EA-5207-4DEC-BE2F-1BA21771695B}"
-        "PackageCode" = "8:{E5B0062E-4E6F-454E-9969-DA9DB450F70C}"
+        "ProductCode" = "8:{4C3F5474-C040-407E-9223-21277304790E}"
+        "PackageCode" = "8:{872D6569-76F3-4DFC-8E43-9BDF78816A0E}"
         "UpgradeCode" = "8:{B70E807B-32C9-4425-ADF0-2377302689B5}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:3.0.2"
+        "ProductVersion" = "8:3.0.3"
         "Manufacturer" = "8:Zeroclub"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://github.com/zeroclubvn/ChildSafe_Project_X15"
