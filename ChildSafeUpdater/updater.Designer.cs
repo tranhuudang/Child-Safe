@@ -35,7 +35,6 @@ namespace ChildSafeUpdater
             this.lbUpdate = new System.Windows.Forms.Label();
             this.clearFile = new System.Windows.Forms.Timer(this.components);
             this.startInstall = new System.Windows.Forms.Timer(this.components);
-            this.statusChecking = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,12 +68,6 @@ namespace ChildSafeUpdater
             this.startInstall.Interval = 2000;
             this.startInstall.Tick += new System.EventHandler(this.startInstall_Tick);
             // 
-            // statusChecking
-            // 
-            this.statusChecking.Enabled = true;
-            this.statusChecking.Interval = 1000;
-            this.statusChecking.Tick += new System.EventHandler(this.statusChecking_Tick);
-            // 
             // updater
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -99,7 +92,6 @@ namespace ChildSafeUpdater
         private System.Windows.Forms.Label lbUpdate;
         private System.Windows.Forms.Timer clearFile;
         private System.Windows.Forms.Timer startInstall;
-        private System.Windows.Forms.Timer statusChecking;
     }
 }
 

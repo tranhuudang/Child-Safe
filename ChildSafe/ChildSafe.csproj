@@ -108,6 +108,7 @@
     </Compile>
     <Content Include="childSafe.ico" />
     <None Include="Resources\refresh_icon_32.png" />
+    <None Include="Resources\check_blue_128.png" />
     <Content Include="updateInfo.xml" />
     <None Include="Resources\5172979_web_option_security_gear_engine_internet_setting.png" />
     <None Include="Resources\5172958_security_communication_comment_talk_internet_chat_message.png" />

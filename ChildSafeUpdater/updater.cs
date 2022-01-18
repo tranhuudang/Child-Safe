@@ -61,15 +61,8 @@ namespace ChildSafeUpdater
         {
             startInstall.Enabled = false;
             Process.Start("ChildSafe_Setup.msi");
-            
+            this.Close();
         }
 
-        private void statusChecking_Tick(object sender, EventArgs e)
-        {
-            if (File.Exists("ChildSafe.exe"))
-            {
-                this.Close();
-            }
-        }
     }
 }

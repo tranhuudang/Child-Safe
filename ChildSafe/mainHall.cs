@@ -36,7 +36,7 @@ namespace ChildSafe
             fileStream.Close();
             // change visual
             btStart.Text = "START";
-            pictureMainHall.Image = Properties.Resources.danger_256;
+            pictureMainHall.Image = Properties.Resources.danger_128;
             // change protected state
             Properties.Settings.Default["protectEnable"] = false;
             btStart.Enabled = true;
@@ -102,7 +102,7 @@ namespace ChildSafe
             }
             // change the visual
             btStart.Text = "STOP";
-            pictureMainHall.Image = Properties.Resources.check_blue_256;
+            pictureMainHall.Image = Properties.Resources.check_blue_128;
             // change protected state
             Properties.Settings.Default["protectEnable"] = true;
         }
@@ -193,12 +193,12 @@ namespace ChildSafe
             // load protection state
             if (Properties.Settings.Default["protectEnable"].ToString() == "True")
             {
-                pictureMainHall.Image = Properties.Resources.check_blue_256;
+                pictureMainHall.Image = Properties.Resources.check_blue_128;
                 btStart.Text = "STOP";
             }
             else
             {
-                pictureMainHall.Image = Properties.Resources.danger_256;
+                pictureMainHall.Image = Properties.Resources.danger_128;
                 btStart.Text = "START";
             }
             // download default filter for child safe
@@ -340,14 +340,19 @@ namespace ChildSafe
 
         private void refresh_Tick(object sender, EventArgs e)
         {
-            if(refresh.Tag.ToString()== "DisableProtect_OK")
+            if (refresh.Tag != null)
             {
                 refresh.Enabled = false;
                 // now enable protect again after 2 second
                 enableProtect();
+                refresh.Tag = null;
             }
-            disableProtect();
-            refresh.Tag = "DisableProtect_OK";
+            else
+            {
+
+                disableProtect();
+                refresh.Tag = "DisableProtect_OK";
+            }
         }
     }
 }

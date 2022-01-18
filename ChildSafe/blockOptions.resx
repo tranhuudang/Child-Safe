@@ -312,7 +312,7 @@
     <value>9, 48</value>
   </data>
   <data name="tbBlacklist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>753, 203</value>
+    <value>753, 148</value>
   </data>
   <data name="tbBlacklist.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -337,7 +337,7 @@
     <value>0, 0</value>
   </data>
   <data name="groupBlacklist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>772, 257</value>
+    <value>772, 202</value>
   </data>
   <data name="groupBlacklist.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -459,11 +459,14 @@
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="lbDetails.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="lbDetails.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 18</value>
   </data>
   <data name="lbDetails.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 167</value>
+    <value>186, 225</value>
   </data>
   <data name="lbDetails.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -486,10 +489,10 @@ Add more  filters to block more kind of risky contents on the Internet.
     <value>0</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>567, 66</value>
+    <value>570, 66</value>
   </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 188</value>
+    <value>192, 246</value>
   </data>
   <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -534,7 +537,7 @@ Add more  filters to block more kind of risky contents on the Internet.
     <value>3, 18</value>
   </data>
   <data name="listOnDutyFilters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>540, 167</value>
+    <value>543, 228</value>
   </data>
   <data name="listOnDutyFilters.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -555,7 +558,7 @@ Add more  filters to block more kind of risky contents on the Internet.
     <value>15, 66</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>546, 188</value>
+    <value>549, 249</value>
   </data>
   <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -678,10 +681,10 @@ Add more  filters to block more kind of risky contents on the Internet.
     <value>Top</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 257</value>
+    <value>0, 202</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>772, 261</value>
+    <value>772, 321</value>
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>

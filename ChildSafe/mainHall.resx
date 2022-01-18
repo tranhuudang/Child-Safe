@@ -119,17 +119,17 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lbPromote.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 15.75pt</value>
+    <value>Segoe UI, 13pt</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lbPromote.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lbPromote.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 39</value>
+    <value>12, 43</value>
   </data>
   <data name="lbPromote.Size" type="System.Drawing.Size, System.Drawing">
-    <value>936, 79</value>
+    <value>748, 82</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lbPromote.TabIndex" type="System.Int32, mscorlib">
@@ -151,16 +151,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbPromote.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="btStart.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>410, 383</value>
+    <value>349, 286</value>
   </data>
   <data name="btStart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 40</value>
+    <value>91, 29</value>
   </data>
   <data name="btStart.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -178,7 +178,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btStart.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <metadata name="contextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -220,13 +220,13 @@
     <value>Vietnamse</value>
   </data>
   <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
     <value>Language</value>
   </data>
   <data name="autoupdateFilterToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="autoupdateFilterToolStripMenuItem.Text" xml:space="preserve">
     <value>Auto-update filter</value>
@@ -280,17 +280,16 @@
     <value>NoControl</value>
   </data>
   <data name="lbNotice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 512</value>
+    <value>76, 415</value>
   </data>
   <data name="lbNotice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>866, 64</value>
+    <value>684, 64</value>
   </data>
   <data name="lbNotice.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
   <data name="lbNotice.Text" xml:space="preserve">
-    <value>*this process will monitor your internet to fill out all unapproriate contents. It is required to access your local permisstions to write and read file. If you encouter errors during the procedure, it's likely to happen because the permission required to run this program is not met. Please try to run the application again by right click and choose Run as administrator. 
-**we make sure to not collect or use any of your personal data.
+    <value>*this process will monitor your internet to fill out all unapproriate contents. It is required to access your local permisstions to write and read file. If you encouter errors during the procedure, it's likely to happen because the permission required to run this program is not met. Please try to run the application again by right click and choose Run as administrator.
 </value>
   </data>
   <data name="&gt;&gt;lbNotice.Name" xml:space="preserve">
@@ -303,13 +302,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbNotice.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="saparator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="saparator.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 497</value>
+    <value>4, 403</value>
   </data>
   <data name="saparator.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>10000, 2</value>
@@ -318,7 +317,7 @@
     <value>20, 2</value>
   </data>
   <data name="saparator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>936, 2</value>
+    <value>779, 2</value>
   </data>
   <data name="saparator.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -333,16 +332,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;saparator.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="progressBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 19</value>
+    <value>3, 19</value>
   </data>
   <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>936, 10</value>
+    <value>746, 10</value>
   </data>
   <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -366,7 +365,7 @@
     <value>NoControl</value>
   </data>
   <data name="options.Location" type="System.Drawing.Point, System.Drawing">
-    <value>445, 426</value>
+    <value>370, 318</value>
   </data>
   <data name="options.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 13</value>
@@ -387,7 +386,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;options.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="lbLoadingStatus.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -423,10 +422,10 @@
     <value>141, 17</value>
   </metadata>
   <data name="panelLoading.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 452</value>
+    <value>8, 346</value>
   </data>
   <data name="panelLoading.Size" type="System.Drawing.Size, System.Drawing">
-    <value>950, 45</value>
+    <value>752, 45</value>
   </data>
   <data name="panelLoading.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -444,16 +443,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelLoading.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
-  <metadata name="gbUpdate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="btIgnore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btIgnore.Location" type="System.Drawing.Point, System.Drawing">
-    <value>227, 112</value>
+    <value>207, 91</value>
   </data>
   <data name="btIgnore.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -480,7 +476,7 @@
     <value>NoControl</value>
   </data>
   <data name="btDownload.Location" type="System.Drawing.Point, System.Drawing">
-    <value>146, 112</value>
+    <value>126, 91</value>
   </data>
   <data name="btDownload.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -537,7 +533,7 @@
     <value>60, 37</value>
   </data>
   <data name="lbUpdateDetail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 72</value>
+    <value>222, 51</value>
   </data>
   <data name="lbUpdateDetail.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -588,10 +584,10 @@
     <value>4</value>
   </data>
   <data name="gbUpdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>640, 298</value>
+    <value>472, 195</value>
   </data>
   <data name="gbUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>308, 141</value>
+    <value>288, 120</value>
   </data>
   <data name="gbUpdate.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -609,40 +605,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;gbUpdate.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btRefresh.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btRefresh.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btRefresh.Location" type="System.Drawing.Point, System.Drawing">
-    <value>536, 383</value>
-  </data>
-  <data name="btRefresh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 40</value>
-  </data>
-  <data name="btRefresh.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;btRefresh.Name" xml:space="preserve">
-    <value>btRefresh</value>
-  </data>
-  <data name="&gt;&gt;btRefresh.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btRefresh.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btRefresh.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="refresh.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>255, 17</value>
+  </metadata>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 512</value>
+    <value>6, 415</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
@@ -663,16 +635,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="pictureMainHall.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="pictureMainHall.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 121</value>
+    <value>330, 137</value>
   </data>
   <data name="pictureMainHall.Size" type="System.Drawing.Size, System.Drawing">
-    <value>256, 256</value>
+    <value>128, 128</value>
   </data>
   <data name="pictureMainHall.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
@@ -690,13 +662,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureMainHall.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="btMenu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>924, 12</value>
+    <value>736, 12</value>
   </data>
   <data name="btMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
@@ -717,11 +689,8 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btMenu.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>9</value>
   </data>
-  <metadata name="refresh.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>255, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -729,7 +698,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>960, 585</value>
+    <value>772, 488</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt</value>
@@ -2481,6 +2450,9 @@
         AQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAwAMAAPw/AAD//wAA
 </value>
   </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -2553,12 +2525,6 @@
   <data name="&gt;&gt;checkForUpdateToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;githubToolStripMenuItem.Name" xml:space="preserve">
-    <value>githubToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;githubToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;sendFeedbackToolStripMenuItem.Name" xml:space="preserve">
     <value>sendFeedbackToolStripMenuItem</value>
   </data>
@@ -2571,12 +2537,6 @@
   <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
-    <value>aboutToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;timerQuote.Name" xml:space="preserve">
     <value>timerQuote</value>
   </data>
@@ -2588,6 +2548,18 @@
   </data>
   <data name="&gt;&gt;refresh.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;githubToolStripMenuItem.Name" xml:space="preserve">
+    <value>githubToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;githubToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
+    <value>aboutToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>mainHall</value>
