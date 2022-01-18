@@ -45,8 +45,10 @@ namespace ChildSafe
             this.autoupdateFilterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.checkForUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sendFeedbackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lbNotice = new System.Windows.Forms.Label();
             this.saparator = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -57,23 +59,17 @@ namespace ChildSafe
             this.gbUpdate = new System.Windows.Forms.GroupBox();
             this.btIgnore = new System.Windows.Forms.Button();
             this.btDownload = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lbUpdateDetail = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lbAppVersion = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.btRefresh = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureMainHall = new System.Windows.Forms.PictureBox();
             this.btMenu = new System.Windows.Forms.PictureBox();
-            this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refresh = new System.Windows.Forms.Timer(this.components);
             this.contextMenu.SuspendLayout();
             this.panelLoading.SuspendLayout();
             this.gbUpdate.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMainHall)).BeginInit();
@@ -179,6 +175,13 @@ namespace ChildSafe
             resources.ApplyResources(this.checkForUpdateToolStripMenuItem, "checkForUpdateToolStripMenuItem");
             this.checkForUpdateToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdateToolStripMenuItem_Click);
             // 
+            // githubToolStripMenuItem
+            // 
+            this.githubToolStripMenuItem.Image = global::ChildSafe.Properties.Resources.github_20;
+            this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
+            resources.ApplyResources(this.githubToolStripMenuItem, "githubToolStripMenuItem");
+            this.githubToolStripMenuItem.Click += new System.EventHandler(this.githubToolStripMenuItem_Click);
+            // 
             // sendFeedbackToolStripMenuItem
             // 
             this.sendFeedbackToolStripMenuItem.Name = "sendFeedbackToolStripMenuItem";
@@ -189,6 +192,13 @@ namespace ChildSafe
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Image = global::ChildSafe.Properties.Resources.info_20;
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // lbNotice
             // 
@@ -258,6 +268,13 @@ namespace ChildSafe
             this.btDownload.UseVisualStyleBackColor = true;
             this.btDownload.Click += new System.EventHandler(this.btDownload_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ChildSafe.Properties.Resources._5172958_security_communication_comment_talk_internet_chat_message;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
             // lbUpdateDetail
             // 
             resources.ApplyResources(this.lbUpdateDetail, "lbUpdateDetail");
@@ -268,38 +285,12 @@ namespace ChildSafe
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // lbAppVersion
-            // 
-            resources.ApplyResources(this.lbAppVersion, "lbAppVersion");
-            this.lbAppVersion.Name = "lbAppVersion";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.lbAppVersion);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
             // btRefresh
             // 
-            this.btRefresh.Image = global::ChildSafe.Properties.Resources.refresh_icon_32;
             resources.ApplyResources(this.btRefresh, "btRefresh");
+            this.btRefresh.Image = global::ChildSafe.Properties.Resources.refresh_icon_32;
             this.btRefresh.Name = "btRefresh";
             this.btRefresh.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::ChildSafe.Properties.Resources._5172958_security_communication_comment_talk_internet_chat_message;
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -324,20 +315,6 @@ namespace ChildSafe
             this.btMenu.TabStop = false;
             this.btMenu.Click += new System.EventHandler(this.btMenu_Click);
             // 
-            // githubToolStripMenuItem
-            // 
-            this.githubToolStripMenuItem.Image = global::ChildSafe.Properties.Resources.github_20;
-            this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
-            resources.ApplyResources(this.githubToolStripMenuItem, "githubToolStripMenuItem");
-            this.githubToolStripMenuItem.Click += new System.EventHandler(this.githubToolStripMenuItem_Click);
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Image = global::ChildSafe.Properties.Resources.info_20;
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
             // refresh
             // 
             this.refresh.Interval = 2000;
@@ -348,7 +325,6 @@ namespace ChildSafe
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btRefresh);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbUpdate);
             this.Controls.Add(this.panelLoading);
             this.Controls.Add(this.pictureBox1);
@@ -367,7 +343,6 @@ namespace ChildSafe
             this.panelLoading.PerformLayout();
             this.gbUpdate.ResumeLayout(false);
             this.gbUpdate.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMainHall)).EndInit();
@@ -413,9 +388,6 @@ namespace ChildSafe
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btIgnore;
         private System.Windows.Forms.Button btDownload;
-        private System.Windows.Forms.Label lbAppVersion;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btRefresh;
         private System.Windows.Forms.Timer refresh;
     }

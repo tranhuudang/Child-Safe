@@ -73,7 +73,8 @@ namespace ChildSafe
                     }
                     writetext.Close();
                 }
-
+                // delete onDuty file after finish using it
+                File.Delete(onDutyFilters);
                 lbLoadingStatus.Text = "Completed";
                 panelLoading.Visible = false;
                 btStart.Enabled = true;
@@ -210,7 +211,6 @@ namespace ChildSafe
             downloadDefaultFilter.Start();
             Version version = Assembly.GetExecutingAssembly().GetName().Version;
             this.Text += " v" + version.Major;
-            lbAppVersion.Text = version.ToString();
         }
 
 
@@ -319,7 +319,7 @@ namespace ChildSafe
                 Version netVersion = new Version(updateFile.SelectSingleNode("//currentVersion/version").InnerText);
                 string describe = updateFile.SelectSingleNode("//currentVersion/describe").InnerText;
                 string linkSetup = updateFile.SelectSingleNode("//path").InnerText;
-                Version currentVersion = new Version(lbAppVersion.Text);
+                Version currentVersion = Assembly.GetExecutingAssembly().GetName().Version;
                 if (netVersion > currentVersion)
                 {
                     gbUpdate.Visible = true;

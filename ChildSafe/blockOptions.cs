@@ -24,7 +24,7 @@ namespace ChildSafe
             if (txUrl2AddBlackList.Text.Length > 5)
             {
                 tbBlacklist.Rows.Add(txUrl2AddBlackList.Text);
-                File.AppendAllText("BlackList", txUrl2AddBlackList.Text);
+                File.AppendAllText("BlackList", txUrl2AddBlackList.Text+"\n");
                 txUrl2AddBlackList.Text = null;
 
             }
