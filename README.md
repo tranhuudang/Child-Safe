@@ -6,7 +6,8 @@ I'm happy 🎉🎉 that I'm finally can create an app that protect us from toxic
 Chương trình chặn quảng cáo và trang web đen, web bẩn và những thể loại trang web độc hại khác cho người Việt! 🚩
 #
 [LASTEST VERSION] \
-⬇️ DOWNLOAD : [GitHub](https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/Setup/ChildSafe_Setup.msi)
+⬇️ Child Safe MSI Setup : [Download](https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/Setup/ChildSafe_Setup.msi) \
+UPDATE HISTORY: [Release](https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/Release.txt) \
 #
 Rất mong nhận được sự ủng hộ từ mọi người, bạn có thể chung tay cùng phát triển bằng cách report những trang web độc hại về địa chỉ này trong phần Discussions hoặc Issues 💕🎊. \
 Về những thắc mắc hoặc góp ý khác cho ứng dụng vui lòng liên hệ quản lí dự án [Dang Tran Huu](mailto:tranhuudang127@gmail.com) hoặc tin nhắn qua Zalo: 0843909394 \
