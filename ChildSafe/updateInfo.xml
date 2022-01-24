@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ChildSafe>
 	<currentVersion>
-		<version>3.0.0.5</version>
-		<describe>Bugs fix and improvements</describe>
+		<version>3.1.0.0</version>
+		<describe>
+			* Fix mis-infomation of filter when click on downloaded filter
+			* Other minor bugs fix and improvements
+		</describe>
 	</currentVersion>
 	<path>https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/setup.exe</path>
 </ChildSafe>

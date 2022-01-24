@@ -14,6 +14,7 @@ namespace ChildSafe
 {
     public partial class blockOptions : Form
     {
+        
         public blockOptions()
         {
             InitializeComponent();
@@ -98,8 +99,7 @@ namespace ChildSafe
         {
             this.Close();
         }
-        string downloadedFiltersFolder = "FilterBase";
-        string onDutyFilters = "OnDuty";
+        
         private void blockOptions_Load(object sender, EventArgs e)
         {
             
@@ -158,17 +158,8 @@ namespace ChildSafe
         }
         void loadDownloadedFilter()
         {
-            cbDownloadedFiltersList.Items.Clear();
-            // get all the file name in BaseFilter folder and put it in combobox list downloaded filters
-            if (Directory.Exists(downloadedFiltersFolder))
-            {
-                string[] downloadedFilters = Directory.GetFiles(downloadedFiltersFolder);
-                foreach (string file in downloadedFilters)
-                {
-                    string filterName = file.Substring(file.LastIndexOf('\\') + 1).Replace('_', ' ');
-                    cbDownloadedFiltersList.Items.Add(filterName);
-                }
-            }
+            FilterBox filterbox = new FilterBox();
+            cbDownloadedFiltersList.DataSource= filterbox.getDownloadedFilter();
         }
 
         private void cbDownloadedFiltersList_SelectedIndexChanged(object sender, EventArgs e)
@@ -200,18 +191,8 @@ namespace ChildSafe
             Properties.Settings.Default["listOnDutyFilters"] = stringFilters;
             // read all text in chose filter and copy its contents to one file name OnDuty
             // when we back to home and hit start, app will looking for OnDuty file to move all web to hosts
-            foreach (string filterName in listOnDutyFilters.Items)
-            {
-
-                string filterContents = File.ReadAllText(downloadedFiltersFolder + "\\" + filterName.Replace(' ', '_'));
-                File.AppendAllText(onDutyFilters, filterContents);
-            }
-            // add blacklist content to OnDuty file
-            if (File.Exists("Blacklist"))
-            {
-                string blackList = File.ReadAllText("Blacklist");
-                File.AppendAllText(onDutyFilters, blackList);
-            }
+            FilterBox filterbox = new FilterBox();
+            filterbox.sendToPendingList(listOnDutyFilters);
             // save all current settings
             Properties.Settings.Default.Save();
             this.Close();
@@ -221,35 +202,11 @@ namespace ChildSafe
         {
             listOnDutyFilters.Items.RemoveAt(listOnDutyFilters.SelectedIndex);
         }
-        string fileFilterUpdate = "FilterBaseUpdate";
+        
         private void listOnDutyFilters_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // open file
-            if (File.Exists(fileFilterUpdate))
-            {
-                // fomular of a custom panel
-
-                // read from file the collection of all available filter
-                string[] contents = File.ReadAllText(fileFilterUpdate).Split('@');
-                foreach (string content in contents)
-                {
-
-                    if (content.Contains(">" + listOnDutyFilters.SelectedItem.ToString()))
-                    {
-                        string[] filter = content.Split('>');
-                        string name = filter[1];
-                        string description = filter[2];
-                        string linkFile = filter[3];
-                        string update = filter[4];
-                        string licence = filter[5];
-                        lbDetails.Text = "Name: " + name + "\n"
-                            + "Description: " + description + "\n"
-                            + "Update: " + update + "\n"
-                            + "Licence: " + licence;
-                    }
-
-                }
-            }
+            FilterBox filterbox = new FilterBox();
+            lbDetails.Text = filterbox.getDownloadedFilterInfo(listOnDutyFilters.SelectedItem.ToString());
         }
 
         private void btDisable_Click(object sender, EventArgs e)

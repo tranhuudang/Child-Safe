@@ -104,27 +104,19 @@ namespace ChildSafe
             //download list filter
             try
             {
-                // read from file the collection of all available filter in a xml file then fetch it in flowlist
-                XmlDocument filters = new XmlDocument();
-                filters.Load("https://raw.githubusercontent.com/zeroclubvn/Host-Filters-Collection/main/Host-Filters-Collection.xml");
-                XmlNodeList nodes = filters.GetElementsByTagName("filter");
-                foreach (XmlNode note in nodes)
+                FilterBox filterbox = new FilterBox();
+                foreach (Filter item in filterbox.getOnlineListFilter())
                 {
-                    string name = note["name"].InnerText;
-                    string description = note["description"].InnerText;
-                    string linkFile = note["path"].InnerText;
-                    string update = note["update"].InnerText;
-                    string licence = note["licence"].InnerText;
-                    // add filters and it's description in to flowlayout list
-                    flowLayoutSet.Controls.Add(newControl(name, description, linkFile, update, licence));
+                    flowLayoutSet.Controls.Add(newControl(item.Name, item.Description,item.LinkFile,item.Update,item.Licence));
                 }
                 lbUpdateTime.Text = DateTime.Now.ToString();
             }
             catch (Exception)
             {
-                lbUpdateTime.Text = "Can't fetch online data !";
+
                 throw;
             }
+            
         }
         // a really helpful function to get rid of special charactors in a string
         public static string RemoveSpecialCharacters(string str)

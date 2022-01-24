@@ -85,6 +85,9 @@
     <Compile Include="about.Designer.cs">
       <DependentUpon>about.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChildSafeAsset.cs" />
+    <Compile Include="Filter.cs" />
+    <Compile Include="FilterBox.cs" />
     <Compile Include="filterBrowsing.cs">
       <SubType>Form</SubType>
     </Compile>
