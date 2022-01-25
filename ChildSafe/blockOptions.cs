@@ -118,6 +118,16 @@ namespace ChildSafe
             }
             this.Controls.Clear();
             InitializeComponent();
+            // change static text language
+            switch (Properties.Settings.Default["language"].ToString())
+            {
+                case "English":
+                    removeToolStripMenuItem.Text = "Remove";
+                    break;
+                case "Tiếng Việt":
+                    removeToolStripMenuItem.Text = "Gỡ bỏ";
+                    break;
+            }
             // load up current active filter
             string[] filters = Properties.Settings.Default["listOnDutyFilters"].ToString().Split('>');
             if (filters.Length != 0)
@@ -129,15 +139,32 @@ namespace ChildSafe
             // check state of blacklist in setting to whether or not it's enable
             if (Properties.Settings.Default["blackListEnable"].ToString() == "True")
             {
-                btDisable.Text = "Disable";
+                
                 pnControlBlacklist.Enabled = true;
                 tbBlacklist.Enabled = true;
+                switch (Properties.Settings.Default["language"].ToString())
+                {
+                    case "English":
+                        btDisable.Text = "Disable";
+                        break;
+                    case "Tiếng Việt":
+                        btDisable.Text = "Vô hiệu";
+                        break;
+                }
             }
             else
             {
-                btDisable.Text = "Enable";
                 pnControlBlacklist.Enabled = false;
                 tbBlacklist.Enabled = false;
+                switch (Properties.Settings.Default["language"].ToString())
+                {
+                    case "English":
+                        btDisable.Text = "Enable";
+                        break;
+                    case "Tiếng Việt":
+                        btDisable.Text = "Kích hoạt";
+                        break;
+                }
             }
             //
             loadBlacklist();
@@ -211,9 +238,18 @@ namespace ChildSafe
 
         private void btDisable_Click(object sender, EventArgs e)
         {
+              
             if (Properties.Settings.Default["blackListEnable"].ToString()=="True")
             {
-                btDisable.Text = "Disable";
+                switch (Properties.Settings.Default["language"].ToString())
+                {
+                    case "English":
+                        btDisable.Text = "Disable";
+                        break;
+                    case "Tiếng Việt":
+                        btDisable.Text = "Vô hiệu";
+                        break;
+                }
                 Properties.Settings.Default["blackListEnable"] = false;
                 pnControlBlacklist.Enabled = true;
                 tbBlacklist.Enabled = true;
@@ -222,7 +258,15 @@ namespace ChildSafe
             }
             else
             {
-                btDisable.Text = "Enable";
+                switch (Properties.Settings.Default["language"].ToString())
+                {
+                    case "English":
+                        btDisable.Text = "Enable";
+                        break;
+                    case "Tiếng Việt":
+                        btDisable.Text = "Kích hoạt";
+                        break;
+                }
                 Properties.Settings.Default["blackListEnable"] = true;
                 pnControlBlacklist.Enabled = false;
                 tbBlacklist.Enabled = false;

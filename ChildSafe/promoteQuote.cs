@@ -2,7 +2,7 @@
 
 namespace ChildSafe
 {
-    class promoteQuote
+    class PromoteQuote
     {
         private String[] quote_Vi =
         {

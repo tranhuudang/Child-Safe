@@ -23,7 +23,7 @@ namespace ChildSafe
             {
                 // read from file the collection of all available filter in a xml file then fetch it in flowlist
                 XmlDocument filters = new XmlDocument();
-                filters.Load("https://raw.githubusercontent.com/zeroclubvn/Host-Filters-Collection/main/Host-Filters-Collection.xml");
+                filters.Load(ChildSafeAsset.hostFiltersCollection);
                 XmlNodeList nodes = filters.GetElementsByTagName("filter");
                 foreach (XmlNode note in nodes)
                 {
@@ -82,11 +82,21 @@ namespace ChildSafe
                     File.AppendAllText(ChildSafeAsset.onDutyFilters, filterContents);
                 }
                 // add blacklist content to OnDuty file
-                if (File.Exists("Blacklist"))
+                if (File.Exists(ChildSafeAsset.blackList))
                 {
-                    string blackList = File.ReadAllText("Blacklist");
+                    string blackList = File.ReadAllText(ChildSafeAsset.blackList);
                     File.AppendAllText(ChildSafeAsset.onDutyFilters, blackList);
                 }
+                if(File.Exists(ChildSafeAsset.whiteList))
+                {
+                    string[] whitelist = File.ReadAllLines(ChildSafeAsset.whiteList);
+                    string onDutyAfterWhiteList = File.ReadAllText(ChildSafeAsset.onDutyFilters);
+                    foreach (string whiteLine in whitelist)
+                    {
+                        onDutyAfterWhiteList.Replace(whiteLine, "");
+                    }
+                    File.WriteAllText(ChildSafeAsset.onDutyFilters, onDutyAfterWhiteList);
+                }    
                 return true;
             }
             catch (Exception)
@@ -103,27 +113,23 @@ namespace ChildSafe
         public string getDownloadedFilterInfo(string filterName)
         {
             string info = "Can't fetch data";
-            // open file
-            if (File.Exists(ChildSafeAsset.fileFilterUpdate))
+            XmlDocument filters = new XmlDocument();
+            filters.Load(ChildSafeAsset.hostFiltersCollection);
+            XmlNodeList nodes = filters.GetElementsByTagName("filter");
+            foreach (XmlNode note in nodes)
             {
-                XmlDocument filters = new XmlDocument();
-                filters.Load(ChildSafeAsset.fileFilterUpdate);
-                XmlNodeList nodes = filters.GetElementsByTagName("filter");
-                foreach (XmlNode note in nodes)
+                string name = note["name"].InnerText;
+                string compareName = name.Substring(name.LastIndexOf('\\') + 1).Replace('_', ' ');
+                if (filterName == compareName)
                 {
-                    string name = note["name"].InnerText;
-                    string compareName = name.Substring(name.LastIndexOf('\\') + 1).Replace('_', ' ');
-                    if (filterName == compareName)
-                    {
-                        string description = note["description"].InnerText;
-                        string linkFile = note["path"].InnerText;
-                        string update = note["update"].InnerText;
-                        string licence = note["licence"].InnerText;
-                        info = "Name: " + name + "\n"
-                                + "Description: " + description + "\n"
-                                + "Update: " + update + "\n"
-                                + "Licence: " + licence;
-                    }
+                    string description = note["description"].InnerText;
+                    string linkFile = note["path"].InnerText;
+                    string update = note["update"].InnerText;
+                    string licence = note["licence"].InnerText;
+                    info =    "Name: " + name + "\n\n"
+                            + "Description: " + description + "\n\n"
+                            + "Update: " + update + "\n"
+                            + "Licence: " + licence;
                 }
             }
             return info;

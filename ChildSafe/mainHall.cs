@@ -143,7 +143,7 @@ namespace ChildSafe
         private void timerQuote_Tick(object sender, EventArgs e)
         {
             // Generate new text quote for every 5 seconds.
-            promoteQuote newQuote = new promoteQuote();
+            PromoteQuote newQuote = new PromoteQuote();
             if (Properties.Settings.Default["language"].ToString() == "English")
                 lbPromote.Text = newQuote.getRandomQuote("en-US");
             else
@@ -194,12 +194,28 @@ namespace ChildSafe
             if (Properties.Settings.Default["protectEnable"].ToString() == "True")
             {
                 pictureMainHall.Image = Properties.Resources.check_blue_128;
-                btStart.Text = "STOP";
+                switch (Properties.Settings.Default["language"].ToString())
+                {
+                    case "English":
+                        btStart.Text = "STOP";
+                        break;
+                    case "Tiếng Việt":
+                        btStart.Text = "DỪNG";
+                        break;
+                }
             }
             else
             {
                 pictureMainHall.Image = Properties.Resources.danger_128;
-                btStart.Text = "START";
+                switch (Properties.Settings.Default["language"].ToString())
+                {
+                    case "English":
+                        btStart.Text = "START";
+                        break;
+                    case "Tiếng Việt":
+                        btStart.Text = "BẮT ĐẦU";
+                        break;
+                }
             }
             // download default filter for child safe
             Thread downloadDefaultFilter = new Thread(() =>

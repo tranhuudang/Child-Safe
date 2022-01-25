@@ -15,10 +15,13 @@ using System.Xml;
 
 namespace ChildSafe
 {
+    
     public partial class filterBrowsing : Form
     {
+
         Control newControl(string name, string descriptionText, string linkFile, string updateText, string licenceText)
         {
+
             // a custom panel to display filter and its descriptions.
             Panel newPanel = new Panel();
             CheckBox newCheckbox = new CheckBox();
@@ -45,19 +48,30 @@ namespace ChildSafe
             newCheckbox.CheckedChanged += new EventHandler(checkOnFilter_Changed);
             newCheckbox.Tag = linkFile;
 
-            description.Location = new Point(10, 30);
+            description.Location = new Point(10, 32);
             description.Size = new Size(470, 35);
             description.Text = descriptionText;
 
-            updateContent.Text = "Update:";
-            licenceContent.Text = "Licence:";
-            updateContent.Location = new Point(11, 65);
+            
+            updateContent.Location = new Point(10, 65);
             licenceContent.Location = new Point(175, 65);
 
             update.Text = updateText;
-            update.Location = new Point(60, 65);
-            licence.Location = new Point(226, 65);
+            update.Location = new Point(64, 65);
+            licence.Location = new Point(232, 65);
             licence.Text = licenceText;
+            switch (Properties.Settings.Default["language"].ToString())
+            {
+                case "English":
+                    updateContent.Text = "Update: ";
+                    licenceContent.Text = "Licence: ";
+                    break;
+                case "Tiếng Việt":
+                    updateContent.Text = "Cập nhật: ";
+                    licenceContent.Text = "Giấy phép: ";
+                    break;
+            }
+
             return newPanel;
         }
 
