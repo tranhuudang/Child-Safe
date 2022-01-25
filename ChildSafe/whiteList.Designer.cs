@@ -32,7 +32,7 @@ namespace ChildSafe
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(whiteList));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btSwitcher = new System.Windows.Forms.Button();
+            this.btDisable = new System.Windows.Forms.Button();
             this.tbWhitelist = new System.Windows.Forms.DataGridView();
             this.urlAdded2Table = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btRemove = new System.Windows.Forms.Button();
@@ -42,19 +42,18 @@ namespace ChildSafe
             this.btApply = new System.Windows.Forms.Button();
             this.btCancel = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.pnControlWhitelist = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbWhitelist)).BeginInit();
+            this.pnControlWhitelist.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.pnControlWhitelist);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.btSwitcher);
+            this.groupBox1.Controls.Add(this.btDisable);
             this.groupBox1.Controls.Add(this.tbWhitelist);
-            this.groupBox1.Controls.Add(this.btRemove);
-            this.groupBox1.Controls.Add(this.btAdd2Table);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txUrl2AddWhiteList);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
@@ -65,12 +64,12 @@ namespace ChildSafe
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Name = "label3";
             // 
-            // btSwitcher
+            // btDisable
             // 
-            resources.ApplyResources(this.btSwitcher, "btSwitcher");
-            this.btSwitcher.Name = "btSwitcher";
-            this.btSwitcher.UseVisualStyleBackColor = true;
-            this.btSwitcher.Click += new System.EventHandler(this.btSwitcher_Click);
+            resources.ApplyResources(this.btDisable, "btDisable");
+            this.btDisable.Name = "btDisable";
+            this.btDisable.UseVisualStyleBackColor = true;
+            this.btDisable.Click += new System.EventHandler(this.btDisable_Click);
             // 
             // tbWhitelist
             // 
@@ -112,12 +111,15 @@ namespace ChildSafe
             this.txUrl2AddWhiteList.FormattingEnabled = true;
             resources.ApplyResources(this.txUrl2AddWhiteList, "txUrl2AddWhiteList");
             this.txUrl2AddWhiteList.Name = "txUrl2AddWhiteList";
+            this.txUrl2AddWhiteList.SelectedIndexChanged += new System.EventHandler(this.txUrl2AddWhiteList_SelectedIndexChanged);
+            this.txUrl2AddWhiteList.TextChanged += new System.EventHandler(this.txUrl2AddWhiteList_TextChanged);
             // 
             // btApply
             // 
             resources.ApplyResources(this.btApply, "btApply");
             this.btApply.Name = "btApply";
             this.btApply.UseVisualStyleBackColor = true;
+            this.btApply.Click += new System.EventHandler(this.btApply_Click);
             // 
             // btCancel
             // 
@@ -130,6 +132,15 @@ namespace ChildSafe
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
+            // 
+            // pnControlWhitelist
+            // 
+            this.pnControlWhitelist.Controls.Add(this.btRemove);
+            this.pnControlWhitelist.Controls.Add(this.btAdd2Table);
+            this.pnControlWhitelist.Controls.Add(this.label1);
+            this.pnControlWhitelist.Controls.Add(this.txUrl2AddWhiteList);
+            resources.ApplyResources(this.pnControlWhitelist, "pnControlWhitelist");
+            this.pnControlWhitelist.Name = "pnControlWhitelist";
             // 
             // whiteList
             // 
@@ -148,6 +159,8 @@ namespace ChildSafe
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbWhitelist)).EndInit();
+            this.pnControlWhitelist.ResumeLayout(false);
+            this.pnControlWhitelist.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,7 +170,7 @@ namespace ChildSafe
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btSwitcher;
+        private System.Windows.Forms.Button btDisable;
         private System.Windows.Forms.Button btRemove;
         private System.Windows.Forms.Button btAdd2Table;
         private System.Windows.Forms.Label label1;
@@ -167,5 +180,6 @@ namespace ChildSafe
         private System.Windows.Forms.DataGridView tbWhitelist;
         private System.Windows.Forms.DataGridViewTextBoxColumn urlAdded2Table;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel pnControlWhitelist;
     }
 }

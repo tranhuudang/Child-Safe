@@ -76,9 +76,21 @@ namespace ChildSafe
 
             if ((numberOfRow != 1) && (selectedCellIndex != -1))
             {
+                try
+                {
+                    string blacklist = File.ReadAllText(ChildSafeAsset.blackList).Replace(tbBlacklist.CurrentCell.Value.ToString(), "");
+                    File.WriteAllText(ChildSafeAsset.blackList, blacklist);
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                
                 tbBlacklist.Rows.RemoveAt(selectedCellIndex);
                 selectedCellIndex--;
                 numberOfRow--;
+                
             }
             else
             {

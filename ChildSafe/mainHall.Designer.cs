@@ -34,8 +34,6 @@ namespace ChildSafe
             this.lbPromote = new System.Windows.Forms.Label();
             this.btStart = new System.Windows.Forms.Button();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.getStartedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.filtersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.whitelistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -91,8 +89,6 @@ namespace ChildSafe
             // contextMenu
             // 
             this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.getStartedToolStripMenuItem,
-            this.toolStripMenuItem1,
             this.filtersToolStripMenuItem,
             this.whitelistToolStripMenuItem,
             this.settingsToolStripMenuItem,
@@ -105,16 +101,6 @@ namespace ChildSafe
             this.contextMenu.Name = "contextMenu";
             resources.ApplyResources(this.contextMenu, "contextMenu");
             // 
-            // getStartedToolStripMenuItem
-            // 
-            this.getStartedToolStripMenuItem.Name = "getStartedToolStripMenuItem";
-            resources.ApplyResources(this.getStartedToolStripMenuItem, "getStartedToolStripMenuItem");
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
-            // 
             // filtersToolStripMenuItem
             // 
             this.filtersToolStripMenuItem.Name = "filtersToolStripMenuItem";
@@ -123,8 +109,8 @@ namespace ChildSafe
             // 
             // whitelistToolStripMenuItem
             // 
-            resources.ApplyResources(this.whitelistToolStripMenuItem, "whitelistToolStripMenuItem");
             this.whitelistToolStripMenuItem.Name = "whitelistToolStripMenuItem";
+            resources.ApplyResources(this.whitelistToolStripMenuItem, "whitelistToolStripMenuItem");
             this.whitelistToolStripMenuItem.Click += new System.EventHandler(this.whitelistToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
@@ -354,11 +340,9 @@ namespace ChildSafe
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.LinkLabel options;
         private System.Windows.Forms.ContextMenuStrip contextMenu;
-        private System.Windows.Forms.ToolStripMenuItem getStartedToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sendFeedbackToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkForUpdateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Label lbLoadingStatus;
         private System.Windows.Forms.Timer timerQuote;

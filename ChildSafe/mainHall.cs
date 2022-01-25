@@ -25,14 +25,11 @@ namespace ChildSafe
             InitializeComponent();
 
         }
-        string host = Path.GetPathRoot(Environment.SystemDirectory) + @"Windows\System32\drivers\etc\hosts";
-        string onDutyFilters = "OnDuty";
-        string defaultChildSafeBaseFilter = "ChildSafeBaseFilter";
-        string defaultChildSafeBaseFilter_Url = "https://raw.githubusercontent.com/zeroclubvn/Vietnamese-Trash-Websites-Filter/main/adult_websites";
+        
         private void disableProtect()
         {
             // safely clear the block list without delete the file
-            FileStream fileStream = File.Open(host, FileMode.Open); fileStream.SetLength(0);
+            FileStream fileStream = File.Open(ChildSafeAsset.host, FileMode.Open); fileStream.SetLength(0);
             fileStream.Close();
             // change visual
             btStart.Text = "START";
@@ -47,12 +44,12 @@ namespace ChildSafe
             // in options we have the oppotunity to add more filter to the block list, all fillter with be combined in OnDuty file. 
             // if user don't use option feature, application will look for ChildSafeBaseFilter which is the default filter of this program.
             // ChildSafeBaseFilter is downloaded when the app is openning and connecting to internet.
-            if (File.Exists(onDutyFilters))
+            if (File.Exists(ChildSafeAsset.onDutyFilters))
             {
-                string[] list2Block = File.ReadAllText(onDutyFilters).Split('\n');
+                string[] list2Block = File.ReadAllText(ChildSafeAsset.onDutyFilters).Split('\n');
                 progressBar1.Maximum = list2Block.Length;
                 progressBar1.Value = 0;
-                using (StreamWriter writetext = new StreamWriter(host))
+                using (StreamWriter writetext = new StreamWriter(ChildSafeAsset.host))
                 {
                     foreach (string line in list2Block)
                     {
@@ -74,19 +71,19 @@ namespace ChildSafe
                     writetext.Close();
                 }
                 // delete onDuty file after finish using it
-                File.Delete(onDutyFilters);
+                File.Delete(ChildSafeAsset.onDutyFilters);
                 lbLoadingStatus.Text = "Completed";
                 panelLoading.Visible = false;
                 btStart.Enabled = true;
             }
             // we use default filter instead in case no option filter is added
-            else if (File.Exists(defaultChildSafeBaseFilter))
+            else if (File.Exists(ChildSafeAsset.defaultChildSafeBaseFilter))
             {
-                string[] list2Block = File.ReadAllText(defaultChildSafeBaseFilter).Split('\n');
+                string[] list2Block = File.ReadAllText(ChildSafeAsset.defaultChildSafeBaseFilter).Split('\n');
                 progressBar1.Maximum = list2Block.Length;
                 progressBar1.Value = 0;
 
-                using (StreamWriter writetext = new StreamWriter(host))
+                using (StreamWriter writetext = new StreamWriter(ChildSafeAsset.host))
                 {
                     foreach (string line in list2Block)
                     {
@@ -221,7 +218,7 @@ namespace ChildSafe
             Thread downloadDefaultFilter = new Thread(() =>
             {
                 WebClient client = new WebClient();
-                client.DownloadFileAsync(new Uri(defaultChildSafeBaseFilter_Url), defaultChildSafeBaseFilter);
+                client.DownloadFileAsync(new Uri(ChildSafeAsset.defaultChildSafeBaseFilter_Url), ChildSafeAsset.defaultChildSafeBaseFilter);
             }
             );
             downloadDefaultFilter.Start();
@@ -369,6 +366,11 @@ namespace ChildSafe
                 disableProtect();
                 refresh.Tag = "DisableProtect_OK";
             }
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

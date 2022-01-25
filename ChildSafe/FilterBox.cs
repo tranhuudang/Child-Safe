@@ -87,13 +87,18 @@ namespace ChildSafe
                     string blackList = File.ReadAllText(ChildSafeAsset.blackList);
                     File.AppendAllText(ChildSafeAsset.onDutyFilters, blackList);
                 }
+                // remove item in whitelist out of onDuty file
                 if(File.Exists(ChildSafeAsset.whiteList))
                 {
                     string[] whitelist = File.ReadAllLines(ChildSafeAsset.whiteList);
                     string onDutyAfterWhiteList = File.ReadAllText(ChildSafeAsset.onDutyFilters);
                     foreach (string whiteLine in whitelist)
                     {
-                        onDutyAfterWhiteList.Replace(whiteLine, "");
+                        if (onDutyAfterWhiteList.Contains(whiteLine))
+                        {
+                            MessageBox.Show("ok");
+                            onDutyAfterWhiteList= onDutyAfterWhiteList.Replace(whiteLine, "whitelist");
+                        }
                     }
                     File.WriteAllText(ChildSafeAsset.onDutyFilters, onDutyAfterWhiteList);
                 }    

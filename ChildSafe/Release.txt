@@ -1,0 +1,10 @@
+﻿## Update history
+
+# 3.1.1.0 (25/01/2022)
+* Whitelist now working
+* Blacklist remove button not working fixed
+* Other minor bugs fix and improvements
+
+# 3.1.0.0 (24/01/2022)
+* Fix mis-infomation of filter when click on downloaded filter
+* Other minor bugs fix and improvements

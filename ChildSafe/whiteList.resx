@@ -118,14 +118,146 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="btRemove.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btRemove.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btRemove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>586, 1</value>
+  </data>
+  <data name="btRemove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 23</value>
+  </data>
+  <data name="btRemove.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btRemove.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="&gt;&gt;btRemove.Name" xml:space="preserve">
+    <value>btRemove</value>
+  </data>
+  <data name="&gt;&gt;btRemove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btRemove.Parent" xml:space="preserve">
+    <value>pnControlWhitelist</value>
+  </data>
+  <data name="&gt;&gt;btRemove.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btAdd2Table.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btAdd2Table.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btAdd2Table.Location" type="System.Drawing.Point, System.Drawing">
+    <value>505, 1</value>
+  </data>
+  <data name="btAdd2Table.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btAdd2Table.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btAdd2Table.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;btAdd2Table.Name" xml:space="preserve">
+    <value>btAdd2Table</value>
+  </data>
+  <data name="&gt;&gt;btAdd2Table.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btAdd2Table.Parent" xml:space="preserve">
+    <value>pnControlWhitelist</value>
+  </data>
+  <data name="&gt;&gt;btAdd2Table.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 6</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Add a  website to white list</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>pnControlWhitelist</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txUrl2AddWhiteList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 3</value>
+  </data>
+  <data name="txUrl2AddWhiteList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 21</value>
+  </data>
+  <data name="txUrl2AddWhiteList.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txUrl2AddWhiteList.Name" xml:space="preserve">
+    <value>txUrl2AddWhiteList</value>
+  </data>
+  <data name="&gt;&gt;txUrl2AddWhiteList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txUrl2AddWhiteList.Parent" xml:space="preserve">
+    <value>pnControlWhitelist</value>
+  </data>
+  <data name="&gt;&gt;txUrl2AddWhiteList.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pnControlWhitelist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 18</value>
+  </data>
+  <data name="pnControlWhitelist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>664, 31</value>
+  </data>
+  <data name="pnControlWhitelist.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pnControlWhitelist.Name" xml:space="preserve">
+    <value>pnControlWhitelist</value>
+  </data>
+  <data name="&gt;&gt;pnControlWhitelist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnControlWhitelist.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;pnControlWhitelist.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>677, 24</value>
   </data>
@@ -151,47 +283,38 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
-  <data name="btSwitcher.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btSwitcher.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btDisable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btSwitcher.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btDisable.Location" type="System.Drawing.Point, System.Drawing">
     <value>685, 19</value>
   </data>
-  <data name="btSwitcher.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btDisable.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="btSwitcher.TabIndex" type="System.Int32, mscorlib">
+  <data name="btDisable.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="btSwitcher.Text" xml:space="preserve">
+  <data name="btDisable.Text" xml:space="preserve">
     <value>Disable</value>
   </data>
-  <data name="&gt;&gt;btSwitcher.Name" xml:space="preserve">
-    <value>btSwitcher</value>
+  <data name="&gt;&gt;btDisable.Name" xml:space="preserve">
+    <value>btDisable</value>
   </data>
-  <data name="&gt;&gt;btSwitcher.Type" xml:space="preserve">
+  <data name="&gt;&gt;btDisable.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btSwitcher.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btDisable.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;btSwitcher.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;btDisable.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <metadata name="urlAdded2Table.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="urlAdded2Table.HeaderText" xml:space="preserve">
-    <value>Website</value>
-  </data>
-  <data name="urlAdded2Table.Width" type="System.Int32, mscorlib">
-    <value>700</value>
-  </data>
   <data name="tbWhitelist.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
@@ -214,118 +337,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;tbWhitelist.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btRemove.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btRemove.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btRemove.Location" type="System.Drawing.Point, System.Drawing">
-    <value>599, 19</value>
-  </data>
-  <data name="btRemove.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 23</value>
-  </data>
-  <data name="btRemove.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="btRemove.Text" xml:space="preserve">
-    <value>Remove</value>
-  </data>
-  <data name="&gt;&gt;btRemove.Name" xml:space="preserve">
-    <value>btRemove</value>
-  </data>
-  <data name="&gt;&gt;btRemove.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btRemove.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;btRemove.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btAdd2Table.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btAdd2Table.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btAdd2Table.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 19</value>
-  </data>
-  <data name="btAdd2Table.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="btAdd2Table.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btAdd2Table.Text" xml:space="preserve">
-    <value>Add</value>
-  </data>
-  <data name="&gt;&gt;btAdd2Table.Name" xml:space="preserve">
-    <value>btAdd2Table</value>
-  </data>
-  <data name="&gt;&gt;btAdd2Table.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btAdd2Table.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;btAdd2Table.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 24</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 13</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Add a  website to white list</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="txUrl2AddWhiteList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>173, 21</value>
-  </data>
-  <data name="txUrl2AddWhiteList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 21</value>
-  </data>
-  <data name="txUrl2AddWhiteList.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txUrl2AddWhiteList.Name" xml:space="preserve">
-    <value>txUrl2AddWhiteList</value>
-  </data>
-  <data name="&gt;&gt;txUrl2AddWhiteList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txUrl2AddWhiteList.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;txUrl2AddWhiteList.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -350,6 +362,15 @@
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <metadata name="urlAdded2Table.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="urlAdded2Table.HeaderText" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="urlAdded2Table.Width" type="System.Int32, mscorlib">
+    <value>700</value>
   </data>
   <data name="btApply.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
