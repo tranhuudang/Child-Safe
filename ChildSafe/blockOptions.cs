@@ -83,8 +83,7 @@ namespace ChildSafe
                 }
                 catch (Exception)
                 {
-
-                    throw;
+                    MessageBox.Show("Can't change the state of the list. Probably related to read/write permission.");
                 }
                 
                 tbBlacklist.Rows.RemoveAt(selectedCellIndex);
@@ -294,6 +293,16 @@ namespace ChildSafe
             whiteList whiteListForm = new whiteList();
             whiteListForm.Show();
             
+        }
+
+        private void listOnDutyFilters_ValueMemberChanged(object sender, EventArgs e)
+        {
+            lbChangedOrNot.Text = "yeschanged";
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ChildSafe>
 	<currentVersion>
-		<version>3.1.1.0</version>
+		<version>3.1.3.0</version>
 		<describe>
-			* Whitelist now working
-			* Blacklist remove button not working fixed
+			* Errors which related to internet connection fixed
 			* Other minor bugs fix and improvements
 		</describe>
 	</currentVersion>

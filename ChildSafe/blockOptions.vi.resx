@@ -117,6 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lbChangedOrNot.Error" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbChangedOrNot.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbChangedOrNot.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbChangedOrNot.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="options.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="options.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="options.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="options.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 13</value>
@@ -124,28 +147,160 @@
   <data name="options.Text" xml:space="preserve">
     <value>Làm thế nào để truy cập trang web bị khóa nhầm?</value>
   </data>
+  <data name="options.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btSave.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btSave.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btSave.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="btSave.Text" xml:space="preserve">
     <value>Lưu</value>
   </data>
+  <data name="btSave.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btCancel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btCancel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btCancel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="btCancel.Text" xml:space="preserve">
     <value>Hủy</value>
+  </data>
+  <data name="btCancel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="panel2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbDetails.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbDetails.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbDetails.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="lbDetails.Text" xml:space="preserve">
     <value>Child Safe sẽ đảm bảo bạn không truy cập những trang web nguy hiểm hoặc lừa đảo. 
 Thêm bộ lọc để khóa những nội dung tiềm tàng nguy cơ khác trên mạng.
 </value>
   </data>
+  <data name="lbDetails.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBox4.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBox4.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="groupBox4.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="groupBox4.Text" xml:space="preserve">
     <value>Chi tiết</value>
+  </data>
+  <data name="groupBox4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="removeOnDutyFilters.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="removeOnDutyFilters.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="removeOnDutyFilters.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="removeOnDutyFilters.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="listOnDutyFilters.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="listOnDutyFilters.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="listOnDutyFilters.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="listOnDutyFilters.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBox3.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBox3.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="groupBox3.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="groupBox3.Text" xml:space="preserve">
     <value>Những bộ lọc đang hoạt động</value>
   </data>
+  <data name="groupBox3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btFilterBrowsing.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btFilterBrowsing.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btFilterBrowsing.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="btFilterBrowsing.Text" xml:space="preserve">
     <value>Duyệt...</value>
   </data>
+  <data name="btFilterBrowsing.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btAdd.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btAdd.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btAdd.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="btAdd.Text" xml:space="preserve">
     <value>Thêm</value>
+  </data>
+  <data name="btAdd.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 13</value>
@@ -153,14 +308,92 @@ Thêm bộ lọc để khóa những nội dung tiềm tàng nguy cơ khác trê
   <data name="label2.Text" xml:space="preserve">
     <value>Tìm kiếm</value>
   </data>
+  <data name="label2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbDownloadedFiltersList.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbDownloadedFiltersList.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cbDownloadedFiltersList.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbDownloadedFiltersList.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBox2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBox2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="groupBox2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Tùy chọn khác</value>
+  </data>
+  <data name="groupBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="panel1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btRemove.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btRemove.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btRemove.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="btRemove.Text" xml:space="preserve">
     <value>Gỡ bỏ</value>
   </data>
+  <data name="btRemove.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btAdd2Table.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btAdd2Table.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btAdd2Table.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="btAdd2Table.Text" xml:space="preserve">
     <value>Khóa</value>
+  </data>
+  <data name="btAdd2Table.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbBlacklist.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbBlacklist.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbBlacklist.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="lbBlacklist.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 13</value>
@@ -168,10 +401,85 @@ Thêm bộ lọc để khóa những nội dung tiềm tàng nguy cơ khác trê
   <data name="lbBlacklist.Text" xml:space="preserve">
     <value>Thêm trang vào blacklist</value>
   </data>
+  <data name="lbBlacklist.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txUrl2AddBlackList.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txUrl2AddBlackList.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txUrl2AddBlackList.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txUrl2AddBlackList.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnControlBlacklist.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnControlBlacklist.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="pnControlBlacklist.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pnControlBlacklist.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label3.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btDisable.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btDisable.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btDisable.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="btDisable.Text" xml:space="preserve">
     <value>Vô hiệu</value>
   </data>
+  <data name="btDisable.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbBlacklist.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbBlacklist.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="tbBlacklist.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tbBlacklist.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBlacklist.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBlacklist.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="groupBlacklist.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="groupBlacklist.Text" xml:space="preserve">
     <value>Danh sách đen</value>
+  </data>
+  <data name="groupBlacklist.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>

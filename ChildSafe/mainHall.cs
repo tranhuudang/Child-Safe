@@ -346,7 +346,6 @@ namespace ChildSafe
             catch (Exception)
             {
                 MessageBox.Show("Can't connect to the internet!");
-                throw;
             }
 
         }

@@ -31,61 +31,41 @@ namespace ChildSafe
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(whiteList));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btDisable = new System.Windows.Forms.Button();
-            this.tbWhitelist = new System.Windows.Forms.DataGridView();
-            this.urlAdded2Table = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnControlWhitelist = new System.Windows.Forms.Panel();
             this.btRemove = new System.Windows.Forms.Button();
             this.btAdd2Table = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txUrl2AddWhiteList = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btDisable = new System.Windows.Forms.Button();
+            this.tbWhitelist = new System.Windows.Forms.DataGridView();
+            this.urlAdded2Table = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btApply = new System.Windows.Forms.Button();
             this.btCancel = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.pnControlWhitelist = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbWhitelist)).BeginInit();
             this.pnControlWhitelist.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbWhitelist)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.pnControlWhitelist);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.btDisable);
             this.groupBox1.Controls.Add(this.tbWhitelist);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
-            // label3
+            // pnControlWhitelist
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Name = "label3";
-            // 
-            // btDisable
-            // 
-            resources.ApplyResources(this.btDisable, "btDisable");
-            this.btDisable.Name = "btDisable";
-            this.btDisable.UseVisualStyleBackColor = true;
-            this.btDisable.Click += new System.EventHandler(this.btDisable_Click);
-            // 
-            // tbWhitelist
-            // 
-            this.tbWhitelist.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.tbWhitelist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tbWhitelist.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.urlAdded2Table});
-            resources.ApplyResources(this.tbWhitelist, "tbWhitelist");
-            this.tbWhitelist.Name = "tbWhitelist";
-            this.tbWhitelist.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbWhitelist_CellClick);
-            this.tbWhitelist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbWhitelist_CellContentClick);
-            // 
-            // urlAdded2Table
-            // 
-            resources.ApplyResources(this.urlAdded2Table, "urlAdded2Table");
-            this.urlAdded2Table.Name = "urlAdded2Table";
+            resources.ApplyResources(this.pnControlWhitelist, "pnControlWhitelist");
+            this.pnControlWhitelist.Controls.Add(this.btRemove);
+            this.pnControlWhitelist.Controls.Add(this.btAdd2Table);
+            this.pnControlWhitelist.Controls.Add(this.label1);
+            this.pnControlWhitelist.Controls.Add(this.txUrl2AddWhiteList);
+            this.pnControlWhitelist.Name = "pnControlWhitelist";
             // 
             // btRemove
             // 
@@ -108,11 +88,40 @@ namespace ChildSafe
             // 
             // txUrl2AddWhiteList
             // 
-            this.txUrl2AddWhiteList.FormattingEnabled = true;
             resources.ApplyResources(this.txUrl2AddWhiteList, "txUrl2AddWhiteList");
+            this.txUrl2AddWhiteList.FormattingEnabled = true;
             this.txUrl2AddWhiteList.Name = "txUrl2AddWhiteList";
             this.txUrl2AddWhiteList.SelectedIndexChanged += new System.EventHandler(this.txUrl2AddWhiteList_SelectedIndexChanged);
             this.txUrl2AddWhiteList.TextChanged += new System.EventHandler(this.txUrl2AddWhiteList_TextChanged);
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label3.Name = "label3";
+            // 
+            // btDisable
+            // 
+            resources.ApplyResources(this.btDisable, "btDisable");
+            this.btDisable.Name = "btDisable";
+            this.btDisable.UseVisualStyleBackColor = true;
+            this.btDisable.Click += new System.EventHandler(this.btDisable_Click);
+            // 
+            // tbWhitelist
+            // 
+            resources.ApplyResources(this.tbWhitelist, "tbWhitelist");
+            this.tbWhitelist.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.tbWhitelist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tbWhitelist.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.urlAdded2Table});
+            this.tbWhitelist.Name = "tbWhitelist";
+            this.tbWhitelist.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbWhitelist_CellClick);
+            this.tbWhitelist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbWhitelist_CellContentClick);
+            // 
+            // urlAdded2Table
+            // 
+            resources.ApplyResources(this.urlAdded2Table, "urlAdded2Table");
+            this.urlAdded2Table.Name = "urlAdded2Table";
             // 
             // btApply
             // 
@@ -133,15 +142,6 @@ namespace ChildSafe
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
-            // pnControlWhitelist
-            // 
-            this.pnControlWhitelist.Controls.Add(this.btRemove);
-            this.pnControlWhitelist.Controls.Add(this.btAdd2Table);
-            this.pnControlWhitelist.Controls.Add(this.label1);
-            this.pnControlWhitelist.Controls.Add(this.txUrl2AddWhiteList);
-            resources.ApplyResources(this.pnControlWhitelist, "pnControlWhitelist");
-            this.pnControlWhitelist.Name = "pnControlWhitelist";
-            // 
             // whiteList
             // 
             resources.ApplyResources(this, "$this");
@@ -158,9 +158,9 @@ namespace ChildSafe
             this.Load += new System.EventHandler(this.whiteList_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbWhitelist)).EndInit();
             this.pnControlWhitelist.ResumeLayout(false);
             this.pnControlWhitelist.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbWhitelist)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

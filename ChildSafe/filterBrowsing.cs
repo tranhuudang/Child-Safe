@@ -90,11 +90,6 @@ namespace ChildSafe
                 selectedFilterName.Items.Remove((sender as CheckBox).Text);
             }
         }
-        private void NewCheckbox_CheckedChanged(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         public filterBrowsing()
         {
             InitializeComponent();
@@ -127,8 +122,7 @@ namespace ChildSafe
             }
             catch (Exception)
             {
-
-                throw;
+                MessageBox.Show("Can't connect to the internet");
             }
             
         }

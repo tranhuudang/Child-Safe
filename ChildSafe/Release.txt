@@ -1,5 +1,9 @@
 ﻿## Update history
 
+# 3.1.3.0 (27/01/2022)
+* Errors which related to internet connection fixed
+* Other minor bugs fix and improvements
+
 # 3.1.1.0 (25/01/2022)
 * Whitelist now working
 * Blacklist remove button not working fixed
