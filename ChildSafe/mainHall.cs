@@ -87,7 +87,19 @@ namespace ChildSafe
                 {
                     foreach (string line in list2Block)
                     {
-                        writetext.WriteLine("127.0.0.0 " + line);
+                        if (line.StartsWith("#") || line.StartsWith("::") || line.StartsWith("fe80") || line == "")
+                        {
+
+                        }
+                        else if (line.StartsWith("0.0.0.0") || line.StartsWith("127.0.0.1"))
+                        {
+                            writetext.WriteLine(line);
+                        }
+                        else
+                        {
+                            writetext.WriteLine("127.0.0.1 " + line);
+
+                        }
                         progressBar1.Value++;
                     }
                     writetext.Close();
