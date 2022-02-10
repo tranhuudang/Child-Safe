@@ -34,13 +34,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_68532967EE3DA0187FB69C75BDBAF09E"
+        "OwnerKey" = "8:_3CD9275535B04F7A8FD75B148A025A40"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3CD9275535B04F7A8FD75B148A025A40"
+        "OwnerKey" = "8:_68532967EE3DA0187FB69C75BDBAF09E"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -61,6 +61,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -77,6 +85,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -213,15 +229,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Child Safe"
-        "ProductCode" = "8:{4B3EBA8A-A1FC-40B6-A52A-D3477059AF87}"
-        "PackageCode" = "8:{4B7689C0-A950-45EB-9B42-FB6D4E6E6173}"
+        "ProductCode" = "8:{DE382BC2-C91A-406E-AE97-B311AA023D1C}"
+        "PackageCode" = "8:{9085B2FB-7DEE-4008-A214-8D77A6E1760A}"
         "UpgradeCode" = "8:{BAEB03CC-7409-4914-B7B2-83318ADEB845}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:3.1.4"
         "Manufacturer" = "8:ZeroClub"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://github.com/zeroclubvn"
@@ -763,7 +779,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3CD9275535B04F7A8FD75B148A025A40"
             {
-            "SourcePath" = "8:..\\ChildSafe\\obj\\x86\\Debug\\ChildSafe.exe"
+            "SourcePath" = "8:..\\ChildSafe\\obj\\Debug\\ChildSafe.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_FCD34D315E5B4D6694DE1039EBD47F58"
