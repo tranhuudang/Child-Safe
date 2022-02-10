@@ -76,7 +76,7 @@ namespace ChildSafe
                 panelLoading.Visible = false;
                 btStart.Enabled = true;
             }
-            // we use default filter instead in case no option filter is added
+            // we use default filter instead in case no option filter is addeded
             else if (File.Exists(ChildSafeAsset.defaultChildSafeBaseFilter))
             {
                 string[] list2Block = File.ReadAllText(ChildSafeAsset.defaultChildSafeBaseFilter).Split('\n');
