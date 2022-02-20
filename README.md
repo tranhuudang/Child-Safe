@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="128" align="center" src="https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/Resources/check_blue_128.png?raw=true">
+  <img width="128" align="center" src="https://raw.githubusercontent.com/zeroclubvn/ChildSafe/master/ChildSafe/Resources/check_blue_128.png?raw=true">
 </p>
 <h1 align="center">
   ChildSafe
@@ -23,9 +23,9 @@
 
 ## Lastest Version
 
-* ⬇️ Child Safe Setup : [Download](https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/Setup/ChildSafe_Setup.msi)
+* ⬇️ Child Safe Setup : [Download](https://raw.githubusercontent.com/zeroclubvn/ChildSafe/master/ChildSafe/Setup/ChildSafe_Setup.msi)
 
-* 🔁 Update History: [Release](https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/Release.txt) 
+* 🔁 Update History: [Release](https://raw.githubusercontent.com/zeroclubvn/ChildSafe/master/ChildSafe/Release.txt) 
 
 ## Credits
 
