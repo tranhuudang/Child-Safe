@@ -21,7 +21,7 @@ namespace ChildSafe
 
         private void linkGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://github.com/zeroclubvn/ChildSafe_Project_X15");
+            Process.Start(ChildSafeAsset.github_page);
 
         }
 

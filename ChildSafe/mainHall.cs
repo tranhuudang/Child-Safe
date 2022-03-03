@@ -253,12 +253,12 @@ namespace ChildSafe
 
         private void githubToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/zeroclubvn/ChildSafe_Project_X15");
+            Process.Start(ChildSafeAsset.github_page);
         }
 
         private void sendFeedbackToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/zeroclubvn/ChildSafe_Project_X15/issues");
+            Process.Start(ChildSafeAsset.github_issue);
         }
 
         private void whitelistToolStripMenuItem_Click(object sender, EventArgs e)
@@ -310,7 +310,7 @@ namespace ChildSafe
             {
                 WebClient downloadSetup = new WebClient();
                 downloadSetup.DownloadFileCompleted += new AsyncCompletedEventHandler(downloadSetup_DownloadFileCompleted);
-                downloadSetup.DownloadFileAsync(new Uri("https://github.com/zeroclubvn/ChildSafe_Project_X15/raw/master/ChildSafe/Setup/ChildSafe_Setup.msi"), "ChildSafe_Setup.msi");
+                downloadSetup.DownloadFileAsync(new Uri(ChildSafeAsset.defaultDownloadInstaller), ChildSafeAsset.setupName);
 
             });
             setup.Start();
@@ -320,13 +320,13 @@ namespace ChildSafe
             this.BeginInvoke((MethodInvoker)delegate
             {
 
-                if (File.Exists("ChildSafe_Setup.msi"))
+                if (File.Exists(ChildSafeAsset.setupName))
                 {
-                    if (File.Exists("ChildSafeUpdater.exe"))
+                    if (File.Exists(ChildSafeAsset.updater))
                     {
                         if (MessageBox.Show("Download completed, do you want to process update now?", "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                         {
-                            Process.Start("ChildSafeUpdater.exe");
+                            Process.Start(ChildSafeAsset.updater);
                             this.Close();
                         }
                     }
@@ -340,7 +340,7 @@ namespace ChildSafe
             try
             {
                 XmlDocument updateFile = new XmlDocument();
-                updateFile.Load("https://raw.githubusercontent.com/zeroclubvn/ChildSafe_Project_X15/master/ChildSafe/updateInfo.xml" + "?" + DateTime.Now.Ticks.ToString());
+                updateFile.Load(ChildSafeAsset.updateInfo + "?" + DateTime.Now.Ticks.ToString());
                 Version netVersion = new Version(updateFile.SelectSingleNode("//currentVersion/version").InnerText);
                 string describe = updateFile.SelectSingleNode("//currentVersion/describe").InnerText;
                 string linkSetup = updateFile.SelectSingleNode("//path").InnerText;

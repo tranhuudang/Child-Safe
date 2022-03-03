@@ -25,7 +25,7 @@ namespace ChildSafe
             if (txUrl2AddBlackList.Text.Length > 5)
             {
                 tbBlacklist.Rows.Add(txUrl2AddBlackList.Text);
-                File.AppendAllText("BlackList", txUrl2AddBlackList.Text+"\n");
+                File.AppendAllText(ChildSafeAsset.blackList, txUrl2AddBlackList.Text+"\n");
                 txUrl2AddBlackList.Text = null;
 
             }
@@ -184,9 +184,9 @@ namespace ChildSafe
         }
         void loadBlacklist()
         {
-            if (File.Exists("Blacklist"))
+            if (File.Exists(ChildSafeAsset.blackList))
             {
-                string[] contents = File.ReadAllText("Blacklist").Split('\n');
+                string[] contents = File.ReadAllText(ChildSafeAsset.blackList).Split('\n');
                 foreach(string line in contents)
                 {
                     if(line!="")
@@ -196,8 +196,8 @@ namespace ChildSafe
         }
         void loadDownloadedFilter()
         {
-            FilterBox filterbox = new FilterBox();
-            cbDownloadedFiltersList.DataSource= filterbox.getDownloadedFilter();
+            FilterBox filterBox = new FilterBox();
+            cbDownloadedFiltersList.DataSource= filterBox.getDownloadedFilter();
         }
 
         private void cbDownloadedFiltersList_SelectedIndexChanged(object sender, EventArgs e)
