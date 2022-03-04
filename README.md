@@ -2,7 +2,7 @@
   <img width="128" align="center" src="https://raw.githubusercontent.com/zeroclubvn/ChildSafe/master/ChildSafe/Resources/check_blue_128.png?raw=true">
 </p>
 <h1 align="center">
-  ChildSafe
+  Child Safe
 </h1>
 <p align="center">
   <b>A simple yet powerful blocker.</b>
