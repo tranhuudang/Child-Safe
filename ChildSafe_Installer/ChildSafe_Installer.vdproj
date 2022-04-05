@@ -86,6 +86,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -110,6 +118,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -247,15 +263,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Child Safe"
-        "ProductCode" = "8:{DE382BC2-C91A-406E-AE97-B311AA023D1C}"
-        "PackageCode" = "8:{9085B2FB-7DEE-4008-A214-8D77A6E1760A}"
+        "ProductCode" = "8:{D363D8B7-1E3C-4489-9E4E-9EB4B8ABEED4}"
+        "PackageCode" = "8:{91BD12F2-3DBE-43CD-9660-7DA9E87A9C55}"
         "UpgradeCode" = "8:{BAEB03CC-7409-4914-B7B2-83318ADEB845}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:3.1.4"
+        "ProductVersion" = "8:3.1.5"
         "Manufacturer" = "8:ZeroClub"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://github.com/zeroclubvn"
@@ -797,7 +813,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3CD9275535B04F7A8FD75B148A025A40"
             {
-            "SourcePath" = "8:..\\ChildSafe\\obj\\Debug\\ChildSafe.exe"
+            "SourcePath" = "8:..\\ChildSafe\\obj\\x86\\Debug\\ChildSafe.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_FCD34D315E5B4D6694DE1039EBD47F58"
@@ -825,7 +841,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_A3248EA592E847F8ABDD6CD3D85D1D07"
             {
-            "SourcePath" = "8:..\\ChildSafeUpdater\\obj\\Debug\\ChildSafeUpdater.exe"
+            "SourcePath" = "8:..\\ChildSafeUpdater\\obj\\x86\\Debug\\ChildSafeUpdater.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_FCD34D315E5B4D6694DE1039EBD47F58"

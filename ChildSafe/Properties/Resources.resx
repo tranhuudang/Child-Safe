@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="5172979_web_option_security_gear_engine_internet_setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5172979_web_option_security_gear_engine_internet_setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="refresh_icon_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\refresh_icon_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -132,9 +129,6 @@
   </data>
   <data name="danger_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\danger_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="back_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back_36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="5172958_security_communication_comment_talk_internet_chat_message" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5172958_security_communication_comment_talk_internet_chat_message.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
