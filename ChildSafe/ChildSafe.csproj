@@ -113,24 +113,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="blockOptions.cs">
+    <Compile Include="Pages\blockOptions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="blockOptions.Designer.cs">
+    <Compile Include="Pages\blockOptions.Designer.cs">
       <DependentUpon>blockOptions.cs</DependentUpon>
     </Compile>
-    <Compile Include="about.cs">
+    <Compile Include="Pages\about.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="about.Designer.cs">
+    <Compile Include="Pages\about.Designer.cs">
       <DependentUpon>about.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildSafeAsset.cs" />
-    <Compile Include="FilterBox.cs" />
-    <Compile Include="filterBrowsing.cs">
+    <Compile Include="Classes\ChildSafeAsset.cs" />
+    <Compile Include="Classes\FilterBox.cs" />
+    <Compile Include="Pages\filterBrowsing.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="filterBrowsing.Designer.cs">
+    <Compile Include="Pages\filterBrowsing.Designer.cs">
       <DependentUpon>filterBrowsing.cs</DependentUpon>
     </Compile>
     <Compile Include="mainHall.cs">
@@ -140,29 +140,31 @@
       <DependentUpon>mainHall.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="PromoteQuote.cs" />
+    <Compile Include="Classes\PromoteQuote.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="whiteList.cs">
+    <Compile Include="Pages\whiteList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="whiteList.Designer.cs">
+    <Compile Include="Pages\whiteList.Designer.cs">
       <DependentUpon>whiteList.cs</DependentUpon>
     </Compile>
     <Content Include="childSafe.ico" />
     <None Include="Resources\refresh_icon_32.png" />
     <None Include="Resources\check_blue_128.png" />
-    <Content Include="Release.txt" />
-    <Content Include="updateInfo.xml" />
+    <None Include="Resources\back_36.png" />
+    <None Include="Resources\back_24.png" />
+    <Content Include="Setup and UpdateInfo\Release.txt" />
+    <Content Include="Setup and UpdateInfo\updateInfo.xml" />
     <None Include="Resources\5172979_web_option_security_gear_engine_internet_setting.png" />
     <None Include="Resources\5172958_security_communication_comment_talk_internet_chat_message.png" />
     <None Include="Resources\5172969_security_success_report_file_check_document_internet.png" />
-    <EmbeddedResource Include="blockOptions.vi.resx">
+    <EmbeddedResource Include="Pages\blockOptions.vi.resx">
       <DependentUpon>blockOptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainHall.vi-VN.resx">
       <DependentUpon>mainHall.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="whiteList.vi.resx">
+    <EmbeddedResource Include="Pages\whiteList.vi.resx">
       <DependentUpon>whiteList.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Resources\danger_256.png" />
@@ -175,19 +177,19 @@
     <None Include="Resources\5172962_padlock_locked_protection_internet_cyber_lock_security1.png" />
     <None Include="Resources\5172962_padlock_locked_protection_internet_cyber_lock_security.png" />
     <None Include="Resources\5172970_locked_security_lock_document_page_internet_file.png" />
-    <EmbeddedResource Include="about.resx">
+    <EmbeddedResource Include="Pages\about.resx">
       <DependentUpon>about.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="about.vi.resx">
+    <EmbeddedResource Include="Pages\about.vi.resx">
       <DependentUpon>about.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="blockOptions.resx">
+    <EmbeddedResource Include="Pages\blockOptions.resx">
       <DependentUpon>blockOptions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="filterBrowsing.resx">
+    <EmbeddedResource Include="Pages\filterBrowsing.resx">
       <DependentUpon>filterBrowsing.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="filterBrowsing.vi.resx">
+    <EmbeddedResource Include="Pages\filterBrowsing.vi.resx">
       <DependentUpon>filterBrowsing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainHall.resx">
@@ -206,7 +208,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="whiteList.resx">
+    <EmbeddedResource Include="Pages\whiteList.resx">
       <DependentUpon>whiteList.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
@@ -219,7 +221,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Setup\ChildSafe_Setup.msi" />
+    <None Include="Setup and UpdateInfo\ChildSafe_Setup.msi" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

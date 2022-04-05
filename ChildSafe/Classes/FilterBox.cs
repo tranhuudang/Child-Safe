@@ -110,7 +110,7 @@ namespace ChildSafe
                     File.AppendAllText(ChildSafeAsset.onDutyFilters, blackList);
                 }
                 // remove item in whitelist out of onDuty file
-                if(File.Exists(ChildSafeAsset.whiteList))
+                if (File.Exists(ChildSafeAsset.whiteList))
                 {
                     string[] whitelist = File.ReadAllLines(ChildSafeAsset.whiteList);
                     string onDutyAfterWhiteList = File.ReadAllText(ChildSafeAsset.onDutyFilters);
@@ -119,11 +119,11 @@ namespace ChildSafe
                         if (onDutyAfterWhiteList.Contains(whiteLine))
                         {
                             MessageBox.Show("ok");
-                            onDutyAfterWhiteList= onDutyAfterWhiteList.Replace(whiteLine, "whitelist");
+                            onDutyAfterWhiteList = onDutyAfterWhiteList.Replace(whiteLine, "whitelist");
                         }
                     }
                     File.WriteAllText(ChildSafeAsset.onDutyFilters, onDutyAfterWhiteList);
-                }    
+                }
                 return true;
             }
             catch (Exception)
@@ -153,7 +153,7 @@ namespace ChildSafe
                     string linkFile = note["path"].InnerText;
                     string update = note["update"].InnerText;
                     string licence = note["licence"].InnerText;
-                    info =    "Name: " + name + "\n\n"
+                    info = "Name: " + name + "\n\n"
                             + "Description: " + description + "\n\n"
                             + "Update: " + update + "\n"
                             + "Licence: " + licence;
@@ -161,7 +161,7 @@ namespace ChildSafe
             }
             return info;
         }
-
+       
     }
 
 }

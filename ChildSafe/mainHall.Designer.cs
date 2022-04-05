@@ -64,6 +64,10 @@ namespace ChildSafe
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureMainHall = new System.Windows.Forms.PictureBox();
             this.btMenu = new System.Windows.Forms.PictureBox();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lbTitle = new System.Windows.Forms.Label();
+            this.btBack = new System.Windows.Forms.PictureBox();
             this.contextMenu.SuspendLayout();
             this.panelLoading.SuspendLayout();
             this.gbUpdate.SuspendLayout();
@@ -71,6 +75,9 @@ namespace ChildSafe
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMainHall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btMenu)).BeginInit();
+            this.panelMain.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btBack)).BeginInit();
             this.SuspendLayout();
             // 
             // lbPromote
@@ -292,26 +299,55 @@ namespace ChildSafe
             // btMenu
             // 
             this.btMenu.ContextMenuStrip = this.contextMenu;
+            this.btMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btMenu.Image = global::ChildSafe.Properties.Resources.more_24;
             resources.ApplyResources(this.btMenu, "btMenu");
             this.btMenu.Name = "btMenu";
             this.btMenu.TabStop = false;
             this.btMenu.Click += new System.EventHandler(this.btMenu_Click);
             // 
+            // panelMain
+            // 
+            this.panelMain.Controls.Add(this.gbUpdate);
+            this.panelMain.Controls.Add(this.panelLoading);
+            this.panelMain.Controls.Add(this.pictureBox1);
+            this.panelMain.Controls.Add(this.options);
+            this.panelMain.Controls.Add(this.lbNotice);
+            this.panelMain.Controls.Add(this.btStart);
+            this.panelMain.Controls.Add(this.pictureMainHall);
+            this.panelMain.Controls.Add(this.lbPromote);
+            resources.ApplyResources(this.panelMain, "panelMain");
+            this.panelMain.Name = "panelMain";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lbTitle);
+            this.panel1.Controls.Add(this.btBack);
+            this.panel1.Controls.Add(this.btMenu);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // lbTitle
+            // 
+            resources.ApplyResources(this.lbTitle, "lbTitle");
+            this.lbTitle.Name = "lbTitle";
+            // 
+            // btBack
+            // 
+            this.btBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btBack.Image = global::ChildSafe.Properties.Resources.back_24;
+            resources.ApplyResources(this.btBack, "btBack");
+            this.btBack.Name = "btBack";
+            this.btBack.TabStop = false;
+            this.btBack.Click += new System.EventHandler(this.btBack_Click);
+            // 
             // mainHall
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.gbUpdate);
-            this.Controls.Add(this.panelLoading);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.options);
+            this.Controls.Add(this.panelMain);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.saparator);
-            this.Controls.Add(this.lbNotice);
-            this.Controls.Add(this.btStart);
-            this.Controls.Add(this.pictureMainHall);
-            this.Controls.Add(this.btMenu);
-            this.Controls.Add(this.lbPromote);
             this.MaximizeBox = false;
             this.Name = "mainHall";
             this.Load += new System.EventHandler(this.mainHall_Load);
@@ -324,8 +360,12 @@ namespace ChildSafe
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMainHall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btMenu)).EndInit();
+            this.panelMain.ResumeLayout(false);
+            this.panelMain.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btBack)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -364,6 +404,10 @@ namespace ChildSafe
         private System.Windows.Forms.Button btIgnore;
         private System.Windows.Forms.Button btDownload;
         private System.Windows.Forms.Timer refresh;
+        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbTitle;
+        private System.Windows.Forms.PictureBox btBack;
     }
 }
 

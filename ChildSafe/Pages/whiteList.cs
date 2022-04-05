@@ -219,5 +219,10 @@ namespace ChildSafe
                 btAdd2Table.Enabled = false;
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

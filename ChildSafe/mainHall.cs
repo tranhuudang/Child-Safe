@@ -19,6 +19,7 @@ namespace ChildSafe
 {
     public partial class mainHall : Form
     {
+        Form currentForm= null;
         public mainHall()
         {
 
@@ -264,9 +265,22 @@ namespace ChildSafe
         private void whitelistToolStripMenuItem_Click(object sender, EventArgs e)
         {
             whiteList whiteListForm = new whiteList();
-            whiteListForm.ShowDialog();
-        }
+            openPage(whiteListForm);
 
+        }
+        private void openPage(Form page)
+        {
+            currentForm = page;
+            currentForm.TopLevel = false;
+            this.Controls.Add(currentForm);
+            currentForm.Show();
+            currentForm.Dock = DockStyle.Fill;
+            currentForm.FormBorderStyle = FormBorderStyle.None;
+            panelMain.Visible = false;
+            lbTitle.Text = currentForm.Text;
+            lbTitle.Visible = true;
+            btBack.Visible = true;
+        }
         private void autoupdateFilterToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -382,6 +396,14 @@ namespace ChildSafe
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btBack_Click(object sender, EventArgs e)
+        {
+            currentForm.Close();
+            panelMain.Visible = true;
+            lbTitle.Visible = false;
+            btBack.Visible = false;
         }
     }
 }
