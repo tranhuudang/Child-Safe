@@ -120,11 +120,188 @@
   <metadata name="pnControlBlacklist.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="&gt;&gt;btRemove.Name" xml:space="preserve">
+    <value>btRemove</value>
+  </data>
+  <data name="&gt;&gt;btRemove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btRemove.Parent" xml:space="preserve">
+    <value>pnControlBlacklist</value>
+  </data>
+  <data name="&gt;&gt;btRemove.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btAdd2Table.Name" xml:space="preserve">
+    <value>btAdd2Table</value>
+  </data>
+  <data name="&gt;&gt;btAdd2Table.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btAdd2Table.Parent" xml:space="preserve">
+    <value>pnControlBlacklist</value>
+  </data>
+  <data name="&gt;&gt;btAdd2Table.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbBlacklist.Name" xml:space="preserve">
+    <value>lbBlacklist</value>
+  </data>
+  <data name="&gt;&gt;lbBlacklist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBlacklist.Parent" xml:space="preserve">
+    <value>pnControlBlacklist</value>
+  </data>
+  <data name="&gt;&gt;lbBlacklist.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txUrl2AddBlackList.Name" xml:space="preserve">
+    <value>txUrl2AddBlackList</value>
+  </data>
+  <data name="&gt;&gt;txUrl2AddBlackList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txUrl2AddBlackList.Parent" xml:space="preserve">
+    <value>pnControlBlacklist</value>
+  </data>
+  <data name="&gt;&gt;txUrl2AddBlackList.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pnControlBlacklist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 18</value>
+  </data>
+  <data name="pnControlBlacklist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>668, 27</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pnControlBlacklist.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pnControlBlacklist.Name" xml:space="preserve">
+    <value>pnControlBlacklist</value>
+  </data>
+  <data name="&gt;&gt;pnControlBlacklist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnControlBlacklist.Parent" xml:space="preserve">
+    <value>groupBlacklist</value>
+  </data>
+  <data name="&gt;&gt;pnControlBlacklist.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>677, 24</value>
+  </data>
+  <data name="label3.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>2, 100</value>
+  </data>
+  <data name="label3.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>2, 10</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>2, 15</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>groupBlacklist</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btDisable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>685, 19</value>
+  </data>
+  <data name="btDisable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btDisable.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btDisable.Text" xml:space="preserve">
+    <value>Disable</value>
+  </data>
+  <data name="&gt;&gt;btDisable.Name" xml:space="preserve">
+    <value>btDisable</value>
+  </data>
+  <data name="&gt;&gt;btDisable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btDisable.Parent" xml:space="preserve">
+    <value>groupBlacklist</value>
+  </data>
+  <data name="&gt;&gt;btDisable.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="urlAdded2Table.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="urlAdded2Table.HeaderText" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="urlAdded2Table.Width" type="System.Int32, mscorlib">
+    <value>700</value>
+  </data>
+  <data name="tbBlacklist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 48</value>
+  </data>
+  <data name="tbBlacklist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>753, 89</value>
+  </data>
+  <data name="tbBlacklist.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tbBlacklist.Name" xml:space="preserve">
+    <value>tbBlacklist</value>
+  </data>
+  <data name="&gt;&gt;tbBlacklist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbBlacklist.Parent" xml:space="preserve">
+    <value>groupBlacklist</value>
+  </data>
+  <data name="&gt;&gt;tbBlacklist.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBlacklist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 12</value>
+  </data>
+  <data name="groupBlacklist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 146</value>
+  </data>
+  <data name="groupBlacklist.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBlacklist.Text" xml:space="preserve">
+    <value>Blacklist</value>
+  </data>
+  <data name="&gt;&gt;groupBlacklist.Name" xml:space="preserve">
+    <value>groupBlacklist</value>
+  </data>
+  <data name="&gt;&gt;groupBlacklist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBlacklist.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBlacklist.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="btRemove.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btRemove.Location" type="System.Drawing.Point, System.Drawing">
     <value>589, 1</value>
   </data>
@@ -224,137 +401,129 @@
   <data name="&gt;&gt;txUrl2AddBlackList.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="pnControlBlacklist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 18</value>
-  </data>
-  <data name="pnControlBlacklist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>668, 27</value>
-  </data>
-  <data name="pnControlBlacklist.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;pnControlBlacklist.Name" xml:space="preserve">
-    <value>pnControlBlacklist</value>
-  </data>
-  <data name="&gt;&gt;pnControlBlacklist.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnControlBlacklist.Parent" xml:space="preserve">
-    <value>groupBlacklist</value>
-  </data>
-  <data name="&gt;&gt;pnControlBlacklist.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>677, 24</value>
-  </data>
-  <data name="label3.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>2, 100</value>
-  </data>
-  <data name="label3.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>2, 10</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2, 15</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>groupBlacklist</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btDisable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 19</value>
-  </data>
-  <data name="btDisable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="btDisable.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="btDisable.Text" xml:space="preserve">
-    <value>Disable</value>
-  </data>
-  <data name="&gt;&gt;btDisable.Name" xml:space="preserve">
-    <value>btDisable</value>
-  </data>
-  <data name="&gt;&gt;btDisable.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btDisable.Parent" xml:space="preserve">
-    <value>groupBlacklist</value>
-  </data>
-  <data name="&gt;&gt;btDisable.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="urlAdded2Table.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="urlAdded2Table.HeaderText" xml:space="preserve">
-    <value>Website</value>
-  </data>
-  <data name="urlAdded2Table.Width" type="System.Int32, mscorlib">
-    <value>700</value>
-  </data>
-  <data name="tbBlacklist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 48</value>
-  </data>
-  <data name="tbBlacklist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>753, 123</value>
-  </data>
-  <data name="tbBlacklist.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;tbBlacklist.Name" xml:space="preserve">
-    <value>tbBlacklist</value>
-  </data>
-  <data name="&gt;&gt;tbBlacklist.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbBlacklist.Parent" xml:space="preserve">
-    <value>groupBlacklist</value>
-  </data>
-  <data name="&gt;&gt;tbBlacklist.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="groupBlacklist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 12</value>
-  </data>
-  <data name="groupBlacklist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>772, 183</value>
-  </data>
-  <data name="groupBlacklist.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="groupBlacklist.Text" xml:space="preserve">
-    <value>Blacklist</value>
-  </data>
-  <data name="&gt;&gt;groupBlacklist.Name" xml:space="preserve">
-    <value>groupBlacklist</value>
-  </data>
-  <data name="&gt;&gt;groupBlacklist.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBlacklist.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBlacklist.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="panel1.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btFilterBrowsing.Name" xml:space="preserve">
+    <value>btFilterBrowsing</value>
+  </data>
+  <data name="&gt;&gt;btFilterBrowsing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btFilterBrowsing.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;btFilterBrowsing.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btAdd.Name" xml:space="preserve">
+    <value>btAdd</value>
+  </data>
+  <data name="&gt;&gt;btAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btAdd.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;btAdd.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cbDownloadedFiltersList.Name" xml:space="preserve">
+    <value>cbDownloadedFiltersList</value>
+  </data>
+  <data name="&gt;&gt;cbDownloadedFiltersList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbDownloadedFiltersList.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;cbDownloadedFiltersList.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 218</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Other options</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 164</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 222</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="lbChangedOrNot.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -461,12 +630,11 @@
   <data name="&gt;&gt;btCancel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 244</value>
+    <value>0, 407</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>772, 40</value>
@@ -481,27 +649,10 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="lbDetails.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lbDetails.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 18</value>
-  </data>
-  <data name="lbDetails.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 141</value>
-  </data>
-  <data name="lbDetails.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lbDetails.Text" xml:space="preserve">
-    <value>Child Safe will make sure that you won’t visit pages that may harm your computer or attempt to trick you. 
-Add more  filters to block more kind of risky contents on the Internet.
-</value>
   </data>
   <data name="&gt;&gt;lbDetails.Name" xml:space="preserve">
     <value>lbDetails</value>
@@ -539,34 +690,33 @@ Add more  filters to block more kind of risky contents on the Internet.
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="removeOnDutyFilters.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>233, 17</value>
-  </metadata>
-  <data name="removeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 22</value>
-  </data>
-  <data name="removeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Remove</value>
-  </data>
-  <data name="removeOnDutyFilters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 26</value>
-  </data>
-  <data name="&gt;&gt;removeOnDutyFilters.Name" xml:space="preserve">
-    <value>removeOnDutyFilters</value>
-  </data>
-  <data name="&gt;&gt;removeOnDutyFilters.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="listOnDutyFilters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lbDetails.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="listOnDutyFilters.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lbDetails.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 18</value>
   </data>
-  <data name="listOnDutyFilters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>543, 141</value>
+  <data name="lbDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 141</value>
   </data>
-  <data name="listOnDutyFilters.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbDetails.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbDetails.Text" xml:space="preserve">
+    <value>Child Safe will make sure that you won’t visit pages that may harm your computer or attempt to trick you. 
+Add more  filters to block more kind of risky contents on the Internet.
+</value>
+  </data>
+  <data name="&gt;&gt;lbDetails.Name" xml:space="preserve">
+    <value>lbDetails</value>
+  </data>
+  <data name="&gt;&gt;lbDetails.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbDetails.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;lbDetails.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;listOnDutyFilters.Name" xml:space="preserve">
@@ -604,6 +754,48 @@ Add more  filters to block more kind of risky contents on the Internet.
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <metadata name="removeOnDutyFilters.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>233, 17</value>
+  </metadata>
+  <data name="removeOnDutyFilters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 26</value>
+  </data>
+  <data name="&gt;&gt;removeOnDutyFilters.Name" xml:space="preserve">
+    <value>removeOnDutyFilters</value>
+  </data>
+  <data name="&gt;&gt;removeOnDutyFilters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="listOnDutyFilters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="listOnDutyFilters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 18</value>
+  </data>
+  <data name="listOnDutyFilters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>543, 141</value>
+  </data>
+  <data name="listOnDutyFilters.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;listOnDutyFilters.Name" xml:space="preserve">
+    <value>listOnDutyFilters</value>
+  </data>
+  <data name="&gt;&gt;listOnDutyFilters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listOnDutyFilters.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;listOnDutyFilters.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="removeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 22</value>
+  </data>
+  <data name="removeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Remove</value>
   </data>
   <data name="btFilterBrowsing.Location" type="System.Drawing.Point, System.Drawing">
     <value>667, 21</value>
@@ -704,54 +896,6 @@ Add more  filters to block more kind of risky contents on the Internet.
   <data name="&gt;&gt;cbDownloadedFiltersList.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="groupBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>772, 218</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Other options</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 201</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>772, 284</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="errorReporter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -765,7 +909,7 @@ Add more  filters to block more kind of risky contents on the Internet.
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>772, 488</value>
+    <value>772, 447</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt</value>

@@ -132,16 +132,18 @@ namespace ChildSafe
 
         private void options_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // auto refresh filter data after save modifications in filter options
             blockOptions optionsForm = new blockOptions();
-            if (optionsForm.ShowDialog() == DialogResult.OK)
-            {
-                if (Properties.Settings.Default["protectEnable"].ToString() == "True")
-                {
-                    btStart.Enabled = false;
-                    refresh.Enabled = true;
-                }
-            }
+            openPage(optionsForm);
+            // auto refresh filter data after save modifications in filter options
+            
+            //if (optionsForm.ShowDialog() == DialogResult.OK)
+            //{
+            //    if (Properties.Settings.Default["protectEnable"].ToString() == "True")
+            //    {
+            //        btStart.Enabled = false;
+            //        refresh.Enabled = true;
+            //    }
+            //}
 
         }
 
@@ -242,8 +244,8 @@ namespace ChildSafe
 
         private void filtersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            blockOptions blockOptionForm = new blockOptions();
-            blockOptionForm.ShowDialog();
+            blockOptions optionsForm = new blockOptions();
+            openPage(optionsForm);
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -272,11 +274,11 @@ namespace ChildSafe
         {
             currentForm = page;
             currentForm.TopLevel = false;
-            this.Controls.Add(currentForm);
+            panelPagesSwitch.Controls.Add(currentForm);
             currentForm.Show();
             currentForm.Dock = DockStyle.Fill;
             currentForm.FormBorderStyle = FormBorderStyle.None;
-            panelMain.Visible = false;
+            panelHomeWithControl.Visible = false;
             lbTitle.Text = currentForm.Text;
             lbTitle.Visible = true;
             btBack.Visible = true;
@@ -401,7 +403,7 @@ namespace ChildSafe
         private void btBack_Click(object sender, EventArgs e)
         {
             currentForm.Close();
-            panelMain.Visible = true;
+            panelHomeWithControl.Visible = true;
             lbTitle.Visible = false;
             btBack.Visible = false;
         }

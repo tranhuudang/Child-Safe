@@ -126,7 +126,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbPromote.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 5</value>
+    <value>10, 3</value>
   </data>
   <data name="lbPromote.Size" type="System.Drawing.Size, System.Drawing">
     <value>748, 82</value>
@@ -148,7 +148,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbPromote.Parent" xml:space="preserve">
-    <value>panelMain</value>
+    <value>panelHomeWithControl</value>
   </data>
   <data name="&gt;&gt;lbPromote.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -157,7 +157,7 @@
     <value>NoControl</value>
   </data>
   <data name="btStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 248</value>
+    <value>347, 246</value>
   </data>
   <data name="btStart.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 29</value>
@@ -175,7 +175,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btStart.Parent" xml:space="preserve">
-    <value>panelMain</value>
+    <value>panelHomeWithControl</value>
   </data>
   <data name="&gt;&gt;btStart.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -268,7 +268,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbNotice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 377</value>
+    <value>74, 375</value>
   </data>
   <data name="lbNotice.Size" type="System.Drawing.Size, System.Drawing">
     <value>684, 64</value>
@@ -287,7 +287,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbNotice.Parent" xml:space="preserve">
-    <value>panelMain</value>
+    <value>panelHomeWithControl</value>
   </data>
   <data name="&gt;&gt;lbNotice.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -353,7 +353,7 @@
     <value>NoControl</value>
   </data>
   <data name="options.Location" type="System.Drawing.Point, System.Drawing">
-    <value>370, 280</value>
+    <value>368, 278</value>
   </data>
   <data name="options.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 13</value>
@@ -371,7 +371,7 @@
     <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;options.Parent" xml:space="preserve">
-    <value>panelMain</value>
+    <value>panelHomeWithControl</value>
   </data>
   <data name="&gt;&gt;options.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -410,7 +410,7 @@
     <value>141, 17</value>
   </metadata>
   <data name="panelLoading.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 308</value>
+    <value>6, 306</value>
   </data>
   <data name="panelLoading.Size" type="System.Drawing.Size, System.Drawing">
     <value>752, 45</value>
@@ -428,7 +428,7 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panelLoading.Parent" xml:space="preserve">
-    <value>panelMain</value>
+    <value>panelHomeWithControl</value>
   </data>
   <data name="&gt;&gt;panelLoading.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -494,7 +494,7 @@
     <value>4</value>
   </data>
   <data name="gbUpdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>472, 233</value>
+    <value>470, 231</value>
   </data>
   <data name="gbUpdate.Size" type="System.Drawing.Size, System.Drawing">
     <value>288, 120</value>
@@ -512,7 +512,7 @@
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;gbUpdate.Parent" xml:space="preserve">
-    <value>panelMain</value>
+    <value>panelHomeWithControl</value>
   </data>
   <data name="&gt;&gt;gbUpdate.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -662,7 +662,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 377</value>
+    <value>4, 375</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
@@ -680,7 +680,7 @@
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>panelMain</value>
+    <value>panelHomeWithControl</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -689,7 +689,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureMainHall.Location" type="System.Drawing.Point, System.Drawing">
-    <value>330, 99</value>
+    <value>328, 97</value>
   </data>
   <data name="pictureMainHall.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 128</value>
@@ -707,7 +707,7 @@
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pictureMainHall.Parent" xml:space="preserve">
-    <value>panelMain</value>
+    <value>panelHomeWithControl</value>
   </data>
   <data name="&gt;&gt;pictureMainHall.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -739,29 +739,98 @@
   <data name="&gt;&gt;btMenu.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="panelMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="panelHomeWithControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
   </data>
-  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 41</value>
+  <data name="panelHomeWithControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>769, 444</value>
   </data>
-  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>772, 447</value>
-  </data>
-  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
+  <data name="panelHomeWithControl.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
-    <value>panelMain</value>
+  <data name="&gt;&gt;panelHomeWithControl.Name" xml:space="preserve">
+    <value>panelHomeWithControl</value>
   </data>
-  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelHomeWithControl.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelHomeWithControl.Parent" xml:space="preserve">
+    <value>panelPagesSwitch</value>
+  </data>
+  <data name="&gt;&gt;panelHomeWithControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelPagesSwitch.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelPagesSwitch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 41</value>
+  </data>
+  <data name="panelPagesSwitch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 447</value>
+  </data>
+  <data name="panelPagesSwitch.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;panelPagesSwitch.Name" xml:space="preserve">
+    <value>panelPagesSwitch</value>
+  </data>
+  <data name="&gt;&gt;panelPagesSwitch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelPagesSwitch.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panelPagesSwitch.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbTitle.Name" xml:space="preserve">
+    <value>lbTitle</value>
+  </data>
+  <data name="&gt;&gt;lbTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbTitle.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lbTitle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btBack.Name" xml:space="preserve">
+    <value>btBack</value>
+  </data>
+  <data name="&gt;&gt;btBack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btBack.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btBack.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 41</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="lbTitle.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -828,30 +897,6 @@
   </data>
   <data name="&gt;&gt;btBack.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>772, 41</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

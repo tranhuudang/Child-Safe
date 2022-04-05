@@ -64,10 +64,11 @@ namespace ChildSafe
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureMainHall = new System.Windows.Forms.PictureBox();
             this.btMenu = new System.Windows.Forms.PictureBox();
-            this.panelMain = new System.Windows.Forms.Panel();
+            this.panelPagesSwitch = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbTitle = new System.Windows.Forms.Label();
             this.btBack = new System.Windows.Forms.PictureBox();
+            this.panelHomeWithControl = new System.Windows.Forms.Panel();
             this.contextMenu.SuspendLayout();
             this.panelLoading.SuspendLayout();
             this.gbUpdate.SuspendLayout();
@@ -75,9 +76,10 @@ namespace ChildSafe
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMainHall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btMenu)).BeginInit();
-            this.panelMain.SuspendLayout();
+            this.panelPagesSwitch.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btBack)).BeginInit();
+            this.panelHomeWithControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbPromote
@@ -306,18 +308,11 @@ namespace ChildSafe
             this.btMenu.TabStop = false;
             this.btMenu.Click += new System.EventHandler(this.btMenu_Click);
             // 
-            // panelMain
+            // panelPagesSwitch
             // 
-            this.panelMain.Controls.Add(this.gbUpdate);
-            this.panelMain.Controls.Add(this.panelLoading);
-            this.panelMain.Controls.Add(this.pictureBox1);
-            this.panelMain.Controls.Add(this.options);
-            this.panelMain.Controls.Add(this.lbNotice);
-            this.panelMain.Controls.Add(this.btStart);
-            this.panelMain.Controls.Add(this.pictureMainHall);
-            this.panelMain.Controls.Add(this.lbPromote);
-            resources.ApplyResources(this.panelMain, "panelMain");
-            this.panelMain.Name = "panelMain";
+            this.panelPagesSwitch.Controls.Add(this.panelHomeWithControl);
+            resources.ApplyResources(this.panelPagesSwitch, "panelPagesSwitch");
+            this.panelPagesSwitch.Name = "panelPagesSwitch";
             // 
             // panel1
             // 
@@ -341,11 +336,24 @@ namespace ChildSafe
             this.btBack.TabStop = false;
             this.btBack.Click += new System.EventHandler(this.btBack_Click);
             // 
+            // panelHomeWithControl
+            // 
+            this.panelHomeWithControl.Controls.Add(this.gbUpdate);
+            this.panelHomeWithControl.Controls.Add(this.panelLoading);
+            this.panelHomeWithControl.Controls.Add(this.pictureBox1);
+            this.panelHomeWithControl.Controls.Add(this.options);
+            this.panelHomeWithControl.Controls.Add(this.lbNotice);
+            this.panelHomeWithControl.Controls.Add(this.btStart);
+            this.panelHomeWithControl.Controls.Add(this.pictureMainHall);
+            this.panelHomeWithControl.Controls.Add(this.lbPromote);
+            resources.ApplyResources(this.panelHomeWithControl, "panelHomeWithControl");
+            this.panelHomeWithControl.Name = "panelHomeWithControl";
+            // 
             // mainHall
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panelMain);
+            this.Controls.Add(this.panelPagesSwitch);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.saparator);
             this.MaximizeBox = false;
@@ -360,11 +368,12 @@ namespace ChildSafe
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMainHall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btMenu)).EndInit();
-            this.panelMain.ResumeLayout(false);
-            this.panelMain.PerformLayout();
+            this.panelPagesSwitch.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btBack)).EndInit();
+            this.panelHomeWithControl.ResumeLayout(false);
+            this.panelHomeWithControl.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -404,10 +413,11 @@ namespace ChildSafe
         private System.Windows.Forms.Button btIgnore;
         private System.Windows.Forms.Button btDownload;
         private System.Windows.Forms.Timer refresh;
-        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.Panel panelPagesSwitch;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.PictureBox btBack;
+        private System.Windows.Forms.Panel panelHomeWithControl;
     }
 }
 
